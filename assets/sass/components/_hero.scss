@@ -1,0 +1,87 @@
+// Hero area end
+.hero {
+  padding: 150px 0px 140px;
+  position: relative;
+  overflow: hidden;
+
+  &__content {
+    &__title {
+      font-size: 70px;
+      font-weight: 600;
+      line-height: 1;
+      padding-right: 150px;
+      margin-bottom: 22px;
+      @media screen and (max-width: 1350px) {
+        padding-right: 0px;
+      }
+      @media screen and (max-width: 990px) {
+        font-size: 50px;
+      }
+      @media screen and (max-width: 990px) {
+        font-size: 46px;
+        line-height: 1.2;
+      }
+    }
+    &__subtitle {
+      font-size: 22px;
+      line-height: 1.5;
+      color: rgb(42, 46, 61);
+      padding-right: 150px;
+      @media screen and (max-width: 1400px) {
+        padding-right: 0px;
+      }
+      @media screen and (max-width: 990px) {
+        font-size: 18px;
+      }
+    }
+
+    &__client-logo {
+      a {
+        margin-top: 70px;
+        width: calc(100% / 4);
+        @media screen and (max-width: 990px) {
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+
+  &__image {
+    @media screen and (max-width: 990px) {
+      position: relative;
+      padding-top: 100px;
+      margin-top: 50px;
+      padding-bottom: 120px;
+    }
+    &__overlay {
+      position: absolute;
+      width: 45%;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 2;
+      background-color: #f4f7fb;
+
+      @media screen and (max-width: 990px) {
+        width: 100%;
+      }
+    }
+    &__area {
+      position: relative;
+      margin-bottom: 0;
+      width: 100%;
+      right: -200px;
+      z-index: 3;
+
+      @media screen and (max-width: 990px) {
+        right: 0px;
+        img {
+          width: 100%;
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+}
+
+// Hero area end
