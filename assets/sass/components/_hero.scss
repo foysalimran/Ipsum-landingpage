@@ -66,21 +66,22 @@
         width: 100%;
       }
     }
-  }
-}
-
-.banner_right {
-  position: relative;
-  margin-bottom: 0;
-  width: 100%;
-  right: -200px;
-  z-index: 3;
-
-  @media screen and (max-width: 990px) {
-    right: 0px;
-    img {
+    &__area {
+      position: relative;
+      margin-bottom: 0;
       width: 100%;
+      right: -200px;
+      z-index: 3;
+
+      @media screen and (max-width: 990px) {
+        right: 0px;
+        img {
+          width: 100%;
+          padding: 0 10px;
+        }
+      }
     }
   }
 }
+
 // Hero area end
