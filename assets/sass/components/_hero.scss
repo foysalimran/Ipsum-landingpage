@@ -36,8 +36,9 @@
     }
 
     &__client-logo {
+
+      margin-top: 70px;
       a {
-        margin-top: 70px;
         width: calc(100% / 4);
         @media screen and (max-width: 990px) {
           margin-top: 40px;
