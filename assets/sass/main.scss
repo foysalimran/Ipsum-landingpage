@@ -1,3 +1,5 @@
-.test {
-    color: orangered;
-}
+@import "./abstracts/variables";
+
+@import "./base/base";
+
+@import "./components/hero";
