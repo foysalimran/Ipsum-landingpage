@@ -22,14 +22,12 @@
   
   .menu {
     > .nav-item {
-      margin-left: 36px;
+      margin: 0 18px;
       position: relative;
       padding-bottom: 35px;
       padding-top: 35px;
       transition: all 0.1s linear;
-      &:first-child{
-        margin-left: 0;
-      }
+      border-bottom: 3px solid transparent;
       > .nav-link {
         
         font-size: 16px;
@@ -57,7 +55,7 @@
           padding: 15px 0px;
           background: #fff;
           top: 100%;
-          box-shadow: 0px 6px 20px 0px rgba(1, 6, 33, 0.08);
+          box-shadow: 0px 6px 20px 0px $color-shadow;
           @media (min-width: 992px) {
             transform: translateY(20px);
             transition: all 0.3s ease-in;
@@ -88,9 +86,9 @@
   
             &:hover,
             &:focus,
-            &.active {
+            &.current {
               > .nav-link {
-                color: $color-primary;
+                color: $color-secondary;
               }
             }
   
@@ -116,17 +114,18 @@
         }
       }
   
-      &.active {
+      &.current {
+        border-bottom: 3px solid $color-secondary;
         .nav-link {
-          color: $color-primary;
+          color: $color-secondary;
         }
       }
   
       &:hover {
+        border-bottom: 3px solid $color-secondary;
         .nav-link {
-          color: $color-primary;
+          color: $color-secondary;
         }
-  
         @media (min-width: 992px) {
           .dropdown-menu {
             opacity: 1;
@@ -168,7 +167,7 @@
             transition: width 0.3s;
           }
         }
-        &:hover,&.active{
+        &:hover,&.current{
           .nav-link {
             @media (min-width: 992px) {
               color: #fff;
@@ -192,8 +191,7 @@
     width: 100%;
     z-index: 999;
     background: #fff;
-    box-shadow: 0px 4px 6px 0px rgba(12, 0, 46, 0.05%);
-    padding: 3px 0px;
+    box-shadow: 0px 4px 6px 0px $color-shadow;
     .navbar-brand {
       &.sticky_logo {
         img {
@@ -215,9 +213,9 @@
         > .nav-link {
           color: #1b1f41;
         }
-        &:hover,&.active{
+        &:hover,&.current{
           > .nav-link {
-            color: $color-primary;
+            color: $color-secondary;
           }
         }
       }
@@ -348,7 +346,7 @@
       left: 0;
       top: 100%;
       background: #fff;
-      box-shadow: 4px 6px 10px rgba(12, 0, 46, 0.05);
+      box-shadow: 4px 6px 10px $color-shadow;
       z-index: 8;
       width: 100%;
     }

@@ -32,6 +32,7 @@ body {
   content: "";
   background-color: #0000002e;
   border-radius: 50%;
+  
 }
 .section-title {
   &__dot {
@@ -41,12 +42,20 @@ body {
     &::before {
       @extend %title-divider-round;
       position: absolute;
-      left: -(8px * 2);
+      left: -40px;
+      width: 30px;
+      height: 3px;
+      border-radius: 0;
+      top: 3px;
     }
     &::after {
       @extend %title-divider-round;
       position: absolute;
-      right: -(8px * 2);
+      right: -40px;
+      width: 30px;
+      height: 3px;
+      border-radius: 0;
+      top: 3px;
     }
   }
   p {
@@ -59,16 +68,23 @@ body {
     @extend %title-divider-round;
     position: relative;
     margin: 0 auto;
-
     &::before {
       @extend %title-divider-round;
       position: absolute;
-      left: -(8px * 2);
+      left: -40px;
+      width: 30px;
+      height: 3px;
+      border-radius: 0;
+      top: 3px;
     }
     &::after {
       @extend %title-divider-round;
       position: absolute;
-      right: -(8px * 2);
+      right: -40px;
+      width: 30px;
+      height: 3px;
+      border-radius: 0;
+      top: 3px;
     }
   }
 }
@@ -78,17 +94,23 @@ body {
     @extend %title-divider-round;
     position: relative;
     margin: 0 16px 0 auto;
-
     &::before {
       @extend %title-divider-round;
-
       position: absolute;
-      left: -(8px * 2);
+      left: -40px;
+      width: 30px;
+      height: 3px;
+      border-radius: 0;
+      top: 3px;
     }
     &::after {
       @extend %title-divider-round;
       position: absolute;
-      right: -(8px * 2);
+      right: -40px;
+      width: 30px;
+      height: 3px;
+      border-radius: 0;
+      top: 3px;
     }
   }
 }

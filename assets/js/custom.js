@@ -1,8 +1,9 @@
 /**
  * Table of contents
  * -----------------------------------
- * 1. PRICING TOGGLER
- * 2. ONE PAGE NAV FOR SIDEBAR
+ * 1. NAVBAR FIXED
+ * 2. PRICING TOGGLER
+ * 3. ONE PAGE NAV FOR SIDEBAR
  *
  */
 
@@ -10,7 +11,7 @@
   "use strict";
   var PATH = {};
 
-  //* Navbar Fixed
+  /******************** 1. NAVBAR FIXED ********************/
   PATH.navbarFixed = function () {
     if ($(".sticky_nav").length) {
       $(window).scroll(function () {
@@ -22,10 +23,9 @@
         }
       });
     }
-  }
-  
+  };
 
-  /******************** 1. PRICING TOGGLER ********************/
+  /******************** 2. PRICING TOGGLER ********************/
   PATH.PricingToggler = function () {
     $(".switcher__button").on("click", function (e) {
       $(".switcher__button").toggleClass("switcher__button--enabled");
@@ -35,7 +35,8 @@
       );
     });
   };
-  /******************** 2. ONE PAGE NAV FOR SIDEBAR ********************/
+
+  /******************** 3. ONE PAGE NAV FOR SIDEBAR ********************/
   PATH.OnePageNav = function () {
     $("#nav").onePageNav({
       currentClass: "current",
@@ -49,7 +50,6 @@
   $(function () {
     PATH.PricingToggler();
     PATH.OnePageNav();
-    
   });
 
   /* Window on scroll function */
