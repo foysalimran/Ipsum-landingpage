@@ -4,7 +4,7 @@
       position: sticky;
       width: 100%;
       top: calc(50% - 62px);
-      @media screen and (max-width: 990px) {
+      @media screen and (max-width: 992px) {
         display: none;
       }
 
@@ -58,7 +58,7 @@
       }
     }
 
-    @media screen and (max-width: 990px) {
+    @media screen and (max-width: 992px) {
       padding: 40px 0;
     }
   }

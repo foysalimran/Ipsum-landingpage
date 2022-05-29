@@ -166,7 +166,7 @@ body {
   position: sticky;
   width: 100%;
   top: calc(50% - 62px); }
-  @media screen and (max-width: 990px) {
+  @media screen and (max-width: 992px) {
     .overview__sidebar--items {
       display: none; } }
   .overview__sidebar--items li {
@@ -203,7 +203,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px; }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 992px) {
   .overview__content {
     padding: 40px 0; } }
 
@@ -695,3 +695,16 @@ body {
     padding-right: 5px; }
     .navbar-brand img {
       max-width: 100%; } }
+
+.services .card {
+  box-shadow: 0 10px 60px 0 rgba(37, 39, 88, 0.1);
+  border: none;
+  transition: all .2s; }
+  .services .card span {
+    color: #553772; }
+  .services .card:hover {
+    transform: translateY(-10px); }
+
+.services .icon {
+  font-size: 100px !important;
+  color: #553772; }
