@@ -8,6 +8,19 @@
     <title>Ipsum - Creative multipurpose HTML landing page</title>
     <!-- ========== Favicon Ico ========== -->
     <link rel="icon" href="assets/images/favicon.ico" />
+
+    <!-- Headings font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Body font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
     <!--====== Bootstrap css ======-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <!--====== Icofont css ======-->
@@ -27,36 +40,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav menu me-lg-auto">
             <li class="nav-item dropdown submenu active">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-              >
-                Home
-              </a>
+              <a class="nav-link dropdown-toggle" href="#">Home</a>
             </li>
             <li class="nav-item dropdown submenu">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-              >
-                About Us
-              </a>
+              <a class="nav-link dropdown-toggle" href="#">Overview</a>
             </li>
             <li class="nav-item dropdown submenu">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-              >
-                Pages
-              </a>
+              <a class="nav-link dropdown-toggle" href="#pricing">Pricing</a>
             </li>
             <li class="nav-item dropdown submenu">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-              >
-                Blogs
-              </a>
+              <a class="nav-link dropdown-toggle" href="#"> Blogs </a>
               <i class="ti-angle-down mobile_dropdown_icon"></i>
 
               <ul class="dropdown-menu">
@@ -72,12 +65,7 @@
               </ul>
             </li>
             <li class="nav-item dropdown submenu">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-              >
-                Contact
-              </a>
+              <a class="nav-link dropdown-toggle" href="#"> Contact </a>
             </li>
           </ul>
           <div class="nav_right">
@@ -116,15 +104,15 @@
                 Quata automatically transcribes and indexes all of your Zoom
                 calls
               </p>
-              <div class="d-flex align-items-center mt-5 gap-4">
+              <div class="d-flex align-items-center m-20px-t gap-4">
                 <a href="#" class="btn-primary"><span>Button primary</span></a>
                 <a href="#" class="btn-secondary"
                   ><span>Button secondary</span></a
                 >
               </div>
 
-              <div class="hero__content__client-logo">
-                <h3>We're Featured on:</h3>
+              <div class="hero__content__client-logo m-50px-t">
+                <h5 class="m-30px-b">We're Featured on:</h5>
                 <div class="d-flex">
                   <a href="#">
                     <img
@@ -320,99 +308,104 @@
     <!-- ========== Overview Section End ========== -->
 
     <!-- ========== Pricing section start ========== -->
-    <section class="pricing" id="pricing">
-      <div class="py-5">
-        <h2 class="pricing__section-title">
-          Pricing plans which <br />
-          suits your needs
-        </h2>
+    <section class="pricing section-padding" id="pricing">
+      <div class="container">
+        <div class="row">
+          <div class="section-title title-center m-50px-b">
+            <h2 class="display-4">
+              Section title center
+              <div class="title-center__dot"></div>
+            </h2>
+            <p class="fs-6">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+          </div>
+        </div>
 
-        <div class="container">
-          <div class="pricing__switcher switcher">
-            <div class="switcher__buttons">
-              <div class="switcher__button switcher__button--enabled">
-                Monthly
+        <div class="pricing__switcher switcher m-auto-all m-40px-b">
+          <div class="switcher__buttons">
+            <div class="switcher__button switcher__button--enabled">
+              Monthly
+            </div>
+            <div class="switcher__button">Yearly</div>
+            <div class="switcher__border"></div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="pricing-one__single">
+              <div class="pricing__values">
+                <div class="pricing__value pricing__value--show">
+                  <span>$</span>0 <b>/ month</b>
+                </div>
+                <div
+                  class="pricing__value pricing__value--hide pricing__value--hidden"
+                >
+                  <span>$</span>0 <b>/ yearly</b>
+                </div>
               </div>
-              <div class="switcher__button">Yearly</div>
-              <div class="switcher__border"></div>
+              <span class="pricing-one__month">basic pack</span>
+              <ul class="pricing-one__list">
+                <li>Extra features</li>
+                <li>Lifetime free support</li>
+                <li>Upgrade options</li>
+                <li>Full access</li>
+              </ul>
+              <a href="#" class="btn-primary m-25px-t m-10px-b"
+                ><span>Choose Plan</span></a
+              >
+              <span class="pricing-one__tag-line">No hidden charges</span>
             </div>
           </div>
-
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="pricing-one__single">
-                <div class="pricing__values">
-                  <div class="pricing__value pricing__value--show">
-                    <span>$</span>0 <b>/ month</b>
-                  </div>
-                  <div
-                    class="pricing__value pricing__value--hide pricing__value--hidden"
-                  >
-                    <span>$</span>0 <b>/ yearly</b>
-                  </div>
+          <div class="col-lg-4">
+            <div class="pricing-one__single popular">
+              <div class="pricing__values">
+                <div class="pricing__value pricing__value--show">
+                  <span>$</span>49 <b>/ month</b>
                 </div>
-                <span class="pricing-one__month">basic pack</span>
-                <ul class="pricing-one__list">
-                  <li>Extra features</li>
-                  <li>Lifetime free support</li>
-                  <li>Upgrade options</li>
-                  <li>Full access</li>
-                </ul>
-                <a href="#" class="btn-primary m-25px-t m-10px-b"
-                  ><span>Choose Plan</span></a
+                <div
+                  class="pricing__value pricing__value--hide pricing__value--hidden"
                 >
-                <span class="pricing-one__tag-line">No hidden charges</span>
+                  <span>$</span>529 <b>/ yearly</b>
+                </div>
               </div>
+              <span class="pricing-one__month">medium pack</span>
+              <ul class="pricing-one__list">
+                <li>Extra features</li>
+                <li>Lifetime free support</li>
+                <li>Upgrade options</li>
+                <li>Full access</li>
+              </ul>
+              <a href="#" class="btn-primary m-25px-t m-10px-b"
+                ><span>Choose Plan</span></a
+              >
+              <span class="pricing-one__tag-line">No hidden charges</span>
             </div>
-            <div class="col-lg-4">
-              <div class="pricing-one__single popular">
-                <div class="pricing__values">
-                  <div class="pricing__value pricing__value--show">
-                    <span>$</span>49 <b>/ month</b>
-                  </div>
-                  <div
-                    class="pricing__value pricing__value--hide pricing__value--hidden"
-                  >
-                    <span>$</span>529 <b>/ yearly</b>
-                  </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="pricing-one__single">
+              <div class="pricing__values">
+                <div class="pricing__value pricing__value--show">
+                  <span>$</span>99 <b>/ month</b>
                 </div>
-                <span class="pricing-one__month">medium pack</span>
-                <ul class="pricing-one__list">
-                  <li>Extra features</li>
-                  <li>Lifetime free support</li>
-                  <li>Upgrade options</li>
-                  <li>Full access</li>
-                </ul>
-                <a href="#" class="btn-primary m-25px-t m-10px-b"
-                  ><span>Choose Plan</span></a
+                <div
+                  class="pricing__value pricing__value--hide pricing__value--hidden"
                 >
-                <span class="pricing-one__tag-line">No hidden charges</span>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="pricing-one__single">
-                <div class="pricing__values">
-                  <div class="pricing__value pricing__value--show">
-                    <span>$</span>99 <b>/ month</b>
-                  </div>
-                  <div
-                    class="pricing__value pricing__value--hide pricing__value--hidden"
-                  >
-                    <span>$</span>900 <b>/ yearly</b>
-                  </div>
+                  <span>$</span>900 <b>/ yearly</b>
                 </div>
-                <span class="pricing-one__month">ultimate pack</span>
-                <ul class="pricing-one__list">
-                  <li>Extra features</li>
-                  <li>Lifetime free support</li>
-                  <li>Upgrade options</li>
-                  <li>Full access</li>
-                </ul>
-                <a href="#" class="btn-primary m-25px-t m-10px-b"
-                  ><span>Choose Plan</span></a
-                >
-                <span class="pricing-one__tag-line">No hidden charges</span>
               </div>
+              <span class="pricing-one__month">ultimate pack</span>
+              <ul class="pricing-one__list">
+                <li>Extra features</li>
+                <li>Lifetime free support</li>
+                <li>Upgrade options</li>
+                <li>Full access</li>
+              </ul>
+              <a href="#" class="btn-primary m-25px-t m-10px-b"
+                ><span>Choose Plan</span></a
+              >
+              <span class="pricing-one__tag-line">No hidden charges</span>
             </div>
           </div>
         </div>
