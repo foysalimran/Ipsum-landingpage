@@ -170,7 +170,6 @@ body {
     .overview__sidebar--items {
       display: none; } }
   .overview__sidebar--items li {
-    list-style: none;
     transition: all 0.2s;
     position: relative;
     padding-left: 25px;
@@ -204,20 +203,9 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px; }
 
-.overview__content-title h2 {
-  font-weight: 700;
-  line-height: 1.4; }
-
-.overview__content-details p {
-  font-weight: normal;
-  line-height: 30px; }
-
 @media screen and (max-width: 990px) {
   .overview__content {
     padding: 40px 0; } }
-
-.current a .overview__sidebar--bullet {
-  opacity: 1; }
 
 .btn-primary {
   position: relative;
