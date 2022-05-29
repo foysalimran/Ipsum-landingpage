@@ -1,0 +1,60 @@
+// Hero area start
+.hero {
+  // padding: 150px 0px 140px;
+  position: relative;
+  overflow: hidden;
+
+  &__content {
+  
+    &__client-logo {
+
+      margin-top: 70px;
+      a {
+        width: calc(100% / 4);
+        @media screen and (max-width: 991px) {
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+
+  &__image {
+    @media screen and (max-width: 991px) {
+      position: relative;
+      margin-top: 50px;
+    }
+    &__overlay {
+      position: absolute;
+      width: 45%;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 2;
+      background-color: #f4f7fb;
+
+      @media screen and (max-width: 991px) {
+        width: 100%;
+        background:transparent;
+      }
+    }
+    &__area {
+      position: relative;
+      margin-bottom: 0;
+      width: 100%;
+      right: -200px;
+      z-index: 3;
+      @media screen and (max-width: 1200px) {
+        right: -100px;
+      }
+
+      @media screen and (max-width: 991px) {
+        right: 0px;
+        img {
+          width: 100%;
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+}
+// Hero area end
