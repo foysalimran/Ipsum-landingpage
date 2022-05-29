@@ -10,6 +10,9 @@
   "use strict";
   var PATH = {};
 
+
+  
+
   //* Navbar Fixed
   PATH.navbarFixed = function () {
     if ($(".sticky_nav").length) {
@@ -55,9 +58,15 @@
   /* Window on scroll function */
   $(window).on("scroll", function () {
     PATH.navbarFixed();
+
+
+  
   });
 
   /* Window on load function */
-  $(window).on("load", function () {});
+  $(window).on("load", function () {
+
+    
+  });
   //
 })(jQuery);
