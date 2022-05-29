@@ -32,61 +32,65 @@
   </head>
   <body>
     <!-- ========== Navbar start ========== -->
-    <nav class="navbar navbar-expand-lg sticky_nav">
-      <div class="container">
-        <a class="navbar-brand" href="#"
-          ><img src="assets/images/ipsum@2x.png" width="130" alt="logo"
-        /></a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav menu me-lg-auto">
-            <li class="nav-item dropdown submenu active">
-              <a class="nav-link dropdown-toggle" href="#">Home</a>
-            </li>
-            <li class="nav-item dropdown submenu">
-              <a class="nav-link dropdown-toggle" href="#overview">Overview</a>
-            </li>
-            <li class="nav-item dropdown submenu">
-              <a class="nav-link dropdown-toggle" href="#pricing">Pricing</a>
-            </li>
-            <li class="nav-item dropdown submenu">
-              <a class="nav-link dropdown-toggle" href="#"> Blogs </a>
-              <i class="ti-angle-down mobile_dropdown_icon"></i>
+    <header>
+      <nav class="navbar navbar-expand-lg sticky_nav">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img src="assets/images/logo.png" alt="logo"
+          /></a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul id="nav" class="navbar-nav menu me-lg-auto">
+              <li class="nav-item dropdown submenu current">
+                <a class="nav-link dropdown-toggle" href="#hero">Home</a>
+              </li>
+              <li class="nav-item dropdown submenu">
+                <a class="nav-link dropdown-toggle" href="#overview"
+                  >Overview</a
+                >
+              </li>
+              <li class="nav-item dropdown submenu">
+                <a class="nav-link dropdown-toggle" href="#pricing">Pricing</a>
+              </li>
+              <li class="nav-item dropdown submenu">
+                <a class="nav-link dropdown-toggle" href="#"> Blogs </a>
+                <i class="ti-angle-down mobile_dropdown_icon"></i>
 
-              <ul class="dropdown-menu">
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Blog One</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Blog Two</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Blog Three</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown submenu">
-              <a class="nav-link dropdown-toggle" href="#"> Contact </a>
-            </li>
-          </ul>
-          <div class="nav_right">
-            <a href="#" class="btn-secondary">Login</a>
-            <a href="#" class="btn-primary"><span>Sign up for free</span></a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Blog One</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Blog Two</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Blog Three</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown submenu">
+                <a class="nav-link dropdown-toggle" href="#"> Contact </a>
+              </li>
+            </ul>
+            <div class="nav_right d-flex gap-4 md-m-30px-tb">
+              <a href="#" class="btn-secondary">Login</a>
+              <a href="#" class="btn-primary"><span>Sign up for free</span></a>
+            </div>
           </div>
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span></span><span></span><span></span><span></span><span></span
+            ><span></span>
+          </button>
         </div>
-        <button
-          class="navbar-toggler collapsed"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span></span><span></span><span></span><span></span><span></span
-          ><span></span>
-        </button>
-      </div>
-    </nav>
+      </nav>
+    </header>
     <!-- ========== Navbar end ========== -->
     <!-- ========== Hero Section Start ========== -->
     <section
@@ -95,7 +99,7 @@
     >
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6 justify-content-between d-flex flex-column">
             <div class="hero__content">
               <h1 class="display-3 m-20px-b">
                 Find value💰 in your zoom Recordings
@@ -105,36 +109,41 @@
                 calls
               </p>
               <div class="d-flex align-items-center m-20px-t gap-4">
-                <a href="#" class="btn-primary"><span>Button primary</span></a>
-                <a href="#" class="btn-secondary"
-                  ><span>Button secondary</span></a
-                >
+                <a href="#" class="btn-primary"><span>Free Ipsum</span></a>
+                <a href="#" class="btn-secondary"><span>View Demo</span></a>
               </div>
+            </div>
+            <div class="hero__client-logo">
+              <h5 class="m-30px-b">We're Featured on:</h5>
 
-              <div class="hero__content__client-logo m-50px-t">
-                <h5 class="m-30px-b">We're Featured on:</h5>
-                <div class="d-flex">
-                  <a href="#">
-                    <img
-                      src="assets/images/client-logo1.png"
-                      alt="Client logo 1"
-                    />
-                  </a>
-                  <a href="#"
-                    ><img
-                      src="assets/images/client-logo2.png"
-                      alt="Client logo 2"
-                  /></a>
-                  <a href="#"
-                    ><img
-                      src="assets/images/client-logo3.png"
-                      alt="Client logo 3"
-                  /></a>
-                  <a href="#"
-                    ><img
-                      src="assets/images/client-logo4.png"
-                      alt="Client logo 4"
-                  /></a>
+              <div class="row">
+                <div class="col-3">
+                  <div
+                  class="hero__client-logo__images corporate-donor m-20px-t m-20px-b sm-m-0px-t"
+                >
+                  <img src="assets/images/1.png" alt="" />
+                </div>
+                </div>
+                <div class="col-3">
+                  <div
+                  class="hero__client-logo__images corporate-donor m-20px-t m-20px-b sm-m-0px-t"
+                >
+                  <img src="assets/images/1.png" alt="" />
+                </div>
+                </div>
+                <div class="col-3">
+                  <div
+                  class="hero__client-logo__images corporate-donor m-20px-t m-20px-b sm-m-0px-t"
+                >
+                  <img src="assets/images/1.png" alt="" />
+                </div>
+                </div>
+                <div class="col-3">
+                  <div
+                  class="hero__client-logo__images corporate-donor m-20px-t m-20px-b sm-m-0px-t"
+                >
+                  <img src="assets/images/1.png" alt="" />
+                </div>
                 </div>
               </div>
             </div>
@@ -345,20 +354,23 @@
             <div class="pricing-one__single">
               <div class="pricing__values">
                 <div class="pricing__value pricing__value--show">
-                  <span>$</span>0 <b>/ month</b>
+                  <span>$</span>0 <b>/ Free</b>
                 </div>
                 <div
                   class="pricing__value pricing__value--hide pricing__value--hidden"
                 >
-                  <span>$</span>0 <b>/ yearly</b>
+                  <span>$</span>0 <b>/ Free</b>
                 </div>
               </div>
-              <span class="pricing-one__month">basic pack</span>
               <ul class="pricing-one__list">
-                <li>Extra features</li>
-                <li>Lifetime free support</li>
-                <li>Upgrade options</li>
-                <li>Full access</li>
+                <li><i class="icofont-check"></i>Training Intake / Requests</li>
+                <li><i class="icofont-check"></i>Team Management</li>
+                <li>
+                  <i class="icofont-check"></i>Lorem Ipsum is simply dummy
+                </li>
+                <li>
+                  <i class="icofont-check"></i>Lorem Ipsum is simply dummy
+                </li>
               </ul>
               <a href="#" class="btn-primary m-25px-t m-10px-b"
                 ><span>Choose Plan</span></a
@@ -370,20 +382,23 @@
             <div class="pricing-one__single popular">
               <div class="pricing__values">
                 <div class="pricing__value pricing__value--show">
-                  <span>$</span>49 <b>/ month</b>
+                  <span>$</span>49 <b>/ Basic</b>
                 </div>
                 <div
                   class="pricing__value pricing__value--hide pricing__value--hidden"
                 >
-                  <span>$</span>529 <b>/ yearly</b>
+                  <span>$</span>529 <b>/ Basic</b>
                 </div>
               </div>
-              <span class="pricing-one__month">medium pack</span>
               <ul class="pricing-one__list">
-                <li>Extra features</li>
-                <li>Lifetime free support</li>
-                <li>Upgrade options</li>
-                <li>Full access</li>
+                <li><i class="icofont-check"></i>Training Intake / Requests</li>
+                <li><i class="icofont-check"></i>Team Management</li>
+                <li>
+                  <i class="icofont-check"></i>Lorem Ipsum is simply dummy
+                </li>
+                <li>
+                  <i class="icofont-check"></i>Lorem Ipsum is simply dummy
+                </li>
               </ul>
               <a href="#" class="btn-primary m-25px-t m-10px-b"
                 ><span>Choose Plan</span></a
@@ -395,20 +410,23 @@
             <div class="pricing-one__single">
               <div class="pricing__values">
                 <div class="pricing__value pricing__value--show">
-                  <span>$</span>99 <b>/ month</b>
+                  <span>$</span>99 <b>/ Pro</b>
                 </div>
                 <div
                   class="pricing__value pricing__value--hide pricing__value--hidden"
                 >
-                  <span>$</span>900 <b>/ yearly</b>
+                  <span>$</span>900 <b>/ Pro</b>
                 </div>
               </div>
-              <span class="pricing-one__month">ultimate pack</span>
               <ul class="pricing-one__list">
-                <li>Extra features</li>
-                <li>Lifetime free support</li>
-                <li>Upgrade options</li>
-                <li>Full access</li>
+                <li><i class="icofont-check"></i>Training Intake / Requests</li>
+                <li><i class="icofont-check"></i>Team Management</li>
+                <li>
+                  <i class="icofont-check"></i>Lorem Ipsum is simply dummy
+                </li>
+                <li>
+                  <i class="icofont-check"></i>Lorem Ipsum is simply dummy
+                </li>
               </ul>
               <a href="#" class="btn-primary m-25px-t m-10px-b"
                 ><span>Choose Plan</span></a

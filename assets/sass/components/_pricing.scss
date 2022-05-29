@@ -109,7 +109,7 @@
     margin-bottom: 40px;
     border-radius: 15px;
     background-color: #fff;
-    box-shadow: 0 10px 60px 0 rgba(37, 39, 88, 0.1);
+    box-shadow: 0 10px 60px 0 $color-shadow;
     padding: 60px 60px 50px;
     position: relative;
     z-index: 11;
@@ -134,6 +134,7 @@
     padding: 50px 0 0;
     margin: 60px 0 0;
     position: relative;
+    text-align: left;
     &:before {
       content: "";
       width: 81px;
@@ -148,6 +149,11 @@
       color: $color-gray;
       font-size: 16px;
       margin: 10px 0;
+      i {
+        font-size: 20px;
+        margin-right: 10px;
+        color: $color-secondary;
+      }
     }
   }
 
