@@ -11,7 +11,6 @@
       li {
         list-style: none;
         transition: all 0.2s;
-        font-weight: 700;
         position: relative;
         padding-left: 25px;
         display: flex;
@@ -23,11 +22,10 @@
           content: "";
           position: absolute;
           left: 0;
-          width: 12px;
-          height: 12px;
+          width: 15px;
+          height: 5px;
           background-color: $color-primary;
           opacity: 0.2;
-          border-radius: 50%;
           transition: all 0.2s;
         }
 
@@ -37,22 +35,17 @@
           }
         }
 
-        a{
-          
+        a {
           display: block;
+          color: $color-primary;
         }
       }
     }
-
-
-
-
-   
   }
 
   &__content {
-    &:not(:last-child) {
-      padding-bottom: 80px;
+    &:not(:first-child) {
+      padding-top: 80px;
     }
     &-title {
       span {
@@ -73,7 +66,6 @@
 
     &-details {
       p {
-
         font-weight: normal;
         line-height: 30px;
       }
@@ -85,9 +77,8 @@
   }
 }
 
-.current a{
-
+.current a {
 }
 .current a .overview__sidebar--bullet {
-    opacity: 1;
+  opacity: 1;
 }
