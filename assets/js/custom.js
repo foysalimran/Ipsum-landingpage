@@ -1,31 +1,49 @@
-/*------------------------------------------------------------------
-jQuery document ready
--------------------------------------------------------------------*/
-$(document).ready(function () {
-	"use strict";
+/**
+ * Table of contents
+ * -----------------------------------
+ * 1. PRICING TOGGLER
+ * 2. ONE PAGE NAV FOR SIDEBAR
+ *
+ */
 
-	// Pricing switcher button
+(function ($) {
+"use strict"
+var PATH = {};
+/******************** 1. PRICING TOGGLER ********************/
+PATH.PricingToggler = function () {
 	$(".switcher__button").on('click', function(e) { 
-	    $(".switcher__button").toggleClass('switcher__button--enabled');
+		$(".switcher__button").toggleClass('switcher__button--enabled');
 		$(".pricing__value").removeClass('pricing__value--hidden');
 		$(".pricing__value").toggleClass('pricing__value--show pricing__value--hide');	
 	});
-});
-
-
-$('#nav').onePageNav({
-currentClass: 'current',
-changeHash: false,
-scrollSpeed: 50,
-filter: '',
-easing: 'swing',
-begin: function() {
-	//I get fired when the animation is starting
-},
-end: function() {
-	//I get fired when the animation is ending
-},
-scrollChange: function($currentListItem) {
-	//I get fired when you enter a section and I pass the list item of the section
 }
+/******************** 1. ONE PAGE NAV FOR SIDEBAR ********************/
+PATH.OnePageNav = function () {
+	$('#nav').onePageNav({
+		currentClass: 'current',
+		changeHash: false,
+		scrollSpeed: 50,
+		easing: 'swing',
+	});
+}
+	
+/* Document ready function */
+$(function(){
+	PATH.PricingToggler();
+	PATH.OnePageNav();
 });
+	
+/* Window on scroll function */
+$(window).on("scroll", function () {
+	
+});
+	
+/* Window on load function */
+$(window).on('load', function () {
+
+});
+//
+
+	//
+	
+})(jQuery);
