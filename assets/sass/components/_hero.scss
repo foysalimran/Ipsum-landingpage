@@ -5,14 +5,10 @@
   overflow: hidden;
 
   &__content {
-  
     &__client-logo {
-
-      margin-top: 70px;
       a {
         width: calc(100% / 4);
         @media screen and (max-width: 991px) {
-          margin-top: 40px;
         }
       }
     }
@@ -34,7 +30,7 @@
 
       @media screen and (max-width: 991px) {
         width: 100%;
-        background:transparent;
+        background: transparent;
       }
     }
     &__area {
