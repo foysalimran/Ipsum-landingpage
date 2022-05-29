@@ -301,7 +301,7 @@ body {
   position: sticky;
   width: 100%;
   top: calc(50% - 62px); }
-  @media screen and (max-width: 990px) {
+  @media screen and (max-width: 992px) {
     .overview__sidebar--items {
       display: none; } }
   .overview__sidebar--items li {
@@ -338,7 +338,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px; }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 992px) {
   .overview__content {
     padding: 40px 0; } }
 
@@ -838,6 +838,61 @@ body {
     .navbar-brand img {
       max-width: 100%; } }
 
+.services .card {
+  box-shadow: 0 10px 60px 0 rgba(37, 39, 88, 0.1);
+  border: none;
+  transition: all .2s; }
+  .services .card span {
+    color: #553772; }
+  .services .card:hover {
+    transform: translateY(-10px); }
+
+.services .icon {
+  font-size: 70px !important;
+  color: #553772; }
+
+.how-works {
+  overflow: hidden; }
+  .how-works-titles {
+    border-bottom: 1px solid #553772;
+    margin-bottom: 20px; }
+    .how-works-titles__wrapper {
+      transition-duration: 0ms;
+      transform: translate3d(-4.5px, 0px, 0px); }
+    .how-works-titles__slide {
+      width: calc(100% / 5);
+      cursor: pointer;
+      padding: 15px 0;
+      text-align: center;
+      opacity: 0.4;
+      transition: all 1s; }
+      .how-works-titles__slide span {
+        display: flex;
+        align-items: center;
+        gap: 10px; }
+        .how-works-titles__slide span i {
+          font-size: 30px; }
+      .how-works-titles__slide.swiper-slide-active {
+        position: relative;
+        opacity: 1; }
+        .how-works-titles__slide.swiper-slide-active::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          width: 50%;
+          height: 4px;
+          background: #1f306e; }
+  .how-works-content__slide {
+    background-color: #fff;
+    padding: 40px 0; }
+    .how-works-content__slide img {
+      display: block;
+      margin: auto;
+      max-width: 100%; }
+
 .footer {
   background-color: #1f306e; }
   .footer hr {
@@ -847,3 +902,4 @@ body {
     height: 1px;
     background-image: linear-gradient(90deg, rgba(206, 211, 246, 0) 0, #ced3f6 38%, #ced3f6 64%, rgba(206, 211, 246, 0) 99%);
     opacity: 0.3; }
+
