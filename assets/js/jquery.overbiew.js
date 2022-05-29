@@ -1,6 +1,3 @@
-
-
-
 /*
  * jQuery One Page Nav Plugin
  * http://github.com/davist11/jQuery-One-Page-Nav
@@ -13,7 +10,7 @@
  * @version 3.0.0
  *
  * Example usage:
- * $('#nav').headerNav({
+ * $('#nav').onePageNav({
  *   currentClass: 'current',
  *   changeHash: false,
  *   scrollSpeed: 750
@@ -23,7 +20,7 @@
 ;(function($, window, document, undefined){
 
 	// our plugin constructor
-	var HeaderNav = function(elem, options){
+	var OnePageNav = function(elem, options){
 		this.elem = elem;
 		this.$elem = $(elem);
 		this.options = options;
@@ -36,7 +33,7 @@
 	};
 
 	// the plugin prototype
-	HeaderNav.prototype = {
+	OnePageNav.prototype = {
 		defaults: {
 			navItems: 'a',
 			currentClass: 'current',
@@ -63,7 +60,7 @@
 			}
 
 			//Handle clicks on the nav
-			this.$nav.on('click.headerNav', $.proxy(this.handleClick, this));
+			this.$nav.on('click.onePageNav', $.proxy(this.handleClick, this));
 
 			//Get the section positions
 			this.getPositions();
@@ -72,7 +69,7 @@
 			this.bindInterval();
 
 			//Update the positions on resize too
-			this.$win.on('resize.headerNav', $.proxy(this.getPositions, this));
+			this.$win.on('resize.onePageNav', $.proxy(this.getPositions, this));
 
 			return this;
 		},
@@ -86,7 +83,7 @@
 			var self = this;
 			var docHeight;
 
-			self.$win.on('scroll.headerNav', function() {
+			self.$win.on('scroll.onePageNav', function() {
 				self.didScroll = true;
 			});
 
@@ -211,15 +208,15 @@
 
 		unbindInterval: function() {
 			clearInterval(this.t);
-			this.$win.unbind('scroll.headerNav');
+			this.$win.unbind('scroll.onePageNav');
 		}
 	};
 
-	HeaderNav.defaults = HeaderNav.prototype.defaults;
+	OnePageNav.defaults = OnePageNav.prototype.defaults;
 
-	$.fn.headerNav = function(options) {
+	$.fn.onePageNav = function(options) {
 		return this.each(function() {
-			new HeaderNav(this, options).init();
+			new OnePageNav(this, options).init();
 		});
 	};
 
