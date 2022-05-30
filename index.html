@@ -1,720 +1,564 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--====== Title ======-->
-    <title>Ipsum - Creative multipurpose HTML landing page</title>
-    <!-- ========== Favicon Ico ========== -->
-    <link rel="icon" href="assets/images/favicon.ico" />
 
-    <!-- Headings font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--====== Title ======-->
+  <title>Ipsum - Creative multipurpose HTML landing page</title>
+  <!-- ========== Favicon Ico ========== -->
+  <link rel="icon" href="assets/images/favicon.ico" />
+  <!-- Headings font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <!-- Body font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+    rel="stylesheet" />
+  <!--====== Bootstrap css ======-->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <!--====== Icofont css ======-->
+  <link rel="stylesheet" href="assets/css/icofont.min.css" />
+  <!--====== Margins & Paddings css ======-->
+  <link rel="stylesheet" href="assets/css/margin-paddings.css" />
+  <!--====== swiper css ======-->
+  <link rel="stylesheet" href="assets/css/swiper.min.css" />
+  <!--====== Style css ======-->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
 
-    <!-- Body font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
-
-    <!--====== Bootstrap css ======-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <!--====== Icofont css ======-->
-    <link rel="stylesheet" href="assets/css/icofont.min.css" />
-    <!--====== Margins & Paddings css ======-->
-    <link rel="stylesheet" href="assets/css/margin-paddings.css" />
-    <!--====== swiper css ======-->
-    <link rel="stylesheet" href="assets/css/swiper.min.css" />
-    <!--====== Style css ======-->
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
-  <body>
-    <!-- ========== Navbar start ========== -->
-    <header>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <a class="navbar-brand" href="#"
-            >
-            <!-- <img src="assets/images/logo.png" width="130" alt="logo" />-->
-            <h1 class="m-0">IPSUM</h1>
-          </a>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul id="navbar01" class="navbar-nav menu me-lg-auto">
-              <li class="nav-item current">
-                <a class="nav-link" href="#hero">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#overview"
-                  >Overview</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#pricing">Pricing</a>
-              </li>
-              <li class="nav-item dropdown submenu">
-                <a class="nav-link dropdown-toggle" href="#blog"> Blog </a>
-                <i class="ti-angle-down mobile_dropdown_icon"></i>
-
-                <ul class="dropdown-menu">
-                  <li class="nav-item">
-                    <a href="#blog2" class="nav-link">Blog One</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#blog1" class="nav-link">Blog Two</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="" class="nav-link">Blog Three</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact"> Contact </a>
-              </li>
-            </ul>
-            <div class="nav_right">
-              <a href="" class="btn-secondary btn-small">Login</a>
-              <a href="" class="btn-primary btn-small"><span>Try for free</span></a>
+<body>
+  <!-- ========== Navbar start ========== -->
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <!-- <img src="assets/images/logo.png" width="130" alt="logo" />-->
+          <h1 class="m-0">IPSUM</h1>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul id="navbar01" class="navbar-nav menu me-lg-auto">
+            <li class="nav-item current">
+              <a class="nav-link" href="#hero">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#overview">Overview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item dropdown submenu">
+              <a class="nav-link dropdown-toggle" href="#blog"> Blog </a>
+              <i class="ti-angle-down mobile_dropdown_icon"></i>
+              <ul class="dropdown-menu">
+                <li class="nav-item">
+                  <a href="#blog2" class="nav-link">Blog One</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#blog1" class="nav-link">Blog Two</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">Blog Three</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <div class="nav_right">
+            <a href="" class="btn-secondary btn-small">Login</a>
+            <a href="" class="btn-primary btn-small"><span>Try for free</span></a>
+          </div>
+        </div>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span></span><span></span><span></span><span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <!-- ========== Navbar end ========== -->
+  <!-- ========== Hero Section Start ========== -->
+  <section id="hero" class="hero p-150px-t lg-p-100px-t p-100px-b lg-p-80px-b">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 justify-content-between d-flex flex-column">
+          <div class="hero__content">
+            <h1 class="display-4 m-20px-b">Take Control of your Project and Team </h1>
+            <p class="fs-4"> The one place for all your projects, team collaboration & client management</p>
+            <div class="d-flex align-items-center m-20px-t gap-4">
+              <a href="#" class="btn-primary"><span>Try for free</span></a>
+              <a href="#" class="btn-secondary"><span>View Demo</span></a>
             </div>
           </div>
-          <button
-            class="navbar-toggler collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span></span><span></span><span></span><span></span><span></span
-            ><span></span>
-          </button>
-        </div>
-      </nav>
-    </header>
-    <!-- ========== Navbar end ========== -->
-
-    <!-- ========== Hero Section Start ========== -->
-    <section
-      id="hero"
-      class="hero p-150px-t lg-p-100px-t p-100px-b lg-p-80px-b"
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 justify-content-between d-flex flex-column">
-            <div class="hero__content">
-              <h1 class="display-4 m-20px-b">
-                Take Control of your Project and Team
-              </h1>
-              <p class="fs-4">
-                The one place for all your projects, team collaboration & client management
-              </p>
-              <div class="d-flex align-items-center m-20px-t gap-4">
-                <a href="#" class="btn-primary"><span>Try for free</span></a>
-                <a href="#" class="btn-secondary"><span>View Demo</span></a>
-              </div>
-            </div>
-            <div class="hero__client-logo">
-              <h5 class="m-20px-b">L<i class="text-danger icofont-heart"></i>ved by 85,000+ teams and businesses worldwide</h5>
-              <div class="row">
-                <div class="col-3">
-                  <a href="#">
-                    <div
-                    class="hero__client-logo__images corporate-donor sm-m-20px-b"
-                  >
+          <div class="hero__client-logo">
+            <h5 class="m-20px-b">L<i class="text-danger icofont-heart"></i>ved by 85,000+ teams and businesses worldwide
+            </h5>
+            <div class="row">
+              <div class="col-3">
+                <a href="#">
+                  <div class="hero__client-logo__images corporate-donor sm-m-20px-b">
                     <img src="assets/images/featured-1.png" alt="" />
                   </div>
-                  </a>
-                </div>
-                <div class="col-3">
-                  <a href="#">
-                    <div
-                    class="hero__client-logo__images corporate-donor sm-m-20px-b"
-                  >
+                </a>
+              </div>
+              <div class="col-3">
+                <a href="#">
+                  <div class="hero__client-logo__images corporate-donor sm-m-20px-b">
                     <img src="assets/images/featured-2.png" alt="" />
                   </div>
-                  </a>
-                </div>
-                
-                <div class="col-3">
-                  <a href="#">
-                    <div
-                    class="hero__client-logo__images corporate-donor sm-m-20px-b"
-                  >
+                </a>
+              </div>
+              <div class="col-3">
+                <a href="#">
+                  <div class="hero__client-logo__images corporate-donor sm-m-20px-b">
                     <img src="assets/images/featured-3.png" alt="" />
                   </div>
-                  </a>
-                </div>
-
-                <div class="col-3">
-                  <a href="#">
-                    <div
-                    class="hero__client-logo__images corporate-donor sm-m-20px-b"
-                  >
+                </a>
+              </div>
+              <div class="col-3">
+                <a href="#">
+                  <div class="hero__client-logo__images corporate-donor sm-m-20px-b">
                     <img src="assets/images/featured-4.png" alt="" />
                   </div>
-                  </a>
-                </div>
-
+                </a>
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="hero__image">
-              <div class="hero__image__overlay"></div>
-              <div class="hero__image__area">
-                <img src="assets/images/hero.png" alt="Heor Image" />
+        </div>
+        <div class="col-lg-6">
+          <div class="hero__image">
+            <div class="hero__image__overlay"></div>
+            <div class="hero__image__area">
+              <img src="assets/images/hero.png" alt="Hero Image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ========== Hero Section End ========== -->
+  <!-- ========== Overview Section Start ========== -->
+  <section id="overview" class="overview section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-title title-center">
+            <h2 class="display-6">Why we're unique?<div class="title-center__dot"></div>
+            </h2>
+            <p class="fs-6"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="overview__sidebar col-lg-3">
+          <ul id="nav" class="overview__sidebar--items">
+            <li class="current">
+              <a href="#overview-1">Control hub</a>
+            </li>
+            <li>
+              <a href="#overview-2">Time management</a>
+            </li>
+            <li>
+              <a href="#overview-3">Collaborative platform</a>
+            </li>
+            <li>
+              <a href="#overview-4">Save time and money</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-9">
+          <!-- overview - 1  -->
+          <div id="overview-1" class="overview__content row justify-content-between align-items-center">
+            <div class="col-lg-6">
+              <div class="text-center">
+                <img class="img-fluid img-thumbnail" src="assets/images/meeting.svg" alt="overview img-1" />
+              </div>
+            </div>
+            <div class="col-lg-6 mt-4 mt-lg-0">
+              <div class="overview__content-title mb-3">
+                <span>The control hub for your business</span>
+                <h2>Stop wasting time shuffling between tools</h2>
+              </div>
+              <div>
+                <p class="lh-lg"> Collaborate over projects with your team and clients optimised for mobile and tablet
+                  don't let slow page speeds drive our innovative platform empowers anyone to convert clicks ou'll
+                  publish your first landing page in minutes. </p>
+                <a href="#" class="btn-primary"><span>Button primary</span></a>
+              </div>
+            </div>
+          </div>
+          <!-- overview - 2  -->
+          <div id="overview-2" class="overview__content row justify-content-between align-items-center">
+            <div class="col-lg-6">
+              <div class="text-center">
+                <img class="img-fluid img-thumbnail" src="assets/images/time-manage.svg" alt="overview img-2" />
+              </div>
+            </div>
+            <div class="col-lg-6 mt-4 mt-lg-0">
+              <div class="overview__content-title mb-3">
+                <span>Holistic time management</span>
+                <h2>Make ad hoc tasks and distractions a thing of the past.</h2>
+              </div>
+              <div>
+                <p class="lh-lg"> Collaborate over projects with your team and clients optimised for mobile and tablet
+                  don't let slow page speeds drive our innovative platform empowers anyone to convert clicks ou'll
+                  publish your first landing page in minutes. </p>
+                <a href="#" class="btn-primary"><span>Button primary</span></a>
+              </div>
+            </div>
+          </div>
+          <!-- overview - 3  -->
+          <div id="overview-3" class="overview__content row justify-content-between align-items-center">
+            <div class="col-lg-6">
+              <div class="text-center">
+                <img class="img-fluid img-thumbnail" src="assets/images/collabration.svg" alt="overview img-3" />
+              </div>
+            </div>
+            <div class="col-lg-6 mt-4 mt-lg-0">
+              <div class="overview__content-title mb-3">
+                <span>An easy-to-use collaborative platform</span>
+                <h2>Ipsum enables you to choose the way you get work done </h2>
+              </div>
+              <div>
+                <p class="lh-lg"> Collaborate over projects with your team and clients optimised for mobile and tablet
+                  don't let slow page speeds drive our innovative platform empowers anyone to convert clicks ou'll
+                  publish your first landing page in minutes. </p>
+                <a href="#" class="btn-primary"><span>Button primary</span></a>
+              </div>
+            </div>
+          </div>
+          <!-- overview - 4  -->
+          <div id="overview-4" class="overview__content row justify-content-between align-items-center">
+            <div class="col-lg-6">
+              <div class="text-center">
+                <img class="img-fluid" src="assets/images/time-money.svg" alt="overview image 4" />
+              </div>
+            </div>
+            <div class="col-lg-6 mt-4 mt-lg-0">
+              <div class="overview__content-title mb-3">
+                <span>Understand every aspect of both time and money</span>
+                <h2 class="lh-base">Tracking profitability in real time and cover any billing scenario.</h2>
+              </div>
+              <div>
+                <p class="lh-lg"> Collaborate over projects with your team and clients optimised for mobile and tablet
+                  don't let slow page speeds drive our innovative platform empowers anyone to convert clicks ou'll
+                  publish your first landing page in minutes. </p>
+                <a href="#" class="btn-primary"><span>Button primary</span></a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- ========== Hero Section End ========== -->
-
-    <!-- ========== Overview Section Start ========== -->
-    <section id="overview" class="overview section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-title title-center">
-              <h2 class="display-6">
-                Why we're unique?
-                <div class="title-center__dot"></div>
-              </h2>
-              <p class="fs-6">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              </p>
-            </div>
-          </div>
+    </div>
+  </section>
+  <!-- ========== Overview Section End ========== -->
+  <!-- ========== Pricing section start ========== -->
+  <section class="pricing section-padding" id="pricing">
+    <div class="container">
+      <div class="row">
+        <div class="section-title title-center m-50px-b">
+          <h2 class="display-6"> Plans & Pricing <div class="title-center__dot"></div>
+          </h2>
+          <p class="fs-6"> Choose the best plan to fit your team’s needs. Get started for free. No credit card required.
+          </p>
         </div>
-        <div class="row">
-          <div class="overview__sidebar col-lg-3">
-            <ul id="nav" class="overview__sidebar--items">
-              <li class="current">
-                <a href="#overview-1"> Control hub </a>
+      </div>
+      <div class="pricing__switcher switcher m-auto-all m-40px-b">
+        <div class="switcher__buttons">
+          <div class="switcher__button switcher__button--enabled"> Monthly </div>
+          <div class="switcher__button">Yearly</div>
+          <div class="switcher__border"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="pricing-one__single">
+            <div class="pricing__values">
+              <div class="pricing__value pricing__value--show">
+                <span>$</span>0 <b>/ Free</b>
+              </div>
+              <div class="pricing__value pricing__value--hide pricing__value--hidden">
+                <span>$</span>0 <b>/ Free</b>
+              </div>
+            </div>
+            <ul class="pricing-one__list">
+              <li><i class="icofont-check"></i>Training Intake / Requests</li>
+              <li><i class="icofont-check"></i>Team Management</li>
+              <li>
+                <i class="icofont-check"></i>Lorem Ipsum is simply dummy
               </li>
               <li>
-                <a href="#overview-2">Time management</a>
-              </li>
-              <li>
-                <a href="#overview-3">Collaborative platform</a>
-              </li>
-              <li>
-                <a href="#overview-4">Save time and money</a>
+                <i class="icofont-check"></i>Lorem Ipsum is simply dummy
               </li>
             </ul>
+            <a href="#" class="btn-primary m-25px-t m-10px-b"><span>Choose Plan</span></a>
+            <span class="pricing-one__tag-line">No hidden charges</span>
           </div>
-          <div class="col-lg-9">
-            <!-- overview - 1  -->
-            <div
-              id="overview-1"
-              class="overview__content row justify-content-between align-items-center"
-            >
-              <div class="col-lg-6">
-                <div class="text-center">
-                  <img
-                    class="img-fluid"
-                    src="assets/images/overview-1.png"
-                    alt="overview img-1"
-                  />
-                </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="pricing-one__single popular">
+            <div class="pricing__values">
+              <div class="pricing__value pricing__value--show">
+                <span>$</span>49 <b>/ Basic</b>
               </div>
-              <div class="col-lg-6 mt-4 mt-lg-0">
-                <div class="overview__content-title mb-3">
-                  <span>Code free drag and drop builder</span>
-                  <h2 class="lh-base">
-                    Easy landing pages to convert more visitors into customers
-                  </h2>
-                </div>
-                <div>
-                  <p class="lh-lg">
-                    Collaborate over projects with your team and clients
-                    optimised for mobile and tablet don't let slow page speeds
-                    drive our innovative platform empowers anyone to convert
-                    clicks ou'll publish your first landing page in minutes.
-                  </p>
-                  <a href="#" class="btn-primary"
-                    ><span>Button primary</span></a
-                  >
-                </div>
+              <div class="pricing__value pricing__value--hide pricing__value--hidden">
+                <span>$</span>529 <b>/ Basic</b>
               </div>
             </div>
-            <!-- overview - 2  -->
-            <div
-              id="overview-2"
-              class="overview__content row justify-content-between align-items-center"
-            >
-              <div class="col-lg-6">
-                <div class="text-center">
-                  <img
-                    class="img-fluid img-thumbnail"
-                    src="assets/images/overview-2.png"
-                    alt="overview img-2"
-                  />
-                </div>
+            <ul class="pricing-one__list">
+              <li><i class="icofont-check"></i>Training Intake / Requests</li>
+              <li><i class="icofont-check"></i>Team Management</li>
+              <li>
+                <i class="icofont-check"></i>Lorem Ipsum is simply dummy
+              </li>
+              <li>
+                <i class="icofont-check"></i>Lorem Ipsum is simply dummy
+              </li>
+            </ul>
+            <a href="#" class="btn-primary m-25px-t m-10px-b"><span>Choose Plan</span></a>
+            <span class="pricing-one__tag-line">No hidden charges</span>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="pricing-one__single">
+            <div class="pricing__values">
+              <div class="pricing__value pricing__value--show">
+                <span>$</span>99 <b>/ Pro</b>
               </div>
-              <div class="col-lg-6 mt-4 mt-lg-0">
-                <div class="overview__content-title mb-3">
-                  <span>Code free drag and drop builder</span>
-                  <h2 class="lh-base">
-                    Easy landing pages to convert more visitors into customers
-                  </h2>
-                </div>
-                <div>
-                  <p class="lh-lg">
-                    Collaborate over projects with your team and clients
-                    optimised for mobile and tablet don't let slow page speeds
-                    drive our innovative platform empowers anyone to convert
-                    clicks ou'll publish your first landing page in minutes.
-                  </p>
-                  <a href="#" class="btn-primary"
-                    ><span>Button primary</span></a
-                  >
-                </div>
+              <div class="pricing__value pricing__value--hide pricing__value--hidden">
+                <span>$</span>900 <b>/ Pro</b>
               </div>
             </div>
-            <!-- overview - 3  -->
-            <div
-              id="overview-3"
-              class="overview__content row justify-content-between align-items-center"
-            >
-              <div class="col-lg-6">
-                <div class="text-center">
-                  <img
-                    class="img-fluid img-thumbnail"
-                    src="assets/images/overiew-3.png"
-                    alt="overview img-3"
-                  />
-                </div>
-              </div>
-              <div class="col-lg-6 mt-4 mt-lg-0">
-                <div class="overview__content-title mb-3">
-                  <span>Code free drag and drop builder</span>
-                  <h2 class="lh-base">
-                    Easy landing pages to convert more visitors into customers
-                  </h2>
-                </div>
-                <div>
-                  <p class="lh-lg">
-                    Collaborate over projects with your team and clients
-                    optimised for mobile and tablet don't let slow page speeds
-                    drive our innovative platform empowers anyone to convert
-                    clicks ou'll publish your first landing page in minutes.
-                  </p>
-                  <a href="#" class="btn-primary"
-                    ><span>Button primary</span></a
-                  >
-                </div>
-              </div>
+            <ul class="pricing-one__list">
+              <li><i class="icofont-check"></i>Training Intake / Requests</li>
+              <li><i class="icofont-check"></i>Team Management</li>
+              <li>
+                <i class="icofont-check"></i>Lorem Ipsum is simply dummy
+              </li>
+              <li>
+                <i class="icofont-check"></i>Lorem Ipsum is simply dummy
+              </li>
+            </ul>
+            <a href="#" class="btn-primary m-25px-t m-10px-b"><span>Choose Plan</span></a>
+            <span class="pricing-one__tag-line">No hidden charges</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ========== Pricing section end ========== -->
+  <!-- ========== Services section start ========== -->
+  <section class="services  section-padding" id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-3 mb-xl-0 col-xl-3">
+          <div class="card">
+            <div class="card-body px-4 pt-4 pb-2">
+              <h5 class=" pb-3 pt-2">Responsive <span>Layouts</span></h5>
+              <p>With supporting text below as a natural lead-in to additional content.</p>
+              <span class="d-flex justify-content-end"><i class="icofont-responsive icon"></i></span>
             </div>
-            <!-- overview - 4  -->
-            <div
-              id="overview-4"
-              class="overview__content row justify-content-between align-items-center"
-            >
-              <div class="col-lg-6">
-                <div class="text-center">
-                  <img
-                    class="img-fluid"
-                    src="assets/images/overview-4.png"
-                    alt="overview img-4"
-                  />
-                </div>
-              </div>
-              <div class="col-lg-6 mt-4 mt-lg-0">
-                <div class="overview__content-title mb-3">
-                  <span>Code free drag and drop builder</span>
-                  <h2 class="lh-base">
-                    Easy landing pages to convert more visitors into customers
-                  </h2>
-                </div>
-                <div>
-                  <p class="lh-lg">
-                    Collaborate over projects with your team and clients
-                    optimised for mobile and tablet don't let slow page speeds
-                    drive our innovative platform empowers anyone to convert
-                    clicks ou'll publish your first landing page in minutes.
-                  </p>
-                  <a href="#" class="btn-primary"
-                    ><span>Button primary</span></a
-                  >
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3 mb-xl-0 col-xl-3">
+          <div class="card">
+            <div class="card-body px-4 pt-4 pb-2">
+              <h5 class=" pb-3 pt-2"><span>SaaS</span> Analysis</h5>
+              <p>With supporting text below as a natural lead-in to additional content.</p>
+              <span class="d-flex justify-content-end"><i class="icofont-attachment icon"></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3 mb-xl-0 col-xl-3">
+          <div class="card">
+            <div class="card-body px-4 pt-4 pb-2">
+              <h5 class=" pb-3 pt-2"><span>Smart</span> BEM <span>Grid</span></h5>
+              <p>With supporting text below as a natural lead-in to additional content.</p>
+              <span class="d-flex justify-content-end"><i class="icofont-spreadsheet icon"></i></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3 mb-xl-0 col-xl-3">
+          <div class="card">
+            <div class="card-body px-4 pt-4 pb-2">
+              <h5 class=" pb-3 pt-2"><span>Target</span> Audience</h5>
+              <p>With supporting text below as a natural lead-in to additional content.</p>
+              <span class="d-flex justify-content-end"><i class="icofont-bullseye icon"></i></span>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- ========== Overview Section End ========== -->
-
-    <!-- ========== Pricing section start ========== -->
-    <section class="pricing section-padding" id="pricing">
-      <div class="container">
-        <div class="row">
-          <div class="section-title title-center m-50px-b">
-            <h2 class="display-6">
-              Plans & Pricing
-              <div class="title-center__dot"></div>
-            </h2>
-            <p class="fs-6">
-              Choose the best plan to fit your team’s needs. Get started for free. No credit card required.
-            </p>
+    </div>
+  </section>
+  <!-- ========== Services section end ========== -->
+  <!-- ========== How it works section start ========== -->
+  <section class="how-works" id="#howWorks">
+    <div class="container">
+      <div class="how-works">
+        <div class="how-works-titles">
+          <div class="how-works-titles__wrapper swiper-wrapper">
+            <div class="how-works-titles__slide swiper-slide m-10px-r">
+              <span><i class="icofont-globe"></i> Initializing</span>
+            </div>
+            <div class="how-works-titles__slide swiper-slide m-10px-r">
+              <span><i class="icofont-settings"></i> Configuration</span>
+            </div>
+            <div class="how-works-titles__slide swiper-slide m-10px-r">
+              <span><i class="icofont-ui-password"></i> Security Levels</span>
+            </div>
+            <div class="how-works-titles__slide swiper-slide m-10px-r">
+              <span><i class="icofont-list"></i> Add Instances</span>
+            </div>
+            <div class="how-works-titles__slide swiper-slide">
+              <span><i class="icofont-gears"></i> API Settings</span>
+            </div>
           </div>
         </div>
-        <div class="pricing__switcher switcher m-auto-all m-40px-b">
-          <div class="switcher__buttons">
-            <div class="switcher__button switcher__button--enabled">
-              Monthly
+        <div class="how-works-content">
+          <div class="how-works-content__wrapper swiper-wrapper">
+            <div class="how-works-content__slide swiper-slide">
+              <img src="assets/images/slide1.png" alt="slide image-1" />
             </div>
-            <div class="switcher__button">Yearly</div>
-            <div class="switcher__border"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="pricing-one__single">
-              <div class="pricing__values">
-                <div class="pricing__value pricing__value--show">
-                  <span>$</span>0 <b>/ Free</b>
-                </div>
-                <div
-                  class="pricing__value pricing__value--hide pricing__value--hidden"
-                >
-                  <span>$</span>0 <b>/ Free</b>
-                </div>
-              </div>
-              <ul class="pricing-one__list">
-                <li><i class="icofont-check"></i>Training Intake / Requests</li>
-                <li><i class="icofont-check"></i>Team Management</li>
-                <li>
-                  <i class="icofont-check"></i>Lorem Ipsum is simply dummy
-                </li>
-                <li>
-                  <i class="icofont-check"></i>Lorem Ipsum is simply dummy
-                </li>
-              </ul>
-              <a href="#" class="btn-primary m-25px-t m-10px-b"
-                ><span>Choose Plan</span></a
-              >
-              <span class="pricing-one__tag-line">No hidden charges</span>
+            <div class="how-works-content__slide swiper-slide">
+              <img src="assets/images/slide2.png" alt="slide image-2" />
             </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="pricing-one__single popular">
-              <div class="pricing__values">
-                <div class="pricing__value pricing__value--show">
-                  <span>$</span>49 <b>/ Basic</b>
-                </div>
-                <div
-                  class="pricing__value pricing__value--hide pricing__value--hidden"
-                >
-                  <span>$</span>529 <b>/ Basic</b>
-                </div>
-              </div>
-              <ul class="pricing-one__list">
-                <li><i class="icofont-check"></i>Training Intake / Requests</li>
-                <li><i class="icofont-check"></i>Team Management</li>
-                <li>
-                  <i class="icofont-check"></i>Lorem Ipsum is simply dummy
-                </li>
-                <li>
-                  <i class="icofont-check"></i>Lorem Ipsum is simply dummy
-                </li>
-              </ul>
-              <a href="#" class="btn-primary m-25px-t m-10px-b"
-                ><span>Choose Plan</span></a
-              >
-              <span class="pricing-one__tag-line">No hidden charges</span>
+            <div class="how-works-content__slide swiper-slide">
+              <img src="assets/images/slide3.png" alt="slide image-3" />
             </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="pricing-one__single">
-              <div class="pricing__values">
-                <div class="pricing__value pricing__value--show">
-                  <span>$</span>99 <b>/ Pro</b>
-                </div>
-                <div
-                  class="pricing__value pricing__value--hide pricing__value--hidden"
-                >
-                  <span>$</span>900 <b>/ Pro</b>
-                </div>
-              </div>
-              <ul class="pricing-one__list">
-                <li><i class="icofont-check"></i>Training Intake / Requests</li>
-                <li><i class="icofont-check"></i>Team Management</li>
-                <li>
-                  <i class="icofont-check"></i>Lorem Ipsum is simply dummy
-                </li>
-                <li>
-                  <i class="icofont-check"></i>Lorem Ipsum is simply dummy
-                </li>
-              </ul>
-              <a href="#" class="btn-primary m-25px-t m-10px-b"
-                ><span>Choose Plan</span></a
-              >
-              <span class="pricing-one__tag-line">No hidden charges</span>
+            <div class="how-works-content__slide swiper-slide">
+              <img src="assets/images/slide1.png" alt="slide image-1" />
+            </div>
+            <div class="how-works-content__slide swiper-slide">
+              <img src="assets/images/slide2.png" alt="slide image-2" />
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- ========== Pricing section end ========== -->
-
-    <!-- ========== Services section start ========== -->
-    <section class="services  section-padding" id="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 mb-3 mb-xl-0 col-xl-3">
-            <div class="card">
-              <div class="card-body px-4 pt-4 pb-2">
-                <h5 class=" pb-3 pt-2">Responsive <span>Layouts</span></h5>
-                <p>With supporting text below as a natural lead-in to additional content.</p>
-                <span class="d-flex justify-content-end"><i class="icofont-responsive icon"></i></span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 mb-3 mb-xl-0 col-xl-3">
-            <div class="card">
-              <div class="card-body px-4 pt-4 pb-2">
-                <h5 class=" pb-3 pt-2"><span>SaaS</span> Analysis</h5>
-                <p>With supporting text below as a natural lead-in to additional content.</p>
-                <span class="d-flex justify-content-end"><i class="icofont-attachment icon"></i></span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 mb-3 mb-xl-0 col-xl-3">
-            <div class="card">
-              <div class="card-body px-4 pt-4 pb-2">
-                <h5 class=" pb-3 pt-2"><span>Smart</span> BEM <span>Grid</span></h5>
-                <p>With supporting text below as a natural lead-in to additional content.</p>
-                <span class="d-flex justify-content-end"><i class="icofont-spreadsheet icon"></i></i></span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 mb-3 mb-xl-0 col-xl-3">
-            <div class="card">
-              <div class="card-body px-4 pt-4 pb-2">
-                <h5 class=" pb-3 pt-2"><span>Target</span> Audience</h5>
-                <p>With supporting text below as a natural lead-in to additional content.</p>
-                <span class="d-flex justify-content-end"><i class="icofont-bullseye icon"></i></span>
-              </div>
-            </div>
-          </div>
+    </div>
+  </section>
+  <!-- ========== How it works section end ========== -->
+  <!-- ========== Testimonial section start ========== -->
+  <section class="section-padding testimonial" id="testimonial">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-8 col-lg-6 text-center">
+          <h6>Testimonial</h6>
+          <h2>Client Feedback</h2>
+          <p> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut consequuntur magni dolores. </p>
         </div>
       </div>
-    </section>
-
-    <!-- ========== Services section end ========== -->
-
-    <!-- ========== How it works section start ========== -->
-
-    <section class="how-works" id="#howWorks">
-      <div class="container">
-        <div class="how-works">
-          <div class="how-works-titles">
-            <div class="how-works-titles__wrapper swiper-wrapper">
-              <div class="how-works-titles__slide swiper-slide m-10px-r">
-                <span><i class="icofont-globe"></i> Initializing</span>
-              </div>
-              <div class="how-works-titles__slide swiper-slide m-10px-r">
-                <span><i class="icofont-settings"></i> Configuration</span>
-              </div>
-              <div class="how-works-titles__slide swiper-slide m-10px-r">
-                <span><i class="icofont-ui-password"></i> Security Levels</span>
-              </div>
-              <div class="how-works-titles__slide swiper-slide m-10px-r">
-                <span><i class="icofont-list"></i> Add Instances</span>
-              </div>
-              <div class="how-works-titles__slide swiper-slide">
-                <span><i class="icofont-gears"></i> API Settings</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="how-works-content">
-            <div class="how-works-content__wrapper swiper-wrapper">
-              <div class="how-works-content__slide swiper-slide">
-                <img src="assets/images/slide1.png" alt="slide image-1" />
-              </div>
-              <div class="how-works-content__slide swiper-slide">
-                <img src="assets/images/slide2.png" alt="slide image-2" />
-              </div>
-              <div class="how-works-content__slide swiper-slide">
-                <img src="assets/images/slide3.png" alt="slide image-3" />
-              </div>
-              <div class="how-works-content__slide swiper-slide">
-                <img src="assets/images/slide1.png" alt="slide image-1" />
-              </div>
-              <div class="how-works-content__slide swiper-slide">
-                <img src="assets/images/slide2.png" alt="slide image-2" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ========== How it works section end ========== -->
-
-    <!-- ========== Testimonial section start ========== -->
-
-    <section class="section-padding testimonial" id="testimonial">
-      <div class="container">
-        <div class="row justify-content-center mb-5">
-          <div class="col-md-8 col-lg-6 text-center">
-            <h6>Testimonial</h6>
-            <h2>Client Feedback</h2>
-            <p>
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-              aut consequuntur magni dolores.
-            </p>
-          </div>
-        </div>
-
-        <div class="row testi-row">
-          <div class="col-12">
-            <!-- Swiper -->
-            <div class="clients-slider">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide p-5px-lr">
-                  <div class="testi-card card">
-                    <div class="card-body p-4">
-                      <img src="assets/images/user-1.jpg" alt="User image-1" />
-                      <h5 class="my-4 pt-2 lh-base">
-                        " Excellent support for a tricky issue related to our
-                        customization of the template."
-                      </h5>
-
-                      <h6 class="mb-0">Brightlight books</h6>
-                      <p class="mb-0">Ubold Customer</p>
-                      <div class="position-absolute bottom-0 end-0"></div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide p-5px-lr">
-                  <div class="testi-card card">
-                    <div class="card-body p-4">
-                      <img src="assets/images/user-2.jpg" alt="User image-2" />
-                      <h5 class="my-4 pt-2 lh-base">
-                        " This kit provides many options which I can youu use
-                        everyday. It's great work and helpful.”
-                      </h5>
-
-                      <h6 class="mb-0">Echineo</h6>
-                      <p class="mb-0">Ubold Customer</p>
-                      <div class="position-absolute bottom-0 end-0"></div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide p-5px-lr">
-                  <div class="testi-card card">
-                    <div class="card-body p-4">
-                      <img src="assets/images/user-3.jpg" alt="User image-3" />
-                      <h5 class="my-4 pt-2 lh-base">
-                        " This is a very extensive web app kit that can serve
-                        all kinds of purposes and help you."
-                      </h5>
-
-                      <h6 class="mb-0">Aebra Schultz</h6>
-                      <p class="mb-0">Designer</p>
-                      <div class="position-absolute bottom-0 end-0"></div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide p-5px-lr">
-                  <div class="testi-card card">
-                    <div class="card-body p-4">
-                      <img src="assets/images/user-1.jpg" alt="User image-1" />
-                      <h5 class="my-4 pt-2 lh-base">
-                        " Excellent support for a tricky issue related to our
-                        customization of the template."
-                      </h5>
-
-                      <h6 class="mb-0">Brightlight bookss</h6>
-                      <p class="mb-0">Ubold Customer</p>
-                      <div class="position-absolute bottom-0 end-0"></div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide p-5px-lr">
-                  <div class="testi-card card">
-                    <div class="card-body p-4">
-                      <img src="assets/images/user-2.jpg" alt="User image-2" />
-                      <h5 class="my-4 pt-2 lh-base">
-                        " This kit provides many options which I can you use
-                        everyday. It's great work and helpful.”
-                      </h5>
-
-                      <h6 class="mb-0">Echineo</h6>
-                      <p class="mb-0">Ubold Customer</p>
-                      <div class="position-absolute bottom-0 end-0"></div>
-                    </div>
+      <div class="row testi-row">
+        <div class="col-12">
+          <!-- Swiper -->
+          <div class="clients-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide p-5px-lr">
+                <div class="testi-card card">
+                  <div class="card-body p-4">
+                    <img src="assets/images/user-1.jpg" alt="User image-1" />
+                    <h5 class="my-4 pt-2 lh-base"> " Excellent support for a tricky issue related to our customization
+                      of the template." </h5>
+                    <h6 class="mb-0">Brightlight books</h6>
+                    <p class="mb-0">Ubold Customer</p>
+                    <div class="position-absolute bottom-0 end-0"></div>
                   </div>
                 </div>
               </div>
-
-              <!-- Pagination -->
-              <div class="swiper-pagination p-20px-t"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== Testimonial section end ========== -->
-
-    <!-- ========== Footer start ========== -->
-
-    <footer id="site-footer" class="footer section-padding">
-      <div class="container">
-        <div class="footer__newsletter">
-          <div class="row gx-5">
-            <div class="col-md-6 mb-3 mb-md-0">
-              <h4 class="m-0">Want to Get Product Updates From Us?</h4>
-            </div>
-            <div class="col-md-6">
-              <div class="footer__newsletter--form">
-                <form action="#">
-                  <input
-                    type="email"
-                    name="email"
-                    required
-                    placeholder="Enter your email address"
-                  />
-                  <button class="btn-primary">Subscribe</button>
-                </form>
+              <div class="swiper-slide p-5px-lr">
+                <div class="testi-card card">
+                  <div class="card-body p-4">
+                    <img src="assets/images/user-2.jpg" alt="User image-2" />
+                    <h5 class="my-4 pt-2 lh-base"> " This kit provides many options which I can youu use everyday. It's
+                      great work and helpful.” </h5>
+                    <h6 class="mb-0">Echineo</h6>
+                    <p class="mb-0">Ubold Customer</p>
+                    <div class="position-absolute bottom-0 end-0"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide p-5px-lr">
+                <div class="testi-card card">
+                  <div class="card-body p-4">
+                    <img src="assets/images/user-3.jpg" alt="User image-3" />
+                    <h5 class="my-4 pt-2 lh-base"> " This is a very extensive web app kit that can serve all kinds of
+                      purposes and help you." </h5>
+                    <h6 class="mb-0">Aebra Schultz</h6>
+                    <p class="mb-0">Designer</p>
+                    <div class="position-absolute bottom-0 end-0"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide p-5px-lr">
+                <div class="testi-card card">
+                  <div class="card-body p-4">
+                    <img src="assets/images/user-1.jpg" alt="User image-1" />
+                    <h5 class="my-4 pt-2 lh-base"> " Excellent support for a tricky issue related to our customization
+                      of the template." </h5>
+                    <h6 class="mb-0">Brightlight bookss</h6>
+                    <p class="mb-0">Ubold Customer</p>
+                    <div class="position-absolute bottom-0 end-0"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide p-5px-lr">
+                <div class="testi-card card">
+                  <div class="card-body p-4">
+                    <img src="assets/images/user-2.jpg" alt="User image-2" />
+                    <h5 class="my-4 pt-2 lh-base"> " This kit provides many options which I can you use everyday. It's
+                      great work and helpful.” </h5>
+                    <h6 class="mb-0">Echineo</h6>
+                    <p class="mb-0">Ubold Customer</p>
+                    <div class="position-absolute bottom-0 end-0"></div>
+                  </div>
+                </div>
               </div>
             </div>
+            <!-- Pagination -->
+            <div class="swiper-pagination p-20px-t"></div>
           </div>
         </div>
-        <hr class="mt-5 mb-6" />
       </div>
-    </footer>
-    <!-- ========== Footer section end ========== -->
+    </div>
+  </section>
+  <!-- ========== Testimonial section end ========== -->
+  <!-- ========== Footer start ========== -->
+  <footer id="site-footer" class="footer section-padding">
+    <div class="container">
+      <div class="footer__newsletter">
+        <div class="row gx-5">
+          <div class="col-md-6 mb-3 mb-md-0">
+            <h4 class="m-0">Want to Get Product Updates From Us?</h4>
+          </div>
+          <div class="col-md-6">
+            <div class="footer__newsletter--form">
+              <form action="#">
+                <input type="email" name="email" required placeholder="Enter your email address" />
+                <button class="btn-primary">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="mt-5 mb-6" />
+    </div>
+  </footer>
+  <!-- ========== Footer section end ========== -->
+  <!--====== jquery js ======-->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery-migrate-3.0.0.min.js"></script>
+  <!--====== Bootstrap js ======-->
+  <script src="assets/js/bootstrap.min.js"></script>
+  <!--====== jQuery Swiper js ======-->
+  <script src="assets/js/swiper.min.js"></script>
+  <!--====== Custom Swiper js ======-->
+  <!-- <script src="assets/js/swiper.custom.js"></script> -->
+  <!--====== jQuery Nav js ======-->
+  <script src="/assets/js/custom.js"></script>
+</body>
 
-    <!--====== jquery js ======-->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery-migrate-3.0.0.min.js"></script>
-
-    <!--====== Bootstrap js ======-->
-    <script src="assets/js/bootstrap.min.js"></script>
-
-    <!--====== jQuery Swiper js ======-->
-    <script src="assets/js/swiper.min.js"></script>
-
-    <!--====== Custom Swiper js ======-->
-    <!-- <script src="assets/js/swiper.custom.js"></script> -->
-
-    <!--====== jQuery Nav js ======-->
-    <script src="/assets/js/custom.js"></script>
-
- 
-  </body>
 </html>
