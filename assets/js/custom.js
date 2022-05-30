@@ -28,14 +28,13 @@
 
   /******************** 2. NAVBAR ********************/
   PATH.HeaderNav = function () {
-    $("#navbar01").headerNav({
+    $("#navbar").headerNav({
       currentClass: "current",
       changeHash: false,
       scrollSpeed: 50,
       easing: "swing",
     });
   };
-
 
   /******************** 3. PRICING TOGGLER ********************/
   PATH.PricingToggler = function () {
