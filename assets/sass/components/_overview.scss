@@ -7,7 +7,6 @@
       @media screen and (max-width: 992px) {
         display: none;
       }
-
       li {
         transition: all 0.2s;
         position: relative;
@@ -27,13 +26,11 @@
           opacity: 0.2;
           transition: all 0.2s;
         }
-
         &.current {
           &::before {
             opacity: 1;
           }
         }
-
         a {
           display: block;
           color: $color-dark;
@@ -41,7 +38,6 @@
       }
     }
   }
-
   &__content {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -58,7 +54,6 @@
         letter-spacing: 1px;
       }
     }
-
     @media screen and (max-width: 992px) {
       padding: 40px 0;
     }

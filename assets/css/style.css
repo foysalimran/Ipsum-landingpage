@@ -848,6 +848,9 @@ body {
     .navbar-brand img {
       max-width: 100%; } }
 
+.faq__image {
+  width: 100%; }
+
 .services .card {
   box-shadow: 0 10px 60px 0 rgba(37, 39, 88, 0.1);
   border: none;
@@ -866,9 +869,6 @@ body {
   .how-works-titles {
     border-bottom: 1px solid #6592fd;
     margin-bottom: 20px; }
-    .how-works-titles__wrapper {
-      transition-duration: 0ms;
-      transform: translate3d(-4.5px, 0px, 0px); }
     .how-works-titles__slide {
       width: calc(100% / 5);
       cursor: pointer;
@@ -901,6 +901,22 @@ body {
       display: block;
       margin: auto;
       max-width: 100%; }
+
+.testi-row {
+  overflow: hidden; }
+  .testi-row .clients-slider {
+    padding: 20px 0 50px; }
+  .testi-row .swiper-pagination-bullet {
+    background-color: #1f306e;
+    opacity: 0.3; }
+    .testi-row .swiper-pagination-bullet-active {
+      opacity: 1; }
+  .testi-row .testi-card {
+    border: none !important;
+    box-shadow: 0px 4px 6px 0px rgba(1, 6, 33, 0.08) !important; }
+    .testi-row .testi-card img {
+      width: 60px;
+      border-radius: 50%; }
 
 .footer {
   background-color: #6365f1; }
