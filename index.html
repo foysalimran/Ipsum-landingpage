@@ -36,47 +36,48 @@
   <body>
     <!-- ========== Navbar start ========== -->
     <header>
-      <nav class="navbar navbar-expand-lg sticky_nav">
+      <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand" href="#"
-            ><img src="assets/images/logo.png" alt="logo"
+            ><img src="assets/images/ipsum@2x.png" width="130" alt="logo"
           /></a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
             <ul id="navbar01" class="navbar-nav menu me-lg-auto">
-              <li class="nav-item dropdown submenu current">
-                <a class="nav-link dropdown-toggle" href="#hero">Home</a>
+              <li class="nav-item current">
+                <a class="nav-link" href="#hero">Home</a>
               </li>
-              <li class="nav-item dropdown submenu">
-                <a class="nav-link dropdown-toggle" href="#overview"
+              <li class="nav-item">
+                <a class="nav-link" href="#overview"
                   >Overview</a
                 >
               </li>
-              <li class="nav-item dropdown submenu">
-                <a class="nav-link dropdown-toggle" href="#pricing">Pricing</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#pricing">Pricing</a>
               </li>
               <li class="nav-item dropdown submenu">
-                <a class="nav-link dropdown-toggle" href="#"> Blogs </a>
+                <a class="nav-link dropdown-toggle" href="#blog"> Blog </a>
                 <i class="ti-angle-down mobile_dropdown_icon"></i>
 
                 <ul class="dropdown-menu">
                   <li class="nav-item">
-                    <a href="#" class="nav-link">Blog One</a>
+                    <a href="#blog2" class="nav-link">Blog One</a>
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link">Blog Two</a>
+                    <a href="#blog1" class="nav-link">Blog Two</a>
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link">Blog Three</a>
+                    <a href="" class="nav-link">Blog Three</a>
                   </li>
                 </ul>
               </li>
-              <li class="nav-item dropdown submenu">
-                <a class="nav-link dropdown-toggle" href="#"> Contact </a>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact"> Contact </a>
               </li>
             </ul>
-            <div class="nav_right d-flex gap-4 md-m-30px-tb">
-              <a href="#" class="btn-secondary">Login</a>
-              <a href="#" class="btn-primary"><span>Sign up for free</span></a>
+            <div class="nav_right">
+              <a href="" class="btn-secondary btn-small">Login</a>
+              <a href="" class="btn-primary btn-small"><span>Sign up for free</span></a>
             </div>
           </div>
           <button
@@ -95,6 +96,7 @@
       </nav>
     </header>
     <!-- ========== Navbar end ========== -->
+
     <!-- ========== Hero Section Start ========== -->
     <section
       id="hero"
@@ -167,6 +169,19 @@
     <!-- ========== Overview Section Start ========== -->
     <section id="overview" class="overview section-padding">
       <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-title title-center">
+              <h2 class="display-4">
+                Section title center
+                <div class="title-center__dot"></div>
+              </h2>
+              <p class="fs-6">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              </p>
+            </div>
+          </div>
+        </div>
         <div class="row">
           <div class="overview__sidebar col-lg-3">
             <ul id="nav" class="overview__sidebar--items">
@@ -440,33 +455,6 @@
         </div>
       </div>
     </section>
-
-    <footer id="site-footer" class="footer section-padding">
-      <div class="container">
-        <div class="footer__newsletter">
-          <div class="row gx-5">
-            <div class="col-md-6 mb-3 mb-md-0">
-              <h4 class="m-0">Want to Get Product Updates From Us?</h4>
-            </div>
-            <div class="col-md-6">
-              <div class="footer__newsletter--form">
-                <form action="#">
-                  <input
-                    type="email"
-                    name="email"
-                    required
-                    placeholder="Enter your email address"
-                  />
-                  <button class="btn-primary">Subscribe</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr class="mt-5 mb-6" />
-      </div>
-    </footer>
-
     <!-- ========== Pricing section end ========== -->
 
     <!-- ========== Services section start ========== -->
@@ -569,27 +557,52 @@
 
     <!-- ========== How it works section end ========== -->
 
+    <!-- ========== Footer section start ========== -->
+    <footer id="site-footer" class="footer section-padding">
+      <div class="container">
+        <div class="footer__newsletter">
+          <div class="row gx-5">
+            <div class="col-md-6 mb-3 mb-md-0">
+              <h4 class="m-0">Want to Get Product Updates From Us?</h4>
+            </div>
+            <div class="col-md-6">
+              <div class="footer__newsletter--form">
+                <form action="#">
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    placeholder="Enter your email address"
+                  />
+                  <button class="btn-primary">Subscribe</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="mt-5 mb-6" />
+      </div>
+    </footer>
+    <!-- ========== Footer section end ========== -->
+
 
 
     <!--====== jquery js ======-->
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery-migrate-3.0.0.min.js"></script>
 
     <!--====== Bootstrap js ======-->
     <script src="assets/js/bootstrap.min.js"></script>
 
-    <!--====== jQuery Nav js ======-->
-    <script src="/assets/js/jquery.nav.js"></script>
-    
     <!--====== jQuery Swiper js ======-->
-    <script src="/assets/js/swiper.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
 
     <!--====== Custom Swiper js ======-->
-    <script src="/assets/js/swiper.custom.js"></script>
-
-    <!--====== jQuery Overview js ======-->
-    <script src="/assets/js/jquery.overbiew.js"></script>
+    <script src="assets/js/swiper.custom.js"></script>
 
     <!--====== jQuery Nav js ======-->
-    <script src="/assets/js/custom.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+
   </body>
 </html>
