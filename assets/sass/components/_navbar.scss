@@ -8,7 +8,6 @@
   width: 100%;
   z-index: 100;
   transition: all 0.3s;
-  border-bottom: 1px solid $color-border;
   transition: all 0.4s ease-in-out;
   .navbar-brand {
     margin-right: 45px;
@@ -186,6 +185,7 @@
   width: 100%;
   z-index: 999;
   background: #fff;
+  box-shadow: 0px 4px 6px 0px $color-shadow;
   .navbar-brand {
     &.sticky_logo {
       img {
