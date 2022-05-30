@@ -849,6 +849,9 @@ body {
     .navbar-brand img {
       max-width: 100%; } }
 
+.faq__image {
+  width: 100%; }
+
 .services .card {
   box-shadow: 0 10px 60px 0 rgba(37, 39, 88, 0.1);
   border: none;
