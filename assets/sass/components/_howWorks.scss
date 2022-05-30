@@ -1,0 +1,54 @@
+.how-works {
+  overflow: hidden;
+
+  &-titles {
+    border-bottom: 1px solid $color-secondary;
+    margin-bottom: 20px;
+
+    &__slide {
+      width: calc(100% / 5);
+      cursor: pointer;
+      padding: 15px 0;
+      text-align: center;
+      opacity: 0.4;
+      transition: all 1s;
+
+      span {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        i {
+          font-size: 30px;
+        }
+      }
+
+      &.swiper-slide-active {
+        position: relative;
+        opacity: 1;
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          
+          bottom: 0;
+          margin: auto;
+          width: 60%;
+          height: 4px;
+          background: $color-primary;
+        }
+      }
+    }
+  }
+
+  &-content__slide {
+    background-color: #fff;
+    padding: 40px 0;
+
+    img {
+      display: block;
+      margin: auto;
+      max-width: 100%;
+    }
+  }
+}

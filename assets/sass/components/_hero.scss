@@ -1,24 +1,115 @@
 // Hero area start
 .hero {
-  // padding: 150px 0px 140px;
   position: relative;
   overflow: hidden;
-
   &__content {
-  
-    &__client-logo {
-
-      margin-top: 70px;
+    & p,
+    & h1,
+    .btn-primary {
+      animation-name: moveInLeft;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+    }
+    & .btn-secondary {
+      animation-name: moveInRight;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+    }
+  }
+  &__client-logo {
+    animation-name: moveInBottom;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    img {
+      width: 100%;
+    }
+    &__images {
+      position: relative;
+      border: 1px solid $color-border;
+      background: #fff;
+      text-align: center;
+      overflow: hidden;
+      padding: 15px;
+      webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+      &:hover {
+        box-shadow: 0px 1px 20px 0px #40404026;
+        -moz-box-shadow: 0px 1px 20px 0px #40404026;
+        -o-box-shadow: 0px 1px 20px 0px #40404026;
+        img {
+          -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+          -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+        }
+        a {
+          opacity: 1;
+          transform: translateX(-50%) translateY(-20%) translateZ(0)
+            rotate(0deg) scale(1);
+          -o-transform: translateX(-50%) translateY(-20%) translateZ(0)
+            rotate(0deg) scale(1);
+          -ms-transform: translateX(-50%) translateY(-20%) translateZ(0)
+            rotate(0deg) scale(1);
+          -moz-transform: translateX(-50%) translateY(-20%) translateZ(0)
+            rotate(0deg) scale(1);
+          -webkit-transform: translateX(-50%) translateY(-20%) translateZ(0)
+            rotate(0deg) scale(1);
+        }
+      }
+      img {
+        margin: 0 auto;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+      }
       a {
-        width: calc(100% / 4);
-        @media screen and (max-width: 991px) {
-          margin-top: 40px;
+        position: absolute;
+        left: 50%;
+        color: #000;
+        margin-top: 10px;
+        font-style: italic;
+        transform: translateX(-50%) translateY(50px) translateZ(0) rotate(0deg)
+          scale(1);
+        -o-transform: translateX(-50%) translateY(50px) translateZ(0)
+          rotate(0deg) scale(1);
+        -ms-transform: translateX(-50%) translateY(50px) translateZ(0)
+          rotate(0deg) scale(1);
+        -moz-transform: translateX(-50%) translateY(50px) translateZ(0)
+          rotate(0deg) scale(1);
+        -webkit-transform: translateX(-50%) translateY(50px) translateZ(0)
+          rotate(0deg) scale(1);
+        opacity: 0;
+        &:hover {
+          color: #38c695;
+        }
+      }
+      &.corporate-donor {
+        padding-left: 15px;
+        padding-right: 15px;
+        &:hover a {
+          transform: translateX(-50%) translateY(-50%) translateZ(0)
+            rotate(0deg) scale(1);
+          -o-transform: translateX(-50%) translateY(-50%) translateZ(0)
+            rotate(0deg) scale(1);
+          -ms-transform: translateX(-50%) translateY(-50%) translateZ(0)
+            rotate(0deg) scale(1);
+          -moz-transform: translateX(-50%) translateY(-50%) translateZ(0)
+            rotate(0deg) scale(1);
+          -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0)
+            rotate(0deg) scale(1);
         }
       }
     }
   }
-
   &__image {
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
     @media screen and (max-width: 991px) {
       position: relative;
       margin-top: 50px;
@@ -34,7 +125,7 @@
 
       @media screen and (max-width: 991px) {
         width: 100%;
-        background:transparent;
+        background: transparent;
       }
     }
     &__area {

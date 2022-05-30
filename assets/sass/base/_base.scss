@@ -11,8 +11,105 @@ a {
 body {
   box-sizing: border-box;
 }
-
 .section-padding {
   padding-top: 80px;
   padding-bottom: 80px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/*
+* Section titles
+*/
+%title-divider-round {
+  top: 0;
+  display: block;
+  width: 8px;
+  height: 8px;
+  content: "";
+  background-color: #0000002e;
+  border-radius: 50%;
+  
+}
+.section-title {
+  &__dot {
+    @extend %title-divider-round;
+    position: relative;
+    margin: 0 0 0 16px;
+    &::before {
+      @extend %title-divider-round;
+      position: absolute;
+      left: -40px;
+      width: 30px;
+      height: 3px;
+      border-radius: 0;
+      top: 3px;
+    }
+    &::after {
+      @extend %title-divider-round;
+      position: absolute;
+      right: -40px;
+      width: 30px;
+      height: 3px;
+      border-radius: 0;
+      top: 3px;
+    }
+  }
+  p {
+    margin-bottom: 0;
+  }
+}
+.title-center {
+  text-align: center;
+  &__dot {
+    @extend %title-divider-round;
+    position: relative;
+    margin: 0 auto;
+    &::before {
+      @extend %title-divider-round;
+      position: absolute;
+      left: -40px;
+      width: 30px;
+      height: 3px;
+      border-radius: 0;
+      top: 3px;
+    }
+    &::after {
+      @extend %title-divider-round;
+      position: absolute;
+      right: -40px;
+      width: 30px;
+      height: 3px;
+      border-radius: 0;
+      top: 3px;
+    }
+  }
+}
+.title-right {
+  text-align: right;
+  &__dot {
+    @extend %title-divider-round;
+    position: relative;
+    margin: 0 16px 0 auto;
+    &::before {
+      @extend %title-divider-round;
+      position: absolute;
+      left: -40px;
+      width: 30px;
+      height: 3px;
+      border-radius: 0;
+      top: 3px;
+    }
+    &::after {
+      @extend %title-divider-round;
+      position: absolute;
+      right: -40px;
+      width: 30px;
+      height: 3px;
+      border-radius: 0;
+      top: 3px;
+    }
+  }
 }
