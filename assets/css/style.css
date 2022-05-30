@@ -186,7 +186,9 @@ body {
 .hero {
   position: relative;
   overflow: hidden; }
-  .hero__content p, .hero__content h1, .hero__content .btn-primary {
+  .hero__content p,
+  .hero__content h1,
+  .hero__content .btn-primary {
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out; }
@@ -202,9 +204,7 @@ body {
       width: 100%; }
     .hero__client-logo__images {
       position: relative;
-      box-shadow: 0px 1px 20px 0px #40404026;
-      -moz-box-shadow: 0px 1px 20px 0px #40404026;
-      -o-box-shadow: 0px 1px 20px 0px #40404026;
+      border: 1px solid #eff0f7;
       background: #fff;
       text-align: center;
       overflow: hidden;
@@ -214,10 +214,9 @@ body {
       -o-transition: all 0.4s ease-in-out;
       transition: all 0.4s ease-in-out; }
       .hero__client-logo__images:hover {
-        box-shadow: 0 8px 48px 0 rgba(0, 0, 0, 0.15);
-        -moz-box-shadow: 0 8px 48px 0 rgba(0, 0, 0, 0.15);
-        -webkit-box-shadow: 0 8px 48px 0 rgba(0, 0, 0, 0.15);
-        -o-box-shadow: 0 8px 48px 0 rgba(0, 0, 0, 0.15); }
+        box-shadow: 0px 1px 20px 0px #40404026;
+        -moz-box-shadow: 0px 1px 20px 0px #40404026;
+        -o-box-shadow: 0px 1px 20px 0px #40404026; }
         .hero__client-logo__images:hover img {
           -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
@@ -251,7 +250,7 @@ body {
         -webkit-transform: translateX(-50%) translateY(50px) translateZ(0) rotate(0deg) scale(1);
         opacity: 0; }
         .hero__client-logo__images a:hover {
-          color: #38C695; }
+          color: #38c695; }
       .hero__client-logo__images.corporate-donor {
         padding-left: 15px;
         padding-right: 15px; }
@@ -318,14 +317,14 @@ body {
       left: 0;
       width: 15px;
       height: 5px;
-      background-color: #1f306e;
+      background-color: #6365f1;
       opacity: 0.2;
       transition: all 0.2s; }
     .overview__sidebar--items li.current::before {
       opacity: 1; }
     .overview__sidebar--items li a {
       display: block;
-      color: #1f306e; }
+      color: #1d1d1d; }
 
 .overview__content {
   padding-top: 50px;
@@ -354,7 +353,7 @@ body {
   overflow: hidden;
   text-transform: capitalize;
   text-decoration: none;
-  background-image: linear-gradient(to right, #1f306e 0%, #553772 100%);
+  background-image: linear-gradient(to right, #6365f1 0%, #6592fd 100%);
   color: #ffffff;
   transition: all 0.3s ease; }
   .btn-primary span {
@@ -370,7 +369,7 @@ body {
     height: 100%;
     z-index: 1;
     opacity: 0;
-    background-image: linear-gradient(to left, #1f306e 0%, #553772 100%);
+    background-image: linear-gradient(to left, #6365f1 0%, #6592fd 100%);
     transition: all 0.4s; }
   .btn-primary:hover::before {
     opacity: 1;
@@ -395,7 +394,7 @@ body {
   text-transform: capitalize;
   text-decoration: none;
   background-color: transparent;
-  color: #1f306e;
+  color: #6365f1;
   transition: all 0.3s ease; }
   .btn-secondary span {
     position: relative;
@@ -406,7 +405,7 @@ body {
     position: absolute;
     width: 15px;
     height: 100%;
-    border: 1px solid #1f306e;
+    border: 1px solid #6365f1;
     transition: all 0.5s ease; }
   .btn-secondary::before {
     top: 0px;
@@ -420,7 +419,7 @@ body {
     width: 100%; }
   .btn-secondary:hover {
     text-decoration: none;
-    background: #1f306e;
+    background: #6365f1;
     color: #fff;
     transition-delay: 0.35s; }
   .btn-secondary.btn-small {
@@ -460,7 +459,7 @@ body {
 .switcher__border {
   height: 40px;
   width: 50%;
-  background-color: #1f306e;
+  background-color: #6365f1;
   display: block;
   position: absolute;
   top: 0px;
@@ -551,7 +550,7 @@ body {
       content: "";
       width: 81px;
       height: 1px;
-      background-color: #1f306e;
+      background-color: #6365f1;
       position: absolute;
       top: -1px;
       left: 50%;
@@ -563,14 +562,14 @@ body {
       .pricing-one__list li i {
         font-size: 20px;
         margin-right: 10px;
-        color: #553772; }
+        color: #6592fd; }
   .pricing-one__tag-line {
     text-transform: uppercase;
     font-size: 16px;
     letter-spacing: 0.2em;
     display: block;
     font-weight: 600;
-    color: #1f306e; }
+    color: #6365f1; }
 
 .navbar {
   border: 0px;
@@ -638,7 +637,7 @@ body {
         .menu > .nav-item.submenu .dropdown-menu .nav-item .nav-link:after {
           display: none; }
       .menu > .nav-item.submenu .dropdown-menu .nav-item:hover > .nav-link, .menu > .nav-item.submenu .dropdown-menu .nav-item:focus > .nav-link, .menu > .nav-item.submenu .dropdown-menu .nav-item.current > .nav-link {
-        color: #553772; }
+        color: #6592fd; }
       .menu > .nav-item.submenu .dropdown-menu .nav-item > .dropdown-menu {
         transition: transform 0.3s ease-in; }
         .menu > .nav-item.submenu .dropdown-menu .nav-item > .dropdown-menu:before {
@@ -654,13 +653,13 @@ body {
             transform: translateY(20px);
             transition: all 0.3s ease-in; } }
   .menu > .nav-item.current {
-    border-bottom: 3px solid #553772; }
+    border-bottom: 3px solid #6592fd; }
     .menu > .nav-item.current .nav-link {
-      color: #553772; }
+      color: #6592fd; }
   .menu > .nav-item:hover {
-    border-bottom: 3px solid #553772; }
+    border-bottom: 3px solid #6592fd; }
     .menu > .nav-item:hover .nav-link {
-      color: #553772; }
+      color: #6592fd; }
     @media (min-width: 992px) {
       .menu > .nav-item:hover .dropdown-menu {
         opacity: 1;
@@ -713,7 +712,7 @@ body {
   .navbar.navbar_fixed.menu_white .menu > .nav-item > .nav-link {
     color: #1b1f41; }
   .navbar.navbar_fixed.menu_white .menu > .nav-item:hover > .nav-link, .navbar.navbar_fixed.menu_white .menu > .nav-item.current > .nav-link {
-    color: #553772; }
+    color: #6592fd; }
   .navbar.navbar_fixed.menu_white .navbar-toggler span {
     background: #475668; }
 
@@ -884,7 +883,7 @@ body {
       transform: rotate(180deg);
       transition: all 0.3s ease-in-out; }
   .faqs-accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
-    background-image: linear-gradient(to right, #1f306e, #553772);
+    background-image: linear-gradient(to right, #6365f1, #6592fd);
     color: #fff; }
 
 .services .card {
@@ -892,22 +891,19 @@ body {
   border: none;
   transition: all .2s; }
   .services .card span {
-    color: #553772; }
+    color: #6592fd; }
   .services .card:hover {
     transform: translateY(-10px); }
 
 .services .icon {
   font-size: 70px !important;
-  color: #553772; }
+  color: #6592fd; }
 
 .how-works {
   overflow: hidden; }
   .how-works-titles {
-    border-bottom: 1px solid #553772;
+    border-bottom: 1px solid #6592fd;
     margin-bottom: 20px; }
-    .how-works-titles__wrapper {
-      transition-duration: 0ms;
-      transform: translate3d(-4.5px, 0px, 0px); }
     .how-works-titles__slide {
       width: calc(100% / 5);
       cursor: pointer;
@@ -932,7 +928,7 @@ body {
           margin: auto;
           width: 60%;
           height: 4px;
-          background: #1f306e; }
+          background: #6365f1; }
   .how-works-content__slide {
     background-color: #fff;
     padding: 40px 0; }
@@ -941,8 +937,24 @@ body {
       margin: auto;
       max-width: 100%; }
 
+.testi-row {
+  overflow: hidden; }
+  .testi-row .clients-slider {
+    padding: 20px 0 50px; }
+  .testi-row .swiper-pagination-bullet {
+    background-color: #6365f1;
+    opacity: 0.3; }
+    .testi-row .swiper-pagination-bullet-active {
+      opacity: 1; }
+  .testi-row .testi-card {
+    border: none !important;
+    box-shadow: 0px 4px 6px 0px rgba(1, 6, 33, 0.08) !important; }
+    .testi-row .testi-card img {
+      width: 60px;
+      border-radius: 50%; }
+
 .footer {
-  background-color: #1f306e;
+  background-color: #6365f1;
   color: #fff; }
   .footer__newsletter h4 {
     color: #fff; }
@@ -1031,6 +1043,6 @@ body {
       .footer__bottom__logo a i {
         color: #fff;
         font-size: 50px;
-        background-color: #553772;
+        background-color: #6592fd;
         padding: 0 10px;
         border-radius: 3px; }

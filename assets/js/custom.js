@@ -9,6 +9,8 @@
  * 6. OVERVIEW ADD CLASS
  * 7. OVERVIEW SCROLL
  * 8. PRICING TOGGLER
+ * 9. HOW IT WORKS SLIDER
+ * 10. TESTIMONIAL SLIDER
  *
  * DOCUMENT READY FUNCTION
  * WINDOW ON SCROLL FUNCTION
@@ -153,12 +155,60 @@
     });
   };
 
+  /******************** 9. HOW IT WORKS SLIDER ********************/
+  PATH.HowWorksSlide = function () {
+    var howWorksTitles = new Swiper(".how-works-titles", {
+      spaceBetween: 1,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      touchRatio: 1,
+      slideToClickedSlide: true,
+    });
+    var howWorksContent = new Swiper(".how-works-content", {
+      direction: "horizontal",
+      effect: "slide",
+    });
+
+    howWorksTitles.controller.control = howWorksContent;
+    howWorksContent.controller.control = howWorksTitles;
+  };
+
+  /******************** 10. TESTIMONIAL SLIDER  ********************/
+  PATH.TestimonialSlide = function () {
+    var testimonialSlider = new Swiper(".clients-slider", {
+      slidesPerView: 3,
+      spaceBetween: 18,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      },
+    });
+  };
+
   /******************** DOCUMENT READY FUNCTION ********************/
   $(function () {
     PATH.MenuClose();
     PATH.HeaderScroll();
     PATH.HeaderSticky();
     PATH.PricingToggler();
+    PATH.HowWorksSlide();
+    PATH.TestimonialSlide();
   });
 
   /******************** WINDOW ON SCROLL FUNCTION ********************/

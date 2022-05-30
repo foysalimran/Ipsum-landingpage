@@ -1,0 +1,30 @@
+
+.testi-row {
+    overflow: hidden;
+
+    .clients-slider {
+        padding: 20px 0 50px;
+      }
+
+      .swiper-pagination{
+        &-bullet {
+            background-color: $color-primary;
+            opacity: 0.3;
+    
+            &-active {
+                opacity: 1;
+              }
+          }
+    }
+
+    .testi-card{
+        border: none !important;
+        box-shadow: 0px 4px 6px 0px $color-shadow !important;
+  
+        img{
+            width: 60px;
+            border-radius: 50%;
+        }
+    }
+  }
+  
