@@ -77,18 +77,22 @@ body {
   line-height: 1.5;
   color: #475668; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Jost", sans-serif;
-  color: #1d1d1d;
-  font-weight: 700; }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 .display-1,
 .display-2,
 .display-3,
 .display-4,
 .display-5,
 .display-6 {
-  font-weight: 700; }
+  font-family: "Jost", sans-serif;
+  color: #1d1d1d;
+  font-weight: 700;
+  line-height: 1.5; }
 
 *,
 *::after,
@@ -342,10 +346,10 @@ body {
   .overview__content:last-child {
     padding-bottom: 0; }
   .overview__content-title span {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 1px; }
   @media screen and (max-width: 992px) {
