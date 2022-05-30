@@ -849,8 +849,43 @@ body {
     .navbar-brand img {
       max-width: 100%; } }
 
-.faq__image {
-  width: 100%; }
+.faqs-accordion .accordion-item {
+  border-bottom: none;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  box-shadow: 0px 1px 20px 0px #40404026;
+  -moz-box-shadow: 0px 1px 20px 0px #40404026;
+  -o-box-shadow: 0px 1px 20px 0px #40404026; }
+  .faqs-accordion .accordion-item .accordion-header .accordion-button {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    box-shadow: none !important;
+    color: #1d1d1d;
+    font-size: 17px;
+    font-weight: 500; }
+    .faqs-accordion .accordion-item .accordion-header .accordion-button.collapsed {
+      border-radius: 6px;
+      color: #475668; }
+      .faqs-accordion .accordion-item .accordion-header .accordion-button.collapsed:before {
+        color: #475668;
+        transform: rotate(0deg); }
+    .faqs-accordion .accordion-item .accordion-header .accordion-button:focus {
+      box-shadow: none; }
+    .faqs-accordion .accordion-item .accordion-header .accordion-button::after {
+      display: none; }
+    .faqs-accordion .accordion-item .accordion-header .accordion-button::before {
+      content: "\eab2";
+      display: inline-block;
+      font: normal normal normal 24px/1 IcoFont;
+      font-size: 22px;
+      color: #fff;
+      position: absolute;
+      right: 20px;
+      transform: rotate(180deg);
+      transition: all 0.3s ease-in-out; }
+  .faqs-accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+    background-image: linear-gradient(to right, #1f306e, #553772);
+    color: #fff; }
 
 .services .card {
   box-shadow: 0 10px 60px 0 rgba(37, 39, 88, 0.1);
