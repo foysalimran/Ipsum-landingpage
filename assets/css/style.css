@@ -328,6 +328,8 @@ body {
       transition: all 0.2s; }
     .overview__sidebar--items li.current::before {
       opacity: 1; }
+    .overview__sidebar--items li.current a {
+      color: #6365f1; }
     .overview__sidebar--items li a {
       display: block;
       color: #1d1d1d; }

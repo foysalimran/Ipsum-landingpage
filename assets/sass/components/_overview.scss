@@ -26,11 +26,17 @@
           opacity: 0.2;
           transition: all 0.2s;
         }
+
         &.current {
           &::before {
             opacity: 1;
           }
+
+          a{
+            color: $color-primary;
+          }
         }
+
         a {
           display: block;
           color: $color-dark;
