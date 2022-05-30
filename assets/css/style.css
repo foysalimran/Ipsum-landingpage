@@ -842,10 +842,10 @@ body {
   box-shadow: 0 10px 60px 0 rgba(37, 39, 88, 0.1);
   border: none;
   transition: all .2s; }
-  .services .card span {
-    color: #553772; }
   .services .card:hover {
     transform: translateY(-10px); }
+  .services .card span {
+    color: #553772; }
 
 .services .icon {
   font-size: 70px !important;
@@ -856,9 +856,6 @@ body {
   .how-works-titles {
     border-bottom: 1px solid #553772;
     margin-bottom: 20px; }
-    .how-works-titles__wrapper {
-      transition-duration: 0ms;
-      transform: translate3d(-4.5px, 0px, 0px); }
     .how-works-titles__slide {
       width: calc(100% / 5);
       cursor: pointer;
