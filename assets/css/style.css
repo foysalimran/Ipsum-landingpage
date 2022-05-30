@@ -920,6 +920,9 @@ body {
   .how-works-titles {
     border-bottom: 1px solid #6592fd;
     margin-bottom: 20px; }
+    @media screen and (max-width: 991px) {
+      .how-works-titles__wrapper.swiper-wrapper {
+        width: 900px; } }
     .how-works-titles__slide {
       width: calc(100% / 5);
       cursor: pointer;

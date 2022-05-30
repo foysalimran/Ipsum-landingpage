@@ -5,6 +5,14 @@
     border-bottom: 1px solid $color-secondary;
     margin-bottom: 20px;
 
+    &__wrapper{
+      &.swiper-wrapper{
+        @media screen and (max-width: 991px) {
+          width: 900px ;
+        }
+      }
+    }
+
     &__slide {
       width: calc(100% / 5);
       cursor: pointer;
