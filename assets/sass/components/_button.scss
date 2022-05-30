@@ -9,7 +9,11 @@
   overflow: hidden;
   text-transform: capitalize;
   text-decoration: none;
-  background-image: linear-gradient(to right, $color-primary 0%, $color-secondary 100%);
+  background-image: linear-gradient(
+    to right,
+    $color-primary 0%,
+    $color-secondary 100%
+  );
   color: #ffffff;
   transition: all 0.3s ease;
   span {
@@ -26,7 +30,11 @@
     height: 100%;
     z-index: 1;
     opacity: 0;
-    background-image: linear-gradient(to left, $color-primary 0%, $color-secondary 100%);
+    background-image: linear-gradient(
+      to left,
+      $color-primary 0%,
+      $color-secondary 100%
+    );
     transition: all 0.4s;
   }
   &:hover::before {
@@ -41,8 +49,10 @@
     outline: none;
     color: #fff;
   }
+  &.btn-small {
+    padding: 4px 20px;
+  }
 }
-
 .btn-secondary {
   position: relative;
   display: inline-block;
@@ -90,5 +100,8 @@
     background: $color-primary;
     color: #fff;
     transition-delay: 0.35s;
+  }
+  &.btn-small {
+    padding: 4px 20px;
   }
 }
