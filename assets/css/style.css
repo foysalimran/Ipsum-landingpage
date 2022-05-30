@@ -203,9 +203,15 @@ body {
   .hero__client-logo {
     animation-name: moveInBottom;
     animation-duration: 1s;
-    animation-timing-function: ease-out; }
+    animation-timing-function: ease-out;
+    padding-top: 40px; }
     .hero__client-logo img {
-      width: 100%; }
+      width: 100%;
+      height: 100%; }
+      @media screen and (max-width: 575px) {
+        .hero__client-logo img {
+          height: 40px;
+          padding: 0 20px; } }
     .hero__client-logo__images {
       position: relative;
       border: 1px solid #eff0f7;
@@ -979,7 +985,7 @@ body {
     text-align: center; } }
 
 .footer {
-  background-color: #6365f1;
+  background-color: #1d1d1d;
   color: #fff; }
   .footer__newsletter h4 {
     color: #fff; }
@@ -1045,7 +1051,21 @@ body {
       .footer__content ul li a {
         margin-bottom: 15px;
         color: #fff;
-        display: inline-block; }
+        display: inline-block;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        transition: all 0.5s; }
+        .footer__content ul li a:hover {
+          color: #b4c7ff; }
+        .footer__content ul li a::after {
+          content: '';
+          display: block;
+          width: 0;
+          height: 1px;
+          background: #b4c7ff;
+          transition: width .3s; }
+        .footer__content ul li a:hover::after {
+          width: 100%; }
   .footer__bottom {
     align-items: center; }
     .footer__bottom a {
