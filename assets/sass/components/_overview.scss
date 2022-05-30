@@ -35,6 +35,15 @@
           display: block;
           color: $color-dark;
         }
+        &:hover{
+          &::before {
+            opacity: 1;
+          }
+          a{
+            color: $color-primary;
+          }
+          
+        }
       }
     }
   }
