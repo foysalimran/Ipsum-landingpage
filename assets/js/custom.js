@@ -58,6 +58,7 @@
     });
   };
 
+
   /* Document ready function */
   $(function () {
     PATH.PricingToggler();
