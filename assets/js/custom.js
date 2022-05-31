@@ -11,6 +11,7 @@
  * 8. PRICING TOGGLER
  * 9. HOW IT WORKS SLIDER
  * 10. TESTIMONIAL SLIDER
+ * 11. COUNTER UP
  *
  * DOCUMENT READY FUNCTION
  * WINDOW ON SCROLL FUNCTION
@@ -201,6 +202,16 @@
     });
   };
 
+  /******************** 11. COUNTER UP  ********************/
+  PATH.CounterUp = function () {
+    jQuery(document).ready(function ($) {
+      $(".counter").counterUp({
+        delay: 10,
+        time: 1000,
+      });
+    });
+  };
+
   /******************** DOCUMENT READY FUNCTION ********************/
   $(function () {
     PATH.MenuClose();
@@ -209,6 +220,7 @@
     PATH.PricingToggler();
     PATH.HowWorksSlide();
     PATH.TestimonialSlide();
+    PATH.CounterUp();
   });
 
   /******************** WINDOW ON SCROLL FUNCTION ********************/
