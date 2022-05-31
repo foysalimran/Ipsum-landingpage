@@ -6,12 +6,13 @@
  * 3. NAV COLLAPSE
  * 4. NAV SMOOTH SCROLL
  * 5. FIXED HEADER
- * 6. OVERVIEW ADD CLASS
- * 7. OVERVIEW SCROLL
- * 8. PRICING TOGGLER
- * 9. HOW IT WORKS SLIDER
- * 10. TESTIMONIAL SLIDER
- * 11. COUNTER UP
+ * 6. HERO VIDEO
+ * 7. OVERVIEW ADD CLASS
+ * 8. OVERVIEW SCROLL
+ * 9. PRICING TOGGLER
+ * 10. HOW IT WORKS SLIDER
+ * 11. TESTIMONIAL SLIDER
+ * 12. COUNTER UP
  *
  * DOCUMENT READY FUNCTION
  * WINDOW ON SCROLL FUNCTION
@@ -96,20 +97,24 @@
     }
   };
 
+  /******************** 6. HERO VIDEO ********************/
   PATH.HeroVideo = function () {
-    var $videoSrc;  
-    $('.video-btn').click(function() {
-        $videoSrc = $(this).data( "src" );
+    var $videoSrc;
+    $(".video-btn").click(function () {
+      $videoSrc = $(this).data("src");
     });
-    $('#heroModal').on('shown.bs.modal', function (e) {
-    $("#video").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" ); 
-    })
-    $('#heroModal').on('hide.bs.modal', function (e) {
-        $("#video").attr('src',$videoSrc); 
-    })
-    };
+    $("#heroModal").on("shown.bs.modal", function (e) {
+      $("#video").attr(
+        "src",
+        $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0"
+      );
+    });
+    $("#heroModal").on("hide.bs.modal", function (e) {
+      $("#video").attr("src", $videoSrc);
+    });
+  };
 
-  /******************** 6. OVERVIEW ADD CLASS ********************/
+  /******************** 7. OVERVIEW ADD CLASS ********************/
   PATH.OverviewAddClass = function () {
     var btns = $(".overview__sidebar li");
     for (var i = 0; i < btns.length; i++) {
@@ -130,7 +135,7 @@
     });
   };
 
-  /******************** 7. OVERVIEW SCROLL ********************/
+  /******************** 8. OVERVIEW SCROLL ********************/
   PATH.OverviewScroll = function () {
     $('.overview__sidebar a[href*="#"]:not([href="#"]').on(
       "click",
@@ -158,7 +163,7 @@
     );
   };
 
-  /******************** 8. PRICING TOGGLER ********************/
+  /******************** 9. PRICING TOGGLER ********************/
   PATH.PricingToggler = function () {
     $(".switcher__button").on("click", function (e) {
       $(".switcher__button").toggleClass("switcher__button--enabled");
@@ -169,7 +174,7 @@
     });
   };
 
-  /******************** 9. HOW IT WORKS SLIDER ********************/
+  /******************** 10. HOW IT WORKS SLIDER ********************/
   PATH.HowWorksSlide = function () {
     var howWorksTitles = new Swiper(".how-works-titles", {
       spaceBetween: 1,
@@ -187,7 +192,7 @@
     howWorksContent.controller.control = howWorksTitles;
   };
 
-  /******************** 10. TESTIMONIAL SLIDER  ********************/
+  /******************** 11. TESTIMONIAL SLIDER  ********************/
   PATH.TestimonialSlide = function () {
     var testimonialSlider = new Swiper(".clients-slider", {
       slidesPerView: 3,
@@ -215,7 +220,7 @@
     });
   };
 
-  /******************** 11. COUNTER UP  ********************/
+  /******************** 12. COUNTER UP  ********************/
   PATH.CounterUp = function () {
     jQuery(document).ready(function ($) {
       $(".counter").counterUp({
@@ -230,10 +235,11 @@
     PATH.MenuClose();
     PATH.HeaderScroll();
     PATH.HeaderSticky();
+    PATH.HeroVideo();
     PATH.PricingToggler();
     PATH.HowWorksSlide();
     PATH.TestimonialSlide();
-    PATH.HeroVideo();
+    PATH.CounterUp();
   });
 
   /******************** WINDOW ON SCROLL FUNCTION ********************/
@@ -241,12 +247,10 @@
     PATH.HeaderFixed();
     PATH.NavbarAddClass();
     PATH.OverviewAddClass();
-   
   });
 
   /******************** WINDOW ON LOAD FUNCTION ********************/
   $(window).on("load", function () {
     PATH.OverviewScroll();
-    PATH.CounterUp();
   });
 })(jQuery);
