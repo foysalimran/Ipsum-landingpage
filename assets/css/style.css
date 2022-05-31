@@ -4,13 +4,10 @@
 /*
 * Font family
 */
+/**
+* MEDIA QUERY MANAGER
+**/
 /*
-0 - 600px       Phone
-600 - 900px     Table portrait
-900 - 1200px    Tablet landscape
-[1200 - 1800]   is where our normal styles apply
-1800px + :      Big desktop
-
 grid-breakpoints: (
   xs: 0,
   sm: 576px,
@@ -22,13 +19,11 @@ grid-breakpoints: (
 
 $breakpoint argument choices:
 - phone
-- tab-port
-- tab-land
+- tablet
+- laptop
+- desktop
 - big-desktop
 
-ORDER: Base + typography > general layout + grid > page layout components
-
-1em = 16px
 */
 @keyframes fadeToY {
   0% {
