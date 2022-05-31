@@ -11,6 +11,7 @@
  * 8. PRICING TOGGLER
  * 9. HOW IT WORKS SLIDER
  * 10. TESTIMONIAL SLIDER
+ * 11. COUNTER UP
  *
  * DOCUMENT READY FUNCTION
  * WINDOW ON SCROLL FUNCTION
@@ -100,7 +101,6 @@
     $('.video-btn').click(function() {
         $videoSrc = $(this).data( "src" );
     });
-    console.log($videoSrc);
     $('#heroModal').on('shown.bs.modal', function (e) {
     $("#video").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" ); 
     })
@@ -215,6 +215,16 @@
     });
   };
 
+  /******************** 11. COUNTER UP  ********************/
+  PATH.CounterUp = function () {
+    jQuery(document).ready(function ($) {
+      $(".counter").counterUp({
+        delay: 10,
+        time: 1000,
+      });
+    });
+  };
+
   /******************** DOCUMENT READY FUNCTION ********************/
   $(function () {
     PATH.MenuClose();
@@ -231,10 +241,12 @@
     PATH.HeaderFixed();
     PATH.NavbarAddClass();
     PATH.OverviewAddClass();
+   
   });
 
   /******************** WINDOW ON LOAD FUNCTION ********************/
   $(window).on("load", function () {
     PATH.OverviewScroll();
+    PATH.CounterUp();
   });
 })(jQuery);

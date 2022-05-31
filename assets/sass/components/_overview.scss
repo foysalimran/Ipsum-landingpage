@@ -4,7 +4,7 @@
       position: sticky;
       width: 100%;
       top: calc(50% - 62px);
-      @media screen and (max-width: 992px) {
+      @include respond(laptop) {
         display: none;
       }
       li {
@@ -32,7 +32,7 @@
             opacity: 1;
           }
 
-          a{
+          a {
             color: $color-primary;
           }
         }
@@ -41,14 +41,13 @@
           display: block;
           color: $color-dark;
         }
-        &:hover{
+        &:hover {
           &::before {
             opacity: 1;
           }
-          a{
+          a {
             color: $color-primary;
           }
-          
         }
       }
     }
@@ -69,7 +68,7 @@
         letter-spacing: 1px;
       }
     }
-    @media screen and (max-width: 992px) {
+    @include respond(laptop) {
       padding: 40px 0;
     }
   }
