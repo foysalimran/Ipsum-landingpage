@@ -60,9 +60,12 @@
     }
     &-title {
       span {
+        background: $color-tertiary;
+        padding: 10px 20px;
+        border-radius: 50px;
+        display: inline-block;
         font-size: 12px;
         font-weight: 700;
-        display: block;
         margin-bottom: 10px;
         text-transform: uppercase;
         letter-spacing: 1px;

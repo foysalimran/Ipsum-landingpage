@@ -1,7 +1,6 @@
 .btn-primary {
   position: relative;
   display: inline-block;
-  font-size: 14px;
   line-height: 30px;
   text-align: center;
   padding: 10px 30px;
@@ -71,6 +70,13 @@
     position: relative;
     z-index: 2;
     color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    i {
+      font-size: 20px;
+      margin-right: 5px;
+    }
   }
   &::before,
   &::after {
