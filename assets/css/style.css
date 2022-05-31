@@ -326,7 +326,7 @@ body {
   position: sticky;
   width: 100%;
   top: calc(50% - 62px); }
-  @media screen and (max-width: 992px) {
+  @media only screen and (max-width: 991px) {
     .overview__sidebar--items {
       display: none; } }
   .overview__sidebar--items li {
@@ -370,7 +370,7 @@ body {
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 1px; }
-  @media screen and (max-width: 992px) {
+  @media only screen and (max-width: 991px) {
     .overview__content {
       padding: 40px 0; } }
 
@@ -937,7 +937,7 @@ body {
   .how-works-titles {
     border-bottom: 1px solid #6592fd;
     margin-bottom: 20px; }
-    @media screen and (max-width: 991px) {
+    @media only screen and (max-width: 991px) {
       .how-works-titles__wrapper.swiper-wrapper {
         width: 900px; } }
     .how-works-titles__slide {
@@ -982,8 +982,8 @@ body {
     .testi-row .swiper-pagination-bullet-active {
       opacity: 1; }
   .testi-row .testi-card {
-    border: none !important;
-    box-shadow: 0px 4px 6px 0px rgba(1, 6, 33, 0.08) !important; }
+    border: none;
+    box-shadow: 0px 4px 6px 0px rgba(1, 6, 33, 0.08); }
     .testi-row .testi-card img {
       width: 60px;
       border-radius: 50%; }
@@ -1011,6 +1011,48 @@ body {
 @media only screen and (max-width: 575px) {
   .cta__about {
     text-align: center; } }
+
+.fun-fact__box:not(:last-child) {
+  border-right: 1px solid #6365f1; }
+
+@media only screen and (max-width: 991px) {
+  .fun-fact__box:nth-child(2) {
+    border: none !important; } }
+
+@media only screen and (max-width: 575px) {
+  .fun-fact__box {
+    border: none !important; } }
+
+.fun-fact__card {
+  border: none; }
+  .fun-fact__card-body {
+    text-align: center; }
+    .fun-fact__card-body i {
+      display: block;
+      height: 170px;
+      width: 170px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+      border-radius: 12px;
+      margin: auto;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 60px 0 rgba(37, 39, 88, 0.1);
+      position: relative;
+      z-index: 1;
+      font-size: 50px;
+      color: #6365f1; }
+      .fun-fact__card-body i::after {
+        position: absolute;
+        content: "";
+        height: calc(100% - 32px);
+        width: calc(100% - 36px);
+        border-radius: 12px;
+        z-index: -1;
+        background: #b4c7ff; }
+    .fun-fact__card-body h4 {
+      font-size: 60px; }
 
 .footer {
   background-color: #1d1d1d;
