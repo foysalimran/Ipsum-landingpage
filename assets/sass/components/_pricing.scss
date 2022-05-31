@@ -119,6 +119,9 @@
       font-weight: 600;
       font-size: 16px;
     }
+    @include respond(phone) {
+      padding: 20px;
+    }
   }
 
   &__month {
