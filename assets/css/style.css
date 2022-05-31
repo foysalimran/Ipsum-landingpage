@@ -949,7 +949,6 @@ body {
           height: 4px;
           background: #6365f1; }
   .how-works-content__slide {
-    background-color: #fff;
     padding: 40px 0; }
     .how-works-content__slide img {
       display: block;
@@ -961,7 +960,7 @@ body {
   .testi-row .clients-slider {
     padding: 20px 0 50px; }
   .testi-row .swiper-pagination-bullet {
-    background-color: #6365f1;
+    background-color: #6592fd;
     opacity: 0.3; }
     .testi-row .swiper-pagination-bullet-active {
       opacity: 1; }
@@ -971,6 +970,13 @@ body {
     .testi-row .testi-card img {
       width: 60px;
       border-radius: 50%; }
+    .testi-row .testi-card__quotation {
+      position: absolute;
+      bottom: 0;
+      right: 0; }
+      .testi-row .testi-card__quotation i {
+        font-size: 45px;
+        color: #b4c7ff; }
 
 .cta__about--subtitle {
   text-transform: uppercase;

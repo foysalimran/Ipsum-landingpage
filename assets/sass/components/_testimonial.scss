@@ -8,7 +8,7 @@
 
       .swiper-pagination{
         &-bullet {
-            background-color: $color-primary;
+            background-color: $color-secondary;
             opacity: 0.3;
     
             &-active {
@@ -24,6 +24,17 @@
         img{
             width: 60px;
             border-radius: 50%;
+        }
+
+        &__quotation{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+
+            i{
+                font-size: 45px;
+                color: $color-tertiary;
+            }
         }
     }
   }

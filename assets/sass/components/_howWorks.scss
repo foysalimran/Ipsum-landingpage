@@ -5,10 +5,10 @@
     border-bottom: 1px solid $color-secondary;
     margin-bottom: 20px;
 
-    &__wrapper{
-      &.swiper-wrapper{
+    &__wrapper {
+      &.swiper-wrapper {
         @media screen and (max-width: 991px) {
-          width: 900px ;
+          width: 900px;
         }
       }
     }
@@ -38,7 +38,7 @@
           content: "";
           position: absolute;
           left: 0;
-          
+
           bottom: 0;
           margin: auto;
           width: 60%;
@@ -50,7 +50,6 @@
   }
 
   &-content__slide {
-    background-color: #fff;
     padding: 40px 0;
 
     img {
