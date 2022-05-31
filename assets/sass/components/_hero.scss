@@ -111,7 +111,7 @@
     animation-name: moveInRight;
     animation-duration: 1s;
     animation-timing-function: ease-out;
-    @media screen and (max-width: 991px) {
+    @include respond(laptop) {
       position: relative;
       margin-top: 50px;
     }
@@ -124,7 +124,7 @@
       z-index: 2;
       background-color: #f4f7fb;
 
-      @media screen and (max-width: 991px) {
+      @include respond(laptop) {
         width: 100%;
         background: transparent;
       }
@@ -135,11 +135,11 @@
       width: 100%;
       right: -200px;
       z-index: 3;
-      @media screen and (max-width: 1200px) {
+      @include respond(desktop) {
         right: -100px;
       }
 
-      @media screen and (max-width: 991px) {
+      @include respond(laptop) {
         right: 0px;
         img {
           width: 100%;
