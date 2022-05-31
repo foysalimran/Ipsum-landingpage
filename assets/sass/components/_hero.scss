@@ -3,17 +3,34 @@
   position: relative;
   overflow: hidden;
   &__content {
+    @include respond(phone) {
+      text-align: center;
+    }
     & p,
     & h1,
     .btn-primary {
       animation-name: moveInLeft;
       animation-duration: 1s;
       animation-timing-function: ease-out;
+      @include respond(phone) {
+        padding: 5px 10px;
+      }
     }
     & .btn-secondary {
       animation-name: moveInRight;
       animation-duration: 1s;
       animation-timing-function: ease-out;
+      @include respond(phone) {
+        padding: 5px 10px;
+        background-color: $color-primary;
+        color: $color-white;
+        &::before {
+          width: 0;
+        }
+        &::after {
+          width: 0;
+        }
+      }
     }
   }
   &__client-logo {

@@ -125,9 +125,7 @@
     }
     &__text {
       @include respond(tablet) {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        text-align: center;
       }
     }
     &__logo {
