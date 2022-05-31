@@ -1,13 +1,13 @@
 .fun-fact {
   &__box {
     &:not(:last-child) {
-      border-right: 1px solid $color-primary;
+      border-right: 1px solid $color-border;
     }
 
     @include respond(laptop) {
-        &:nth-child(2) {
-            border: none !important;
-          }
+      &:nth-child(2) {
+        border: none !important;
+      }
     }
     @include respond(phone) {
       & {
@@ -33,21 +33,11 @@
         border-radius: 12px;
         margin: auto;
         margin-bottom: 30px;
-        box-shadow: 0 10px 60px 0 rgba(37, 39, 88, 0.1);
+        box-shadow: 0 5px 30px 0 $color-shadow;
         position: relative;
         z-index: 1;
         font-size: 50px;
         color: $color-primary;
-
-        &::after {
-          position: absolute;
-          content: "";
-          height: calc(100% - 32px);
-          width: calc(100% - 36px);
-          border-radius: 12px;
-          z-index: -1;
-          background: $color-tertiary;
-        }
       }
 
       h4 {
