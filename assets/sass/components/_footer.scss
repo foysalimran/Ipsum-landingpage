@@ -115,7 +115,7 @@
       color: $color-white;
     }
     &__text {
-      @media screen and (max-width: 767px) {
+      @include respond(tablet) {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -125,7 +125,7 @@
       display: flex;
       align-items: center;
       justify-content: end;
-      @media screen and (max-width: 767px) {
+      @include respond(tablet) {
         justify-content: center;
         margin-top: 20px;
       }
@@ -139,7 +139,6 @@
           background-color: $color-secondary;
           padding:  0 10px;
           border-radius: 3px;
-          
         }
       }
     }

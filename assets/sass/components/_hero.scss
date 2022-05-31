@@ -1,4 +1,4 @@
-// Hero area start
+// Hero css start
 .hero {
   position: relative;
   overflow: hidden;
@@ -148,5 +148,20 @@
       }
     }
   }
+  .modal-dialog {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+  }
+  
+  .modal-body {
+  position:relative;
+  padding:0px;
+  }
+  .btn-close {
+  position:absolute;
+  right:-30px;
+  top:0;
+  }
 }
-// Hero area end
+// Hero css end

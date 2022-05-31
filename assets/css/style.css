@@ -312,7 +312,7 @@ body {
       width: 100%;
       right: -200px;
       z-index: 3; }
-      @media only screen and (min-width: 1199px) {
+      @media only screen and (max-width: 1199px) {
         .hero__image__area {
           right: -100px; } }
       @media only screen and (max-width: 991px) {
@@ -321,6 +321,17 @@ body {
           .hero__image__area img {
             width: 100%;
             padding: 0 10px; } }
+  .hero .modal-dialog {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px; }
+  .hero .modal-body {
+    position: relative;
+    padding: 0px; }
+  .hero .btn-close {
+    position: absolute;
+    right: -30px;
+    top: 0; }
 
 .overview__sidebar--items {
   position: sticky;
@@ -819,7 +830,7 @@ body {
   .nav_right {
     margin-top: 10px; } }
 
-@media only screen and (min-width: 1199px) {
+@media only screen and (max-width: 1199px) {
   .navbar .navbar-brand {
     margin-right: 15px; }
   .menu > .nav-item {
@@ -1098,7 +1109,7 @@ body {
     align-items: center; }
     .footer__bottom a {
       color: #fff; }
-    @media screen and (max-width: 767px) {
+    @media only screen and (max-width: 767px) {
       .footer__bottom__text {
         display: flex;
         align-items: center;
@@ -1107,7 +1118,7 @@ body {
       display: flex;
       align-items: center;
       justify-content: end; }
-      @media screen and (max-width: 767px) {
+      @media only screen and (max-width: 767px) {
         .footer__bottom__logo {
           justify-content: center;
           margin-top: 20px; } }

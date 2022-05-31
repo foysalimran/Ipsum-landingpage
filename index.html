@@ -107,7 +107,15 @@
               </p>
               <div class="d-flex align-items-center m-20px-t gap-4">
                 <a href="#" class="btn-primary"><span>Try for free</span></a>
-                <a href="#" class="btn-secondary"><span>View Demo</span></a>
+                <a
+                  href="#"
+                  type="button"
+                  class="btn-secondary video-btn"
+                  data-bs-toggle="modal"
+                  data-src="https://www.youtube.com/embed/IP7uGKgJL8U"
+                  data-bs-target="#heroModal"
+                  ><span>View Demo</span></a
+                >
               </div>
             </div>
             <div class="hero__client-logo">
@@ -160,6 +168,36 @@
               <div class="hero__image__overlay"></div>
               <div class="hero__image__area">
                 <img src="assets/images/hero.png" alt="Hero Image" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="modal fade"
+          id="heroModal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+                <div class="ratio ratio-16x9">
+                  <iframe
+                    class="embed-responsive-item"
+                    src=""
+                    id="video"
+                    allowscriptaccess="always"
+                    allow="autoplay"
+                  ></iframe>
+                </div>
               </div>
             </div>
           </div>
