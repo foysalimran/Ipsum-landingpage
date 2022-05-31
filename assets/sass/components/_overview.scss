@@ -53,8 +53,7 @@
     }
   }
   &__content {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
     &:last-child {
       padding-bottom: 0;
     }
@@ -70,9 +69,6 @@
         text-transform: uppercase;
         letter-spacing: 1px;
       }
-    }
-    @include respond(laptop) {
-      padding: 40px 0;
     }
   }
 }

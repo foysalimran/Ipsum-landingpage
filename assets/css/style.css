@@ -229,8 +229,7 @@ body {
   .hero__client-logo {
     animation-name: moveInBottom;
     animation-duration: 1s;
-    animation-timing-function: ease-out;
-    padding-top: 40px; }
+    animation-timing-function: ease-out; }
     .hero__client-logo img {
       width: 100%; }
     .hero__client-logo__images {
@@ -315,11 +314,11 @@ body {
       position: relative;
       margin-bottom: 0;
       width: 100%;
-      right: -200px;
+      right: -120px;
       z-index: 3; }
       @media only screen and (max-width: 1199px) {
         .hero__image__area {
-          right: -100px; } }
+          right: -80px; } }
       @media only screen and (max-width: 991px) {
         .hero__image__area {
           right: 0px; }
@@ -375,8 +374,7 @@ body {
       color: #6365f1; }
 
 .overview__content {
-  padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-bottom: 40px; }
   .overview__content:last-child {
     padding-bottom: 0; }
   .overview__content-title span {
@@ -389,9 +387,6 @@ body {
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 1px; }
-  @media only screen and (max-width: 991px) {
-    .overview__content {
-      padding: 40px 0; } }
 
 .btn-primary {
   position: relative;
@@ -593,6 +588,9 @@ body {
       border-top-right-radius: 10px;
       font-weight: 600;
       font-size: 16px; }
+    @media only screen and (max-width: 575px) {
+      .pricing-one__single {
+        padding: 20px; } }
   .pricing-one__month {
     display: inline-block;
     vertical-align: middle;
@@ -995,8 +993,8 @@ body {
           content: "";
           position: absolute;
           left: 0;
+          margin-bottom: -2px;
           bottom: 0;
-          margin: auto;
           width: 60%;
           height: 4px;
           background: #6365f1; }
@@ -1010,7 +1008,7 @@ body {
 .testi-row {
   overflow: hidden; }
   .testi-row .clients-slider {
-    padding: 20px 0 50px; }
+    padding: 0 0 50px 0; }
   .testi-row .swiper-pagination-bullet {
     background-color: #6592fd;
     opacity: 0.3; }
