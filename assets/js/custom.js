@@ -96,6 +96,19 @@
     }
   };
 
+  PATH.HeroVideo = function () {
+    var $videoSrc;  
+    $('.video-btn').click(function() {
+        $videoSrc = $(this).data( "src" );
+    });
+    $('#heroModal').on('shown.bs.modal', function (e) {
+    $("#video").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" ); 
+    })
+    $('#heroModal').on('hide.bs.modal', function (e) {
+        $("#video").attr('src',$videoSrc); 
+    })
+    };
+
   /******************** 6. OVERVIEW ADD CLASS ********************/
   PATH.OverviewAddClass = function () {
     var btns = $(".overview__sidebar li");
@@ -220,7 +233,7 @@
     PATH.PricingToggler();
     PATH.HowWorksSlide();
     PATH.TestimonialSlide();
-    PATH.CounterUp();
+    PATH.HeroVideo();
   });
 
   /******************** WINDOW ON SCROLL FUNCTION ********************/
@@ -228,10 +241,12 @@
     PATH.HeaderFixed();
     PATH.NavbarAddClass();
     PATH.OverviewAddClass();
+   
   });
 
   /******************** WINDOW ON LOAD FUNCTION ********************/
   $(window).on("load", function () {
     PATH.OverviewScroll();
+    PATH.CounterUp();
   });
 })(jQuery);
