@@ -21,6 +21,9 @@
         &:focus {
           outline: none;
         }
+        @include respond(phone) {
+          height: 48px;
+        }
       }
       &__btn {
         position: absolute;
@@ -34,6 +37,10 @@
         justify-content: center;
         border-radius: 50%;
         border: none;
+        @include respond(phone) {
+          height: 48px;
+          width: 48px;
+        }
         i {
           font-size: 30px;
         }
