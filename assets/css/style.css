@@ -678,6 +678,18 @@ body {
     margin-right: 45px; }
     .navbar .navbar-brand.sticky_logo img + img {
       display: none; }
+  @media only screen and (max-width: 575px) {
+    .navbar .btn-secondary {
+      background-color: #6365f1;
+      color: #fff; }
+      .navbar .btn-secondary::after {
+        width: 0;
+        height: 0;
+        border: 0; }
+      .navbar .btn-secondary::after {
+        width: 0;
+        height: 0;
+        border: 0; } }
 
 .menu > .nav-item {
   margin: 0 18px;
