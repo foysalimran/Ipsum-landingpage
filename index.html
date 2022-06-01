@@ -786,11 +786,11 @@
           </div>
           <div class="col-md-6">
             <div class="footer__newsletter__form">
-              <form action="#">
-                <input type="email" name="email" required placeholder="Enter your email address" />
-                <button class="footer__newsletter__form__btn footer__newsletter__form__btn-default">
+              <form action="assets/subscribe/subscribe.php" class="subscription-form form-inline wow fadeInRight" data-wow-duration="1.5s" id="subscribe">
+                <input type="email"  name="email" required placeholder="Enter your email address" id="subscribe_email" />
+                <button  type="submit"  id="subscribe-button" class="footer__newsletter__form__btn footer__newsletter__form__btn-default">
                   <i class="icofont-long-arrow-right"></i>
-                </button>
+                </butt>
               </form>
             </div>
           </div>
@@ -887,6 +887,8 @@
   <script src="assets/js/waypoints.min.js"></script>
   <!--====== Couner up js ======-->
   <script src="assets/js/jquery.counterup.min.js"></script>
+  <!--====== Ajaxchimp js ======-->
+  <script src="assets/js/jquery.ajaxchimp.min.js"></script>
   <!--====== Custom js ======-->
   <script src="assets/js/custom.js"></script>
 </body>
