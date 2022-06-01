@@ -511,51 +511,15 @@ body {
   background-color: #f7f8f9;
   border-radius: 25px; }
 
-.switcher__buttons {
-  width: 100%; }
-
-.switcher__button {
-  cursor: pointer;
-  width: 50%;
-  float: left;
-  height: 40px;
-  line-height: 40px;
-  position: relative;
-  z-index: 888;
-  transition: 0.3s ease-in-out; }
-
-.switcher__border {
-  height: 40px;
-  width: 50%;
-  background-color: #6365f1;
-  display: block;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: 555;
-  margin: 0;
-  border: none;
-  transition: 0.3s ease-in-out;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  border--radius: 20px;
-  -webkit-border-radius: 20px; }
-
-.switcher__button--enabled {
-  color: #fff; }
-
-.switcher__button:nth-child(1).switcher__button--enabled ~ .switcher__border {
-  left: 0; }
-
-.switcher__button:nth-child(2).switcher__button--enabled ~ .switcher__border {
-  left: 50%; }
-
 .pricing__values {
   font-size: 58px;
   font-weight: 700;
   height: 70px;
   position: relative;
   text-align: center; }
+  @media only screen and (max-width: 575px) {
+    .pricing__values {
+      font-size: 45px; } }
 
 .pricing__value {
   position: absolute;
@@ -658,6 +622,45 @@ body {
     display: block;
     font-weight: 600;
     color: #6365f1; }
+
+.switcher__buttons {
+  width: 100%; }
+
+.switcher__button {
+  cursor: pointer;
+  width: 50%;
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  z-index: 888;
+  transition: 0.3s ease-in-out; }
+
+.switcher__border {
+  height: 40px;
+  width: 50%;
+  background-color: #6365f1;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 555;
+  margin: 0;
+  border: none;
+  transition: 0.3s ease-in-out;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border--radius: 20px;
+  -webkit-border-radius: 20px; }
+
+.switcher__button--enabled {
+  color: #fff; }
+
+.switcher__button:nth-child(1).switcher__button--enabled ~ .switcher__border {
+  left: 0; }
+
+.switcher__button:nth-child(2).switcher__button--enabled ~ .switcher__border {
+  left: 50%; }
 
 .navbar {
   border: 0px;
@@ -1104,6 +1107,9 @@ body {
       color: #6365f1; }
     .fun-fact__card-body h4 {
       font-size: 60px; }
+      @media only screen and (max-width: 575px) {
+        .fun-fact__card-body h4 {
+          font-size: 40px; } }
 
 .footer {
   background-color: #1d1d1d;
