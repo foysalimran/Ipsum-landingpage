@@ -4,6 +4,7 @@
       position: sticky;
       width: 100%;
       top: calc(50% - 62px);
+      padding: 0;
       @include respond(laptop) {
         display: none;
       }
@@ -53,9 +54,11 @@
     }
   }
   &__content {
-    padding-bottom: 40px;
-    &:last-child {
-      padding-bottom: 0;
+    &:not(:first-child) {
+      padding-top: 40px;
+    }
+    &:not(:last-child) {
+      padding-bottom: 40px;
     }
     &-title {
       span {

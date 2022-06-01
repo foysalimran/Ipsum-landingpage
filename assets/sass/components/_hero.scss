@@ -2,6 +2,16 @@
 .hero {
   position: relative;
   overflow: hidden;
+  &__shape {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    img {
+      max-width: 100%;
+    }
+  }
   &__content {
     @include respond(phone) {
       text-align: center;
@@ -124,9 +134,6 @@
     }
   }
   &__image {
-    animation-name: moveInRight;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
     @include respond(laptop) {
       position: relative;
       margin-top: 50px;
@@ -138,7 +145,7 @@
       right: 0;
       bottom: 0;
       z-index: 2;
-      background-color: #f4f7fb;
+      background-color: $bg-color-1;
 
       @include respond(laptop) {
         width: 100%;
@@ -146,6 +153,11 @@
       }
     }
     &__area {
+      img {
+        animation-name: moveInRight;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+      }
       position: relative;
       margin-bottom: 0;
       width: 100%;
@@ -169,15 +181,15 @@
     margin: 30px auto;
     padding: 0 20px;
   }
-  
+
   .modal-body {
-  position:relative;
-  padding:0px;
+    position: relative;
+    padding: 0px;
   }
   .btn-close {
-  position:absolute;
-  right:-30px;
-  top:0;
+    position: absolute;
+    right: -30px;
+    top: 0;
   }
 }
 // Hero css end

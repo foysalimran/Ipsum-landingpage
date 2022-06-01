@@ -2,8 +2,7 @@
   overflow: hidden;
 
   &-titles {
-    border-bottom: 1px solid $color-secondary;
-    margin-bottom: 20px;
+    border-bottom: 1px solid $color-border;
 
     &__wrapper {
       &.swiper-wrapper {
@@ -38,7 +37,7 @@
           content: "";
           position: absolute;
           left: 0;
-          margin-bottom: -2px;
+          margin-bottom: -3px;
           bottom: 0;
           width: 60%;
           height: 4px;
@@ -49,8 +48,7 @@
   }
 
   &-content__slide {
-    padding: 40px 0;
-
+    margin-top: 40px;
     img {
       display: block;
       margin: auto;
