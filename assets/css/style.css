@@ -1214,8 +1214,6 @@ body {
         margin-bottom: 15px;
         color: #fff;
         display: inline-block;
-        -webkit-transition: all 0.5s;
-        -moz-transition: all 0.5s;
         transition: all 0.5s; }
         .footer__content ul li a:hover {
           color: #b4c7ff; }
@@ -1271,3 +1269,28 @@ body {
 
 .success-msg {
   color: #56CC35; }
+
+.hero-2 {
+  position: relative;
+  overflow: hidden; }
+  .hero-2__shape-1 {
+    position: absolute;
+    top: 140px;
+    left: 200px;
+    z-index: -1; }
+    .hero-2__shape-1 img {
+      max-width: 100%; }
+  .hero-2__shape-2 {
+    position: absolute;
+    top: 300px;
+    right: 240px;
+    z-index: -1; }
+    .hero-2__shape-2 img {
+      max-width: 100%; }
+  .hero-2__content {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center; }
+  .hero-2__image {
+    max-width: 1000px;
+    margin: 0 auto; }
