@@ -3,6 +3,11 @@
     box-shadow: 0 10px 60px 0 rgba(37, 39, 88, 0.1);
     border: none;
     transition: all .2s;
+    p {
+      @include respond(phone) {
+        margin-bottom: 0;
+      }
+    }
     span {
       color: $color-secondary;
     }
@@ -11,7 +16,10 @@
     }
   }
   .icon {
-    font-size: 70px !important;
+    font-size: 70px;
     color: $color-secondary;
+    @include respond(phone) {
+      font-size: 50px;
+    }
   }
 }

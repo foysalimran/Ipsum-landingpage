@@ -216,16 +216,33 @@ body {
 .hero {
   position: relative;
   overflow: hidden; }
+  @media only screen and (max-width: 575px) {
+    .hero__content {
+      text-align: center; } }
   .hero__content p,
   .hero__content h1,
   .hero__content .btn-primary {
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out; }
+    @media only screen and (max-width: 575px) {
+      .hero__content p,
+      .hero__content h1,
+      .hero__content .btn-primary {
+        padding: 5px 10px; } }
   .hero__content .btn-secondary {
     animation-name: moveInRight;
     animation-duration: 1s;
     animation-timing-function: ease-out; }
+    @media only screen and (max-width: 575px) {
+      .hero__content .btn-secondary {
+        padding: 5px 10px;
+        background-color: #6365f1;
+        color: #fff; }
+        .hero__content .btn-secondary::before {
+          width: 0; }
+        .hero__content .btn-secondary::after {
+          width: 0; } }
   .hero__client-logo {
     animation-name: moveInBottom;
     animation-duration: 1s;
@@ -610,6 +627,10 @@ body {
     margin: 60px 0 0;
     position: relative;
     text-align: left; }
+    @media only screen and (max-width: 575px) {
+      .pricing-one__list {
+        padding: 30px 0 0;
+        margin: 30px 0 0; } }
     .pricing-one__list:before {
       content: "";
       width: 81px;
@@ -956,14 +977,20 @@ body {
   box-shadow: 0 10px 60px 0 rgba(37, 39, 88, 0.1);
   border: none;
   transition: all .2s; }
+  @media only screen and (max-width: 575px) {
+    .services .card p {
+      margin-bottom: 0; } }
   .services .card span {
     color: #6592fd; }
   .services .card:hover {
     transform: translateY(-10px); }
 
 .services .icon {
-  font-size: 70px !important;
+  font-size: 70px;
   color: #6592fd; }
+  @media only screen and (max-width: 575px) {
+    .services .icon {
+      font-size: 50px; } }
 
 .how-works {
   overflow: hidden; }
@@ -1098,6 +1125,9 @@ body {
       transition: border-color 0.4s; }
       .footer__newsletter__form input:focus {
         outline: none; }
+      @media only screen and (max-width: 575px) {
+        .footer__newsletter__form input {
+          height: 48px; } }
     .footer__newsletter__form__btn {
       position: absolute;
       right: 0;
@@ -1110,6 +1140,10 @@ body {
       justify-content: center;
       border-radius: 50%;
       border: none; }
+      @media only screen and (max-width: 575px) {
+        .footer__newsletter__form__btn {
+          height: 48px;
+          width: 48px; } }
       .footer__newsletter__form__btn i {
         font-size: 30px; }
     .footer__newsletter__form__btn-default {
@@ -1169,9 +1203,7 @@ body {
       color: #fff; }
     @media only screen and (max-width: 767px) {
       .footer__bottom__text {
-        display: flex;
-        align-items: center;
-        justify-content: center; } }
+        text-align: center; } }
     .footer__bottom__logo {
       display: flex;
       align-items: center;

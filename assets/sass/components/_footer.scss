@@ -21,6 +21,9 @@
         &:focus {
           outline: none;
         }
+        @include respond(phone) {
+          height: 48px;
+        }
       }
       &__btn {
         position: absolute;
@@ -34,6 +37,10 @@
         justify-content: center;
         border-radius: 50%;
         border: none;
+        @include respond(phone) {
+          height: 48px;
+          width: 48px;
+        }
         i {
           font-size: 30px;
         }
@@ -125,9 +132,7 @@
     }
     &__text {
       @include respond(tablet) {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        text-align: center;
       }
     }
     &__logo {
