@@ -1244,3 +1244,17 @@ body {
         padding: 0; }
         .footer__bottom__logo a:not(:last-child) {
           margin-right: 10px; }
+
+.success-msg,
+.error-msg {
+  font-size: 15px;
+  text-align: center;
+  padding: 10px;
+  display: none;
+  margin: 0px !important; }
+
+.error-msg {
+  color: #FF5252 !important; }
+
+.success-msg {
+  color: #56CC35; }
