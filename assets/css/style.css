@@ -454,6 +454,12 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px; }
 
+.overview-v3 .overview__content:not(:first-child) {
+  padding-top: 20px; }
+
+.overview-v3 .overview__content:not(:last-child) {
+  padding-bottom: 20px; }
+
 .btn-primary {
   position: relative;
   display: inline-block;
