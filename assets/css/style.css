@@ -1117,6 +1117,12 @@ body {
       .testi-row .testi-card__quotation i {
         font-size: 45px;
         color: #b4c7ff; }
+    .testi-row .testi-card__user-info {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .testi-row .testi-card__user-info img {
+        margin-right: 20px; }
 
 .cta__about--subtitle {
   text-transform: uppercase;
@@ -1653,6 +1659,8 @@ body {
       width: 100px;
       border-radius: 50%; }
 
-.hero-3__image {
-  margin-left: -220px;
-  padding-top: 80px; }
+.hero-3 {
+  overflow: hidden; }
+  .hero-3__image {
+    margin-left: -220px;
+    padding-top: 80px; }
