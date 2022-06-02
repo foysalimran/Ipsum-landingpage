@@ -176,14 +176,14 @@
   
     /******************** 10. HOW IT WORKS SLIDER ********************/
     PATH.HowWorksSlide = function () {
-      var howWorksTitles = new Swiper(".how-works-titles", {
+      var howWorksTitles = new Swiper(".how-works-2-titles", {
         spaceBetween: 1,
         centeredSlides: true,
         slidesPerView: "auto",
         touchRatio: 1,
         slideToClickedSlide: true,
       });
-      var howWorksContent = new Swiper(".how-works-content", {
+      var howWorksContent = new Swiper(".how-works-2-content", {
         direction: "horizontal",
         effect: "slide",
       });
