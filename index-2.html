@@ -36,24 +36,13 @@
       <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand" href="#">
+            <!-- <img src="assets/images/logo.png" width="130" alt="logo" />-->
             <h1 class="m-0">IPSUM</h1>
           </a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul id="navbar01" class="navbar-nav menu me-lg-auto">
-              <li class="nav-item dropdown submenu current">
-                <a class="nav-link dropdown-toggle" href="#hero">Home</a>
-                <i class="ti-angle-down mobile_dropdown_icon"></i>
-                <ul class="dropdown-menu">
-                  <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home One</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="index-2.html" class="nav-link">Home Two</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="index-3.html" class="nav-link">Home Three</a>
-                  </li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="#hero">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#about">About</a>
@@ -65,8 +54,9 @@
                 <a class="nav-link" href="#pricing">Pricing</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link" href="#testimonial">Testimonial</a>
               </li>
+              <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
             </ul>
             <div class="nav_right">
               <a href="" class="btn-secondary btn-small">Login</a>
@@ -90,108 +80,62 @@
         </div>
       </nav>
     </header>
-    <!-- <header class="header header--sticky">
-      <div class="header__content header__content--fix-width">
-        <div class="header__logo-title">LATERAL</div>
-        <nav class="header__menu sticky">
-          <div class="menu-button"></div>
-          <ul>
-            <li><a class="header-link" href="#hero">HOME</a></li>
-            <li class="menu-item-has-children">
-              <span class="submenu-button"></span
-              ><a href="#overview" class="header-link">overview</a>
-              <ul class="sub-menu submenu-header-sticky">
-                <li><a href="#about" class="header-link">OUR PRODUCTS</a></li>
-                <li><a href="#hiw" class="header-link">HOW IT WORKS</a></li>
-                <li><a href="#clients" class="header-link">OUR CLIENTS</a></li>
-                <li>
-                  <a href="#testimonials" class="header-link">TESTIMONIALS</a>
-                </li>
-                <li><a href="#support" class="header-link">SUPPORT</a></li>
-              </ul>
-            </li>
-            <li><a href="#pricing" class="header-link">PRICING</a></li>
-            <li><a href="#about" class="header-link">about</a></li>
-            <li
-              class="header__btn header__btn--login modal-toggle"
-              data-openpopup="signuplogin"
-              data-popup="login"
-            >
-              <a href="#">LOGIN</a>
-            </li>
-            <li
-              class="header__btn header__btn--signup modal-toggle"
-              data-openpopup="signuplogin"
-              data-popup="signup"
-            >
-              <a href="#">GET STARTED</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header> -->
     <!-- ========== Navbar end ========== -->
     <!-- ========== Hero Section Start ========== -->
-    <section id="hero" class="hero p-150px-t lg-p-100px-t md-p-0px-b p-100px-b">
+    <section
+      id="hero2"
+      class="hero-2 p-100px-t lg-p-100px-t md-p-0px-b p-100px-b"
+    >
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-6">
-            <div class="hero__content">
-              <h1 class="display-4 m-30px-b text-capitalize">
-                Take Control of your Project and Team
-              </h1>
-              <p class="fs-4 m-50px-b md-m-30px-b">
-                The one place for all your projects, team collaboration &amp;
-                client management
-              </p>
-              <div class="d-sm-flex gap-4">
-                <a href="#" class="btn-primary"><span>Get started now</span></a>
-                <a
-                  href="#"
-                  type="button"
-                  class="btn-secondary video-btn"
-                  data-bs-toggle="modal"
-                  data-src="https://www.youtube.com/embed/IP7uGKgJL8U"
-                  data-bs-target="#heroModal"
-                  ><span><i class="icofont-play-alt-2"></i> Watch Demo</span></a
-                >
-              </div>
+          <div class="hero-2__content">
+            <h1 class="display-4 m-30px-b text-capitalize">
+              Take Control of your Project and Team
+            </h1>
+            <p class="fs-4 m-50px-b md-m-30px-b">
+              The one place for all your projects, team collaboration &amp;
+              client management
+            </p>
+            <div class="d-sm-flex justify-content-center gap-4">
+              <a href="#" class="btn-primary"><span>Get started now</span></a>
+              <a
+                href="#"
+                type="button"
+                class="btn-secondary video-btn"
+                data-bs-toggle="modal"
+                data-src="https://www.youtube.com/embed/IP7uGKgJL8U"
+                data-bs-target="#heroModal"
+                ><span><i class="icofont-play-alt-2"></i> Watch Demo</span></a
+              >
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="hero__image">
-              <div class="hero__image__overlay"></div>
-              <div class="hero__image__area">
-                <img src="assets/images/hero.png" alt="Hero Image" />
-              </div>
-            </div>
+          <div class="hero-2__image">
+              <img src="assets/images/hero4.png" alt="laptop image" >
           </div>
         </div>
         <div class="modal fade" id="heroModal">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-body">
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-                <div class="ratio ratio-16x9">
-                  <iframe
-                    class="embed-responsive-item"
-                    id="video"
-                    allow="autoplay"
-                  ></iframe>
-                </div>
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="ratio ratio-16x9">
+                <iframe class="embed-responsive-item" id="video" allow="autoplay"></iframe>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="hero__shape">
-        <img src="assets/images/shape.svg" alt="Hero shape" />
       </div>
+      <div class="hero-2__shape-1">
+        <img src="assets/images/box-1.svg" alt="Hero shape">
+      </div>
+      <div class="hero-2__shape-2">
+        <img src="assets/images/dots.svg" alt="Hero shape">
+      </div>
+      <!-- <div class="hero-2__shape-3">
+        <img src="assets/images/shape_49.svg" alt="Hero shape">
+      </div> -->
+     
     </section>
     <!-- ========== Hero Section End ========== -->
     <!-- ========== How it works section start ========== -->
@@ -451,7 +395,7 @@
       <!-- ========== Services section start ========== -->
       <div class="services m-80px-t container">
         <div class="row">
-          <div class="col-md-6 mb-3 mb-xl-0 col-xl-3">
+          <div class="col-md-6 mb-4 mb-xl-0 col-xl-3">
             <div class="card">
               <div class="card-body px-4 pt-4 pb-2">
                 <h5 class="pb-3 pt-2">Easy to <span>Mange</span></h5>
@@ -465,7 +409,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 mb-3 mb-xl-0 col-xl-3">
+          <div class="col-md-6 mb-4 mb-xl-0 col-xl-3">
             <div class="card">
               <div class="card-body px-4 pt-4 pb-2">
                 <h5 class="pb-3 pt-2"><span>Detailed</span> Data report</h5>
@@ -479,7 +423,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 mb-3 mb-md-0 mb-xl-0 col-xl-3">
+          <div class="col-md-6 mb-4 mb-md-0 mb-xl-0 col-xl-3">
             <div class="card">
               <div class="card-body px-4 pt-4 pb-2">
                 <h5 class="pb-3 pt-2">
@@ -541,7 +485,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-4 mb-3 mb-lg-0">
+          <div class="col-lg-4 mb-4 mb-lg-0">
             <div class="pricing-one__single">
               <div class="pricing__values">
                 <div class="pricing__value pricing__value--show">
@@ -585,7 +529,7 @@
               <span class="pricing-one__tag-line">No hidden charges</span>
             </div>
           </div>
-          <div class="col-lg-4 mb-3 mb-lg-0">
+          <div class="col-lg-4 mb-4 mb-lg-0">
             <div class="pricing-one__single popular">
               <div class="pricing__values">
                 <div class="pricing__value pricing__value--show">
@@ -695,7 +639,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-12 col-sm-6 mb-3 mb-lg-0 col-lg-3 fun-fact__box">
+          <div class="col-12 col-sm-6 mb-4 mb-lg-0 col-lg-3 fun-fact__box">
             <div class="card fun-fact__card p-30px-tb">
               <div class="fun-fact__card-body">
                 <i class="icofont-airplane"></i>
@@ -707,7 +651,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 mb-3 mb-lg-0 col-lg-3 fun-fact__box">
+          <div class="col-12 col-sm-6 mb-4 mb-lg-0 col-lg-3 fun-fact__box">
             <div class="card fun-fact__card p-30px-tb">
               <div class="fun-fact__card-body">
                 <i class="icofont-brand-delicious"></i>
@@ -719,7 +663,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 mb-3 mb-lg-0 col-lg-3 fun-fact__box">
+          <div class="col-12 col-sm-6 mb-4 mb-lg-0 col-lg-3 fun-fact__box">
             <div class="card fun-fact__card p-30px-tb">
               <div class="fun-fact__card-body">
                 <i class="icofont-dice"></i>
@@ -731,7 +675,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 mb-3 mb-lg-0 col-lg-3 fun-fact__box">
+          <div class="col-12 col-sm-6 mb-4 mb-lg-0 col-lg-3 fun-fact__box">
             <div class="card fun-fact__card p-30px-tb">
               <div class="fun-fact__card-body">
                 <i class="icofont-cube"></i>
@@ -862,7 +806,7 @@
     <section class="cta section-padding bg-color-1" id="cta">
       <div class="container">
         <div class="row align-items-center text-center-xs">
-          <div class="col-12 col-md-6 mb-3 mb-md-0">
+          <div class="col-12 col-md-6 mb-4 mb-md-0">
             <img
               class="img-fluid"
               src="assets/images/target.svg"
@@ -902,7 +846,7 @@
           </div>
         </div>
         <div class="row align-items-center">
-          <div class="col-lg-4 mb-3 mb-lg-0">
+          <div class="col-lg-4 mb-4 mb-lg-0">
             <img
               src="assets/images/faq.svg"
               alt=""
@@ -1092,7 +1036,7 @@
       <div class="container">
         <div class="footer__newsletter">
           <div class="row align-items-center">
-            <div class="col-md-6 mb-3 mb-md-0">
+            <div class="col-md-6 mb-4 mb-md-0">
               <h4 class="m-0 fs-4 fw-bold">
                 Want to Get Product Updates From Us?
               </h4>
@@ -1149,7 +1093,7 @@
         </div>
         <hr class="m-45px-tb md-m-30px-tb" />
         <div class="row footer__content">
-          <div class="col-lg-4 mb-3 mb-lg-0 footer__content__fast">
+          <div class="col-lg-4 mb-4 mb-lg-0 footer__content__fast">
             <h3 class="widget-title">About us</h3>
             <p class="m-20px-b">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -1231,7 +1175,6 @@
       </div>
     </footer>
     <!-- ========== Footer section end ========== -->
-
     <!--====== jquery js ======-->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery-migrate-3.0.0.min.js"></script>
@@ -1245,8 +1188,6 @@
     <script src="assets/js/jquery.counterup.min.js"></script>
     <!--====== Ajaxchimp js ======-->
     <script src="assets/js/jquery.ajaxchimp.min.js"></script>
-    <!--====== Navbar js ======-->
-    <script src="assets/js/navbar.js"></script>
     <!--====== Custom js ======-->
     <script src="assets/js/custom.js"></script>
   </body>
