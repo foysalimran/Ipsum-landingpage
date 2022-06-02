@@ -75,3 +75,14 @@
     }
   }
 }
+
+.overview-v3 {
+  .overview__content {
+    &:not(:first-child) {
+      padding-top: 20px;
+    }
+    &:not(:last-child) {
+      padding-bottom: 20px;
+    }
+  }
+}

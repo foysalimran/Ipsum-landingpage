@@ -454,6 +454,12 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px; }
 
+.overview-v3 .overview__content:not(:first-child) {
+  padding-top: 20px; }
+
+.overview-v3 .overview__content:not(:last-child) {
+  padding-bottom: 20px; }
+
 .btn-primary {
   position: relative;
   display: inline-block;
@@ -1117,6 +1123,12 @@ body {
       .testi-row .testi-card__quotation i {
         font-size: 45px;
         color: #b4c7ff; }
+    .testi-row .testi-card__user-info {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .testi-row .testi-card__user-info img {
+        margin-right: 20px; }
 
 .cta__about--subtitle {
   text-transform: uppercase;
@@ -1362,6 +1374,17 @@ body {
   .hero-2__image img {
     width: 100%;
     padding: 40px; }
+  .hero-2 .modal-dialog {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px; }
+  .hero-2 .modal-body {
+    position: relative;
+    padding: 0px; }
+  .hero-2 .btn-close {
+    position: absolute;
+    right: -30px;
+    top: 0; }
 
 .banner-one__shape-1 {
   background-image: url(../images/box-1.svg);
@@ -1600,6 +1623,25 @@ body {
       margin: auto;
       max-width: 100%; }
 
+.nav-tabs .nav-item {
+  float: left;
+  position: relative;
+  margin-right: -1px; }
+
+.nav-tabs .nav-link {
+  float: left;
+  padding: 6px 25px;
+  text-decoration: none;
+  color: #1d1d1d; }
+  @media only screen and (max-width: 767px) {
+    .nav-tabs .nav-link {
+      padding: 5px; } }
+
+.nav-tabs .nav-item:before, .nav-tabs .nav-item:after,
+.nav-tabs .nav-link:before, .nav-tabs .nav-link:after {
+  position: absolute;
+  bottom: 0; }
+
 .faqs-accordion-2 .accordion-item {
   border-bottom: none;
   margin-bottom: 12px;
@@ -1653,6 +1695,46 @@ body {
       width: 100px;
       border-radius: 50%; }
 
-.hero-3__image {
-  margin-left: -220px;
-  padding-top: 80px; }
+.hero-3 {
+  position: relative;
+  overflow: hidden;
+  background-color: #f4f7fb; }
+  .hero-3__image {
+    margin-left: -220px;
+    padding-top: 80px; }
+  @media only screen and (max-width: 1199px) {
+    .hero-3__content {
+      max-width: 700px;
+      margin: 0 auto 50px auto; } }
+  .hero-3 .modal-dialog {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px; }
+  .hero-3 .modal-body {
+    position: relative;
+    padding: 0px; }
+  .hero-3 .btn-close {
+    position: absolute;
+    right: -30px;
+    top: 0; }
+  .hero-3__shape-1 {
+    background-image: url(../images/shape_13.svg);
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    top: 20%;
+    left: 50%;
+    position: absolute;
+    -webkit-animation-duration: 7s;
+    animation-duration: 7s;
+    -webkit-perspective: 85px;
+    perspective: 85px;
+    -webkit-animation-name: bubbleMover;
+    animation-name: bubbleMover;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite; }
+    @media only screen and (max-width: 1199px) {
+      .hero-3__shape-1 {
+        display: none; } }

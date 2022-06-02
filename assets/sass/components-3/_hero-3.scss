@@ -1,8 +1,53 @@
 .hero-3{
-
+    position: relative;
+    overflow: hidden;
+    background-color: $bg-color-1;
     &__image{
         margin-left: -220px;
         padding-top: 80px
     }
-
+    &__content {
+        @include respond(desktop) {
+            max-width: 700px;
+            margin: 0 auto 50px auto;
+            
+        }
+    }
+    .modal-dialog {
+        max-width: 800px;
+        margin: 30px auto;
+        padding: 0 20px;
+      }
+    
+      .modal-body {
+        position: relative;
+        padding: 0px;
+      }
+      .btn-close {
+        position: absolute;
+        right: -30px;
+        top: 0;
+      }
+      &__shape-1 {
+        background-image: url(../images/shape_13.svg);
+        background-size: cover;
+        width: 150px;
+        height: 150px;
+        top: 20%;
+        left: 50%;
+        position: absolute;
+        -webkit-animation-duration: 7s;
+        animation-duration: 7s;
+        -webkit-perspective: 85px;
+        perspective: 85px;
+        -webkit-animation-name: bubbleMover;
+        animation-name: bubbleMover;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        @include respond(desktop) {
+            display: none;
+        }
+      }
 }
