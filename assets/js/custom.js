@@ -298,7 +298,7 @@
   /******************** WINDOW ON SCROLL FUNCTION ********************/
   $(window).on("scroll", function () {
     PATH.HeaderFixed();
-    PATH.NavbarAddClass();
+    // PATH.NavbarAddClass();
     PATH.OverviewAddClass();
   });
 

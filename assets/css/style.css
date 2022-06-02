@@ -754,7 +754,7 @@ body {
         transition: color 0.2s linear; }
         .menu > .nav-item.submenu .dropdown-menu .nav-item .nav-link:after {
           display: none; }
-      .menu > .nav-item.submenu .dropdown-menu .nav-item:hover > .nav-link, .menu > .nav-item.submenu .dropdown-menu .nav-item:focus > .nav-link, .menu > .nav-item.submenu .dropdown-menu .nav-item.current > .nav-link {
+      .menu > .nav-item.submenu .dropdown-menu .nav-item:hover > .nav-link, .menu > .nav-item.submenu .dropdown-menu .nav-item:focus > .nav-link, .menu > .nav-item.submenu .dropdown-menu .nav-item.active > .nav-link {
         color: #6592fd; }
       .menu > .nav-item.submenu .dropdown-menu .nav-item > .dropdown-menu {
         transition: transform 0.3s ease-in; }
@@ -770,9 +770,9 @@ body {
             visibility: hidden;
             transform: translateY(20px);
             transition: all 0.3s ease-in; } }
-  .menu > .nav-item.current {
+  .menu > .nav-item .active {
     border-bottom: 3px solid #6592fd; }
-    .menu > .nav-item.current .nav-link {
+    .menu > .nav-item .active .nav-link {
       color: #6592fd; }
   .menu > .nav-item:hover {
     border-bottom: 3px solid #6592fd; }
@@ -804,10 +804,10 @@ body {
   transition: width 0.3s; }
 
 @media (min-width: 992px) {
-  .menu_white .menu > .nav-item:hover .nav-link, .menu_white .menu > .nav-item.current .nav-link {
+  .menu_white .menu > .nav-item:hover .nav-link, .menu_white .menu > .nav-item.active .nav-link {
     color: #fff; } }
 
-.menu_white .menu > .nav-item:hover .nav-link:before, .menu_white .menu > .nav-item.current .nav-link:before {
+.menu_white .menu > .nav-item:hover .nav-link:before, .menu_white .menu > .nav-item.active .nav-link:before {
   width: 100%; }
 
 .menu_white .navbar-toggler span {
@@ -829,7 +829,7 @@ body {
     transition: all 0.2s linear; }
   .navbar.navbar_fixed.menu_white .menu > .nav-item > .nav-link {
     color: #1b1f41; }
-  .navbar.navbar_fixed.menu_white .menu > .nav-item:hover > .nav-link, .navbar.navbar_fixed.menu_white .menu > .nav-item.current > .nav-link {
+  .navbar.navbar_fixed.menu_white .menu > .nav-item:hover > .nav-link, .navbar.navbar_fixed.menu_white .menu > .nav-item.active > .nav-link {
     color: #6592fd; }
   .navbar.navbar_fixed.menu_white .navbar-toggler span {
     background: #475668; }

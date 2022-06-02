@@ -100,7 +100,7 @@
           }
           &:hover,
           &:focus,
-          &.current {
+          &.active {
             > .nav-link {
               color: $color-secondary;
             }
@@ -126,7 +126,7 @@
       }
     }
 
-    &.current {
+    .active {
       border-bottom: 3px solid $color-secondary;
       .nav-link {
         color: $color-secondary;
@@ -178,7 +178,7 @@
         }
       }
       &:hover,
-      &.current {
+      &.active {
         .nav-link {
           @media (min-width: 992px) {
             color: #fff;
@@ -222,7 +222,7 @@
         color: #1b1f41;
       }
       &:hover,
-      &.current {
+      &.active {
         > .nav-link {
           color: $color-secondary;
         }
