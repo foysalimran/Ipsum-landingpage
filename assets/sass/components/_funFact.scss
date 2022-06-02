@@ -49,3 +49,37 @@
     }
   }
 }
+
+.fun-fact-2__item {
+  position: relative;
+  &__dot-1 {
+    top: 20px;
+    left: 60px;
+  }
+  &__dot-2 {
+    left: 110px;
+    top: 150px;
+  }
+  &__dot-3 {
+    right: 70px;
+    top: 95px;
+  }
+}
+
+[class*=fun-fact-2__item__dot-] {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: $color-primary;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: dotsAnim;
+  animation-name: dotsAnim;
+  -webkit-animation-timing-function: cubic-bezier(.39,.58,.57,1);
+  animation-timing-function: cubic-bezier(.39,.58,.57,1);
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}

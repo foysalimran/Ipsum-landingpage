@@ -93,6 +93,41 @@ $breakpoint argument choices:
     opacity: 1;
     transform: translateX(0); } }
 
+@keyframes dotsAnim {
+  0% {
+    opacity: 0;
+    transform: translateX(50px); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(50px); } }
+
+@keyframes bubbleMover {
+  0% {
+    -webkit-transform: translateY(0px) translateX(0) rotate(0);
+    transform: translateY(0px) translateX(0) rotate(0); }
+  30% {
+    -webkit-transform: translateY(30px) translateX(50px) rotate(15deg);
+    transform: translateY(30px) translateX(50px) rotate(15deg);
+    -webkit-transform-origin: center center;
+    transform-origin: center center; }
+  50% {
+    -webkit-transform: translateY(50px) translateX(100px) rotate(45deg);
+    transform: translateY(50px) translateX(100px) rotate(45deg);
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom; }
+  80% {
+    -webkit-transform: translateY(30px) translateX(50px) rotate(15deg);
+    transform: translateY(30px) translateX(50px) rotate(15deg);
+    -webkit-transform-origin: left top;
+    transform-origin: left top; }
+  100% {
+    -webkit-transform: translateY(0px) translateX(0) rotate(0);
+    transform: translateY(0px) translateX(0) rotate(0);
+    -webkit-transform-origin: center center;
+    transform-origin: center center; } }
+
 body {
   font-family: "Poppins", sans-serif;
   line-height: 1.5;
@@ -1136,6 +1171,35 @@ body {
         .fun-fact__card-body h4 {
           font-size: 40px; } }
 
+.fun-fact-2__item {
+  position: relative; }
+  .fun-fact-2__item__dot-1 {
+    top: 20px;
+    left: 60px; }
+  .fun-fact-2__item__dot-2 {
+    left: 110px;
+    top: 150px; }
+  .fun-fact-2__item__dot-3 {
+    right: 70px;
+    top: 95px; }
+
+[class*=fun-fact-2__item__dot-] {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #6365f1;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: dotsAnim;
+  animation-name: dotsAnim;
+  -webkit-animation-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);
+  animation-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
+
 .footer {
   background-color: #1d1d1d;
   color: #fff; }
@@ -1273,24 +1337,6 @@ body {
 .hero-2 {
   position: relative;
   overflow: hidden; }
-  .hero-2__shape-1 {
-    position: absolute;
-    top: 140px;
-    left: 200px;
-    z-index: -1; }
-    @media only screen and (max-width: 1400px) {
-      .hero-2__shape-1 {
-        left: 70px; } }
-    @media only screen and (max-width: 1199px) {
-      .hero-2__shape-1 {
-        left: 80px; } }
-    @media only screen and (max-width: 991px) {
-      .hero-2__shape-1 {
-        top: 370px;
-        left: 60px; } }
-    @media only screen and (max-width: 767px) {
-      .hero-2__shape-1 {
-        display: none; } }
   .hero-2__shape-2 {
     position: absolute;
     top: 300px;
@@ -1313,9 +1359,30 @@ body {
     max-width: 750px;
     margin: 0 auto;
     text-align: center; }
-  .hero-2__image {
-    max-width: 1000px;
-    margin: 0 auto; }
+  .hero-2__image img {
+    width: 100%;
+    padding: 40px; }
+
+.banner-one__shape-3 {
+  background-image: url(../images/box-1.svg);
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  top: 20%;
+  left: 10%;
+  -webkit-animation-duration: 7s;
+  animation-duration: 7s;
+  -webkit-perspective: 85px;
+  perspective: 85px; }
+
+[class*=banner-one__shape-] {
+  position: absolute;
+  -webkit-animation-name: bubbleMover;
+  animation-name: bubbleMover;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
 
 .pricing-2__section-title {
   font-size: 70px;
@@ -1568,6 +1635,23 @@ body {
   .faqs-accordion-2 .accordion-item .accordion-header .accordion-button:not(.collapsed) {
     background-image: linear-gradient(to right, #6365f1, #6592fd);
     color: #fff; }
+
+.testi-row-2 {
+  overflow: hidden; }
+  .testi-row-2 .clients-slider-2 {
+    padding: 0 0 50px 0; }
+  .testi-row-2 .swiper-pagination-2-bullet {
+    background-color: #6592fd;
+    opacity: 0.3; }
+    .testi-row-2 .swiper-pagination-2-bullet-active {
+      opacity: 1; }
+  .testi-row-2 .testi-card {
+    border: none;
+    box-shadow: 0px 4px 6px 0px rgba(1, 6, 33, 0.08);
+    text-align: center; }
+    .testi-row-2 .testi-card img {
+      width: 100px;
+      border-radius: 50%; }
 
 .hero-3__image {
   margin-left: -220px;
