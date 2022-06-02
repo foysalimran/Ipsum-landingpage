@@ -1,0 +1,20 @@
+.cta-2 {
+    &__about {
+      &--subtitle {
+        text-transform: uppercase;
+        color: $color-secondary;
+      }
+      &--title {
+        text-transform: capitalize;
+      }
+      &--details {
+        line-height: 1.8;
+        margin-top: 20px;
+        margin-bottom: 30px;
+      }
+      @include respond(phone) {
+        text-align: center;
+      }
+    }
+  }
+  
