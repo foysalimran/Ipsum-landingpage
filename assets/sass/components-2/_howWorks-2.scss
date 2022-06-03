@@ -70,13 +70,14 @@
     }
   }
 
+.nav-tabs {
+  justify-content: center;
+}
+
 .nav-tabs .nav-item {
-  float: left;
-  position: relative ;
   margin-right: -1px;
 }
 .nav-tabs .nav-link {
-  float: left;
   padding: 6px 25px;
   text-decoration: none;
   color: $color-dark;
@@ -84,10 +85,3 @@
     padding: 5px;
   }
 }
-
-.nav-tabs .nav-item:before, .nav-tabs .nav-item:after, 
-.nav-tabs .nav-link:before, .nav-tabs .nav-link:after {
-  position: absolute;
-  bottom: 0;
-}
-
