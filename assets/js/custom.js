@@ -172,6 +172,17 @@
         });
     };
 
+    /******************** 9. PRICING-3 TOGGLER ********************/
+    PATH.PricingToggler3 = function() {
+        $(".switcher-3__button").on("click", function(e) {
+            $(".switcher-3__button").toggleClass("switcher-3__button--enabled");
+            $(".pricing-3__value").removeClass("pricing-3__value--hidden");
+            $(".pricing-3__value").toggleClass(
+                "pricing-3__value--show pricing-3__value--hide"
+            );
+        });
+    };
+
     /******************** 10. HOW IT WORKS SLIDER ********************/
     PATH.HowWorksSlide = function() {
         var howWorksTitles = new Swiper(".how-works-titles", {
@@ -286,6 +297,7 @@
         PATH.HeaderSticky();
         PATH.HeroVideo();
         PATH.PricingToggler();
+        PATH.PricingToggler3();
         PATH.HowWorksSlide();
         PATH.TestimonialSlide();
         PATH.CounterUp();
