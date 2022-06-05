@@ -1,0 +1,80 @@
+.hero-2 {
+  position: relative;
+  overflow: hidden;
+  &__shape-2 {
+    position: absolute;
+    top: 300px;
+    right: 240px;
+    z-index: -1;
+
+    @include respond(big-desktop) {
+        right: 150px;
+    }
+
+    @include respond(desktop) {
+        top: 350px;
+    right: 120px;
+    }
+    @include respond(laptop) {
+        // top: 350px;
+    right: 50px;
+    }
+
+    @include respond(tablet) {
+        display: none;
+    }
+   
+  }
+  &__content {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__image {
+    img {
+      width: 100%;
+      padding: 40px;
+    }
+  }
+  .modal-dialog {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+  }
+
+  .modal-body {
+    position: relative;
+    padding: 0px;
+  }
+  .btn-close {
+    position: absolute;
+    right: -30px;
+    top: 0;
+  }
+}
+
+
+.banner-one__shape-1 {
+  background-image: url(../images/box-1.svg);
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  top: 20%;
+  left: 10%;
+  -webkit-animation-duration: 7s;
+  animation-duration: 7s;
+  -webkit-perspective: 85px;
+  perspective: 85px;
+}
+
+[class*=banner-one__shape-] {
+  position: absolute;
+  // border-radius: 50%;
+  -webkit-animation-name: bubbleMover;
+  animation-name: bubbleMover;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
