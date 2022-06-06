@@ -68,4 +68,16 @@
       }
     }
   }
+
+
+  
+}
+  // v3
+.test {
+  .nav-link {
+    color: $color-dark;
+  }
+  .nav-tabs .nav-link.active {
+    color: $color-primary;
+  }
 }

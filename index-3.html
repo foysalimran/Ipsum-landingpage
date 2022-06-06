@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <!--====== Icofont css ======-->
     <link rel="stylesheet" href="assets/css/icofont.min.css" />
+    <!--====== Modal video css ======-->
+    <link rel="stylesheet" href="assets/css/modal-video.min.css" />
     <!--====== Margins & Paddings css ======-->
     <link rel="stylesheet" href="assets/css/margin-paddings.css" />
     <!--====== swiper css ======-->
@@ -35,13 +37,15 @@
     <header>
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="index.html">
             <h1 class="m-0">IPSUM</h1>
           </a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul id="navbar01" class="navbar-nav menu me-lg-auto">
-              <li class="nav-item dropdown submenu current">
-                <a class="nav-link dropdown-toggle" href="#hero">Home</a>
+            <ul id="onepage-nav" class="navbar-nav menu me-lg-auto">
+              <li class="nav-item dropdown submenu">
+                <a class="nav-link active scroll dropdown-toggle" href="#hero"
+                  >Home</a
+                >
                 <i class="ti-angle-down mobile_dropdown_icon"></i>
                 <ul class="dropdown-menu">
                   <li class="nav-item">
@@ -56,16 +60,19 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link scroll" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#overview">Overview</a>
+                <a class="nav-link scroll" href="#overview">Overview</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#pricing">Pricing</a>
+                <a class="nav-link scroll" href="#pricing">Pricing</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link scroll" href="#testimonial">Testimonial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link scroll" href="#faq">FAQ</a>
               </li>
             </ul>
             <div class="nav_right">
@@ -90,53 +97,13 @@
         </div>
       </nav>
     </header>
-    <!-- <header class="header header--sticky">
-      <div class="header__content header__content--fix-width">
-        <div class="header__logo-title">LATERAL</div>
-        <nav class="header__menu sticky">
-          <div class="menu-button"></div>
-          <ul>
-            <li><a class="header-link" href="#hero">HOME</a></li>
-            <li class="menu-item-has-children">
-              <span class="submenu-button"></span
-              ><a href="#overview" class="header-link">overview</a>
-              <ul class="sub-menu submenu-header-sticky">
-                <li><a href="#about" class="header-link">OUR PRODUCTS</a></li>
-                <li><a href="#hiw" class="header-link">HOW IT WORKS</a></li>
-                <li><a href="#clients" class="header-link">OUR CLIENTS</a></li>
-                <li>
-                  <a href="#testimonials" class="header-link">TESTIMONIALS</a>
-                </li>
-                <li><a href="#support" class="header-link">SUPPORT</a></li>
-              </ul>
-            </li>
-            <li><a href="#pricing" class="header-link">PRICING</a></li>
-            <li><a href="#about" class="header-link">about</a></li>
-            <li
-              class="header__btn header__btn--login modal-toggle"
-              data-openpopup="signuplogin"
-              data-popup="login"
-            >
-              <a href="#">LOGIN</a>
-            </li>
-            <li
-              class="header__btn header__btn--signup modal-toggle"
-              data-openpopup="signuplogin"
-              data-popup="signup"
-            >
-              <a href="#">GET STARTED</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header> -->
-    <!-- ========== Navbar end ========== -->
+    <!-- ========== Navbar End ========== -->
     <!-- ========== Hero Section Start ========== -->
-    <section id="hero" class="hero-3 lg-p-100px-t">
+    <section id="hero" class="hero lg-p-100px-t">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 col-xl-7">
-            <div class="hero-3__content text-center text-xl-start">
+            <div class="hero__content text-center text-xl-start">
               <h1 class="display-4 m-30px-b text-capitalize">
                 Take Control of your Project and Team
               </h1>
@@ -150,18 +117,15 @@
                 <a href="#" class="btn-primary"><span>Get started now</span></a>
                 <a
                   href="#"
-                  type="button"
-                  class="btn__secondary video-btn"
-                  data-bs-toggle="modal"
-                  data-src="https://www.youtube.com/embed/IP7uGKgJL8U"
-                  data-bs-target="#heroModal"
+                  class="btn__secondary js-modal-btn"
+                  data-video-id="20QUNgFIrK0"
                   ><span><i class="icofont-play-alt-2"></i> Watch Demo</span></a
                 >
               </div>
             </div>
           </div>
           <div class="d-none d-xl-block col-lg-5">
-            <div class="hero-3__image">
+            <div class="hero-v3__image">
               <img class="" src="assets//images/hero-5.png" alt="" />
             </div>
           </div>
@@ -188,7 +152,7 @@
           </div>
         </div>
       </div>
-      <span class="hero-3__shape-1"></span>
+      <span class="hero-v3__shape-1"></span>
     </section>
     <!-- ========== Hero Section End ========== -->
 
@@ -262,7 +226,7 @@
               >
             </li>
           </ul>
-          <div class="tab-content">
+          <div class="tab-content how-works-content__slide">
             <div
               class="tab-pane active"
               id="home"
@@ -287,7 +251,7 @@
                     cupidatat non proident, sunt in culpa qui officia deserunt.
                   </p>
                   <div
-                    class="d-flex align-items-center how-works-2-content__slide__text"
+                    class="d-flex align-items-center how-works-content__slide__text"
                   >
                     <i class="icofont-chart-histogram"></i>
                     <div>
@@ -299,7 +263,7 @@
                     </div>
                   </div>
                   <div
-                    class="d-flex align-items-center how-works-2-content__slide__text"
+                    class="d-flex align-items-center how-works-content__slide__text"
                   >
                     <i class="icofont-calendar"></i>
                     <div>
@@ -330,7 +294,7 @@
                     cupidatat non proident, sunt in culpa qui officia deserunt.
                   </p>
                   <div
-                    class="d-flex align-items-center how-works-2-content__slide__text"
+                    class="d-flex align-items-center how-works-content__slide__text"
                   >
                     <i class="icofont-chart-histogram"></i>
                     <div>
@@ -342,7 +306,7 @@
                     </div>
                   </div>
                   <div
-                    class="d-flex align-items-center how-works-2-content__slide__text"
+                    class="d-flex align-items-center how-works-content__slide__text"
                   >
                     <i class="icofont-calendar"></i>
                     <div>
@@ -355,12 +319,12 @@
                   </div>
                 </div>
                 <div class="col-lg-6 mb-4 mb-xl-0 order-1 order-lg-0">
-                    <img
-                      class="img-fluid"
-                      src="assets/images/how-it-2.png"
-                      alt="slide image-2"
-                    />
-                  </div>
+                  <img
+                    class="img-fluid"
+                    src="assets/images/how-it-2.png"
+                    alt="slide image-2"
+                  />
+                </div>
               </div>
             </div>
             <div
@@ -387,7 +351,7 @@
                     cupidatat non proident, sunt in culpa qui officia deserunt.
                   </p>
                   <div
-                    class="d-flex align-items-center how-works-2-content__slide__text"
+                    class="d-flex align-items-center how-works-content__slide__text"
                   >
                     <i class="icofont-chart-histogram"></i>
                     <div>
@@ -399,7 +363,7 @@
                     </div>
                   </div>
                   <div
-                    class="d-flex align-items-center how-works-2-content__slide__text"
+                    class="d-flex align-items-center how-works-content__slide__text"
                   >
                     <i class="icofont-calendar"></i>
                     <div>
@@ -420,7 +384,6 @@
               aria-labelledby="settings-tab"
             >
               <div class="row align-items-center">
-            
                 <div class="col-lg-6 order-2 order-lg-0">
                   <h2 class="m-20px-b">The Easiest Possible Integration</h2>
                   <p class="lh-lg m-20px-b">
@@ -431,7 +394,7 @@
                     cupidatat non proident, sunt in culpa qui officia deserunt.
                   </p>
                   <div
-                    class="d-flex align-items-center how-works-2-content__slide__text"
+                    class="d-flex align-items-center how-works-content__slide__text"
                   >
                     <i class="icofont-chart-histogram"></i>
                     <div>
@@ -443,7 +406,7 @@
                     </div>
                   </div>
                   <div
-                    class="d-flex align-items-center how-works-2-content__slide__text"
+                    class="d-flex align-items-center how-works-content__slide__text"
                   >
                     <i class="icofont-calendar"></i>
                     <div>
@@ -456,12 +419,12 @@
                   </div>
                 </div>
                 <div class="col-lg-6 mb-4 mb-xl-0 order-1 order-lg-0">
-                    <img
-                      class="img-fluid"
-                      src="assets/images/how-it-4.png"
-                      alt="slide image-4"
-                    />
-                  </div>
+                  <img
+                    class="img-fluid"
+                    src="assets/images/how-it-4.png"
+                    alt="slide image-4"
+                  />
+                </div>
               </div>
             </div>
             <div
@@ -488,7 +451,7 @@
                     cupidatat non proident, sunt in culpa qui officia deserunt.
                   </p>
                   <div
-                    class="d-flex align-items-center how-works-2-content__slide__text"
+                    class="d-flex align-items-center how-works-content__slide__text"
                   >
                     <i class="icofont-chart-histogram"></i>
                     <div>
@@ -500,7 +463,7 @@
                     </div>
                   </div>
                   <div
-                    class="d-flex align-items-center how-works-2-content__slide__text"
+                    class="d-flex align-items-center how-works-content__slide__text"
                   >
                     <i class="icofont-calendar"></i>
                     <div>
@@ -603,25 +566,6 @@
             </div>
           </div>
         </div>
-        <!-- <div class="row">
-          <div class="overview__sidebar col-lg-3">
-            <ul id="nav" class="overview__sidebar--items">
-              <li class="current">
-                <a href="#overview-1">Control hub</a>
-              </li>
-              <li>
-                <a href="#overview-2">Time management</a>
-              </li>
-              <li>
-                <a href="#overview-3">Collaborative platform</a>
-              </li>
-              <li>
-                <a href="#overview-4">Save time and money</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-9"> -->
-        <!-- overview - 1  -->
         <div id="overview-1" class="overview__content row align-items-center">
           <div class="col-lg-5">
             <div class="text-center">
@@ -785,7 +729,7 @@
     </section>
     <!-- ========== Overview Section End ========== -->
     <!-- ========== Pricing section start ========== -->
-    <section class="pricing-3 section-padding" id="pricing">
+    <section class="pricing section-padding" id="pricing">
       <div class="container">
         <div class="row">
           <div
@@ -801,165 +745,31 @@
             </div>
           </div>
         </div>
-        <div class="pricing-3__switcher switcher-3 m-auto-all m-40px-b">
-          <div class="switcher-3__buttons">
-            <div class="switcher-3__button switcher-3__button--enabled">
+        <div class="pricing__switcher switcher m-auto-all m-40px-b">
+          <div class="switcher__buttons">
+            <div class="switcher__button switcher__button--enabled">
               Monthly
             </div>
-            <div class="switcher-3__button">Yearly</div>
-            <div class="switcher-3__border"></div>
+            <div class="switcher__button">Yearly</div>
+            <div class="switcher__border"></div>
           </div>
         </div>
-        <!-- <div class="row">
-          <div class="col-lg-4 mb-3 mb-lg-0">
-            <div class="pricing-3-one__single">
-              <div class="pricing-3__values">
-                <div class="pricing-3__value pricing-3__value--show">
-                  <span>$</span>0 <b>/ Free</b>
-                </div>
-                <div
-                  class="pricing-3__value pricing-3__value--hide pricing-3__value--hidden"
-                >
-                  <span>$</span>0 <b>/ Free</b>
-                </div>
-              </div>
-              <ul class="pricing-3-one__list">
-                <li><i class="icofont-check-circled"></i>Unlimited projects</li>
-                <li>
-                  <i class="icofont-check-circled"></i>Unlimited team members
-                </li>
-                <li>
-                  <i class="icofont-check-circled"></i>Task list & task board
-                </li>
-                <li>
-                  <i class="icofont-check-circled"></i>Contact and customers
-                  data
-                </li>
-                <li>
-                  <i class="icofont-check-circled"></i>Invoice and receipts
-                </li>
-                <li>
-                  <i class="icofont-close-circled"></i>Bills for each projects
-                </li>
-                <li><i class="icofont-close-circled"></i>Membership plan</li>
-                <li>
-                  <i class="icofont-close-circled"></i>Summary financial report
-                </li>
-                <li>
-                  <i class="icofont-close-circled"></i> Detailed work reports
-                </li>
-              </ul>
-              <a href="#" class="btn-primary m-25px-t m-10px-b"
-                ><span>Choose Plan</span></a
-              >
-              <span class="pricing-3-one__tag-line">No hidden charges</span>
-            </div>
-          </div>
-          <div class="col-lg-4 mb-3 mb-lg-0">
-            <div class="pricing-3-one__single popular">
-              <div class="pricing-3__values">
-                <div class="pricing-3__value pricing-3__value--show">
-                  <span>$</span>49<b>/Basic</b>
-                </div>
-                <div
-                  class="pricing-3__value pricing-3__value--hide pricing-3__value--hidden"
-                >
-                  <span>$</span>529 <b>/ Basic</b>
-                </div>
-              </div>
-              <ul class="pricing-3-one__list">
-                <li><i class="icofont-check-circled"></i>Unlimited projects</li>
-                <li>
-                  <i class="icofont-check-circled"></i>Unlimited team members
-                </li>
-                <li>
-                  <i class="icofont-check-circled"></i>Task list & task board
-                </li>
-                <li>
-                  <i class="icofont-check-circled"></i>Contact and customers
-                  data
-                </li>
-                <li>
-                  <i class="icofont-check-circled"></i>Invoice and receipts
-                </li>
-                <li>
-                  <i class="icofont-check-circled"></i>Bills for each projects
-                </li>
-                <li><i class="icofont-check-circled"></i>Membership plan</li>
-                <li>
-                  <i class="icofont-close-circled"></i>Summary financial report
-                </li>
-                <li>
-                  <i class="icofont-close-circled"></i> Detailed work reports
-                </li>
-              </ul>
-              <a href="#" class="btn-primary m-25px-t m-10px-b"
-                ><span>Choose Plan</span></a
-              >
-              <span class="pricing-3-one__tag-line">No hidden charges</span>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="pricing-3-one__single">
-              <div class="pricing-3__values">
-                <div class="pricing-3__value pricing-3__value--show">
-                  <span>$</span>99 <b>/ Pro</b>
-                </div>
-                <div
-                  class="pricing-3__value pricing-3__value--hide pricing-3__value--hidden"
-                >
-                  <span>$</span>900 <b>/ Pro</b>
-                </div>
-              </div>
-              <ul class="pricing-3-one__list">
-                <li><i class="icofont-check-circled"></i>Unlimited projects</li>
-                <li>
-                  <i class="icofont-check-circled"></i>Unlimited team members
-                </li>
-                <li>
-                  <i class="icofont-check-circled"></i>Task list & task board
-                </li>
-                <li>
-                  <i class="icofont-check-circled"></i>Contact and customers
-                  data
-                </li>
-                <li>
-                  <i class="icofont-check-circled"></i>Invoice and receipts
-                </li>
-                <li>
-                  <i class="icofont-check-circled"></i>Bills for each projects
-                </li>
-                <li><i class="icofont-check-circled"></i>Membership plan</li>
-                <li>
-                  <i class="icofont-check-circled"></i>Summary financial report
-                </li>
-                <li>
-                  <i class="icofont-check-circled"></i> Detailed work reports
-                </li>
-              </ul>
-              <a href="#" class="btn-primary m-25px-t m-10px-b"
-                ><span>Choose Plan</span></a
-              >
-              <span class="pricing-3-one__tag-line">No hidden charges</span>
-            </div>
-          </div>
-        </div> -->
         <div class="row">
           <div class="col-lg-4 mb-3 mb-lg-0">
-            <div class="pricing-3-one__single">
+            <div class="pricing-one__single">
               <h3><i class="icofont-leaf"></i>Free</h3>
               <p>perfect to get started</p>
-              <div class="pricing-3__values">
-                <div class="pricing-3__value pricing-3__value--show">
+              <div class="pricing__values">
+                <div class="pricing__value pricing__value--show">
                   <span>$</span>0 <b>per seat / month</b>
                 </div>
                 <div
-                  class="pricing-3__value pricing-3__value--hide pricing-3__value--hidden"
+                  class="pricing__value pricing__value--hide pricing__value--hidden"
                 >
                   <span>$</span>0 <b>per seat / year</b>
                 </div>
               </div>
-              <ul class="pricing-3-one__list">
+              <ul class="pricing-one__list">
                 <li>Lite includes:</li>
                 <li><i class="icofont-check-circled"></i>Unlimited projects</li>
                 <li>
@@ -976,28 +786,27 @@
                   <i class="icofont-check-circled"></i>Invoice and receipts
                 </li>
               </ul>
-              <span class="pricing-3-one__tag-line">See all features</span>
+              <span class="pricing-one__tag-line">See all features</span>
               <a href="#" class="btn-primary m-25px-t m-10px-b"
                 ><span>Try 7 day for free</span></a
               >
-
             </div>
           </div>
           <div class="col-lg-4 mb-3 mb-lg-0">
-            <div class="pricing-3-one__single popular">
+            <div class="pricing-one__single popular">
               <h3><i class="icofont-brand-android-robot"></i>Pro</h3>
               <p>Best for professionals</p>
-              <div class="pricing-3__values">
-                <div class="pricing-3__value pricing-3__value--show">
+              <div class="pricing__values">
+                <div class="pricing__value pricing__value--show">
                   <span>$</span>49<b>per seat / month</b>
                 </div>
                 <div
-                  class="pricing-3__value pricing-3__value--hide pricing-3__value--hidden"
+                  class="pricing__value pricing__value--hide pricing__value--hidden"
                 >
                   <span>$</span>529 <b>per seat / year</b>
                 </div>
               </div>
-              <ul class="pricing-3-one__list">
+              <ul class="pricing-one__list">
                 <li>Everything is lite, plus:</li>
                 <li><i class="icofont-check-circled"></i>Unlimited projects</li>
                 <li>
@@ -1014,28 +823,27 @@
                   <i class="icofont-check-circled"></i>Invoice and receipts
                 </li>
               </ul>
-              <span class="pricing-3-one__tag-line">See all features</span>
+              <span class="pricing-one__tag-line">See all features</span>
               <a href="#" class="btn-primary m-25px-t m-10px-b"
                 ><span>Get Started</span></a
               >
-
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="pricing-3-one__single">
+            <div class="pricing-one__single">
               <h3><i class="icofont-flash"></i>Ultimate</h3>
               <p>Toolset for hard players</p>
-              <div class="pricing-3__values">
-                <div class="pricing-3__value pricing-3__value--show">
+              <div class="pricing__values">
+                <div class="pricing__value pricing__value--show">
                   <span>$</span>99 <b>per seat / month</b>
                 </div>
                 <div
-                  class="pricing-3__value pricing-3__value--hide pricing-3__value--hidden"
+                  class="pricing__value pricing__value--hide pricing__value--hidden"
                 >
                   <span>$</span>900 <b>per seat / year</b>
                 </div>
               </div>
-              <ul class="pricing-3-one__list ps-0">
+              <ul class="pricing-one__list ps-0">
                 <li>Everything in pro, plus:</li>
                 <li><i class="icofont-check-circled"></i>Unlimited projects</li>
                 <li>
@@ -1052,7 +860,7 @@
                   <i class="icofont-check-circled"></i>Invoice and receipts
                 </li>
               </ul>
-              <span class="pricing-3-one__tag-line">See all features</span>
+              <span class="pricing-one__tag-line">See all features</span>
               <a href="#" class="btn-primary m-25px-t m-10px-b"
                 ><span>Get Started</span></a
               >
@@ -1642,6 +1450,8 @@
     <script src="assets/js/jquery-migrate-3.0.0.min.js"></script>
     <!--====== Bootstrap js ======-->
     <script src="assets/js/bootstrap.min.js"></script>
+    <!--====== Modal video js ======-->
+    <script src="assets/js/jquery-modal-video.min.js"></script>
     <!--====== jquery Swiper js ======-->
     <script src="assets/js/swiper.min.js"></script>
     <!--====== waypoints js ======-->
@@ -1650,11 +1460,9 @@
     <script src="assets/js/jquery.counterup.min.js"></script>
     <!--====== Ajaxchimp js ======-->
     <script src="assets/js/jquery.ajaxchimp.min.js"></script>
-    <!--====== Navbar js ======-->
-    <script src="assets/js/navbar.js"></script>
+    <!-- One page nav -->
+    <script src="assets/js/onepageNav.js"></script>
     <!--====== Custom js ======-->
     <script src="assets/js/custom.js"></script>
-    <!--====== Custom-3 js ======-->
-    <script src="assets/js/custom-3.js"></script>
   </body>
 </html>
