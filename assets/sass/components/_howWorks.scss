@@ -58,17 +58,20 @@
       margin: auto;
       max-width: 100%;
     }
-    p {
-      font-size: 14px;
-    }
     &__text {
+      &__icon {
+        background: $bg-color-1;
+        width: 120px;
+        height: 70px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+      }
       i {
         font-size: 30px;
         color: $color-primary;
-        padding: 20px;
-        background: $bg-color-1;
-        border-radius: 50%;
-        margin-right: 30px;
       }
       h4 {
         color: $color-primary;
@@ -102,7 +105,11 @@
       }
     }
     &:hover .icon-outer {
-      background-color: $color-primary;
+      background-image: linear-gradient(
+      to right,
+      $color-primary 0%,
+      $color-secondary 100%
+    );
       color: #ffffff;
       box-shadow: 0 8px 48px 0 rgba(0, 0, 0, 0.15);
     }
@@ -143,10 +150,17 @@
   .features-item:last-child::after {
     border-color: transparent;
   }
+  .nav-link {
+    padding: 0 !important;
+  }
 
   .nav-link.active {
     .icon-outer {
-      background-color: $color-primary;
+      background-image: linear-gradient(
+      to right,
+      $color-primary 0%,
+      $color-secondary 100%
+    );
       color: #ffffff;
       box-shadow: 0 8px 48px 0 rgba(0, 0, 0, 0.15);
     }
