@@ -31,24 +31,13 @@
     };
 
     /******************** 2. NAVBAR ADD CLASS ********************/
-    PATH.NavbarAddClass = function() {
-        var btns = $(".navbar-nav .nav-item");
-        for (var i = 0; i < btns.length; i++) {
-            btns[i].addEventListener("click", function() {
-                var current = document.getElementsByClassName("current");
-                current[0].className = current[0].className.replace(" current", "");
-                this.className += " current";
-            });
-        }
-
-        var distance = $(window).scrollTop();
-        $("section").each(function(i) {
-            if ($(this).position().top <= distance + 250) {
-                $(".navbar-nav li.current").removeClass("current");
-
-                $(".navbar-nav li").eq(i).addClass("current");
-            }
-        });
+    PATH.HeaderOnePageNav = function() {
+        $('.scroll').onePgaeNav({
+            activeClass: 'active',
+            wrapper: '#onepage-nav',
+            navStop: 50,
+            navStart: 200,
+          });
     };
 
     /******************** 3. NAV COLLAPSE ********************/
@@ -61,7 +50,7 @@
         });
     };
 
-    /******************** 4. NAV SMOOTH SCROLL ********************/
+    /******************** 4. NAV SMOOTH SCROLL *******************
     PATH.HeaderScroll = function() {
         $('.navbar a[href*="#"]:not([href="#"])').on("click", function() {
             var PathName =
@@ -84,7 +73,7 @@
             }
         });
     };
-
+*/
     /******************** 5. FIXED HEADER ********************/
     PATH.HeaderFixed = function() {
         var varHeaderFix = $(window).scrollTop() >= 60,
@@ -114,24 +103,13 @@
     };
 
     /******************** 7. OVERVIEW ADD CLASS ********************/
-    PATH.OverviewAddClass = function() {
-        var btns = $(".overview__sidebar li");
-        for (var i = 0; i < btns.length; i++) {
-            btns[i].addEventListener("click", function() {
-                var current = document.getElementsByClassName("current");
-                current[0].className = current[0].className.replace(" current", "");
-                this.className += " current";
-            });
-        }
-
-        var distance = $(window).scrollTop();
-        $(".overview__content").each(function(i) {
-            if ($(this).position().top <= distance + 250) {
-                $(".overview__sidebar li.current").removeClass("current");
-
-                $(".overview__sidebar li").eq(i).addClass("current");
-            }
-        });
+    PATH.OverviewScrollNav = function() {
+        $('.olink').onePgaeNav({
+            activeClass: 'active',
+            wrapper: '#nav',
+            navStop: 100,
+            navStart: 200,
+          });
     };
 
     /******************** 8. OVERVIEW SCROLL ********************/
@@ -291,11 +269,12 @@
     }
 
     /******************** DOCUMENT READY FUNCTION ********************/
-    $(function() {
+    $(function () {
         PATH.MenuClose();
-        PATH.HeaderScroll();
+        PATH.HeaderOnePageNav();
         PATH.HeaderSticky();
         PATH.HeroVideo();
+        PATH.OverviewScrollNav();
         PATH.PricingToggler();
         PATH.PricingToggler3();
         PATH.HowWorksSlide();
@@ -308,12 +287,10 @@
     /******************** WINDOW ON SCROLL FUNCTION ********************/
     $(window).on("scroll", function() {
         PATH.HeaderFixed();
-        PATH.NavbarAddClass();
-        PATH.OverviewAddClass();
     });
 
     /******************** WINDOW ON LOAD FUNCTION ********************/
     $(window).on("load", function() {
-        PATH.OverviewScroll();
+        
     });
 })(jQuery);
