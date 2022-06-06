@@ -157,6 +157,10 @@ h6,
   padding: 0;
   box-sizing: inherit; }
 
+button {
+  border: none;
+  box-shadow: none; }
+
 a {
   text-decoration: none; }
 
@@ -414,24 +418,29 @@ body {
     padding-left: 25px;
     display: flex;
     align-items: center; }
-    .overview__sidebar--items li:not(:last-child) {
+    .overview__sidebar--items li a:not(:last-child) {
       margin-bottom: 15px; }
-    .overview__sidebar--items li::before {
+    .overview__sidebar--items li a::before {
       content: "";
       position: absolute;
       left: 0;
       width: 15px;
       height: 5px;
+      top: 18px;
       background-color: #6365f1;
       opacity: 0.2;
       transition: all 0.2s; }
-    .overview__sidebar--items li.current::before {
+    .overview__sidebar--items li a.active::before {
       opacity: 1; }
-    .overview__sidebar--items li.current a {
+    .overview__sidebar--items li a.active a,
+    .overview__sidebar--items li a.active a.active {
       color: #6365f1; }
     .overview__sidebar--items li a {
       display: block;
+      margin: 10px 0;
       color: #1d1d1d; }
+      .overview__sidebar--items li a.active {
+        color: #6365f1; }
     .overview__sidebar--items li:hover::before {
       opacity: 1; }
     .overview__sidebar--items li:hover a {
@@ -795,7 +804,11 @@ body {
         transition: color 0.2s linear; }
         .menu > .nav-item.submenu .dropdown-menu .nav-item .nav-link:after {
           display: none; }
+<<<<<<< HEAD
       .menu > .nav-item.submenu .dropdown-menu .nav-item:hover > .nav-link, .menu > .nav-item.submenu .dropdown-menu .nav-item:focus > .nav-link, .menu > .nav-item.submenu .dropdown-menu .nav-item.active > .nav-link {
+=======
+      .menu > .nav-item.submenu .dropdown-menu .nav-item:hover > .nav-link, .menu > .nav-item.submenu .dropdown-menu .nav-item:focus > .nav-link {
+>>>>>>> develop
         color: #6592fd; }
       .menu > .nav-item.submenu .dropdown-menu .nav-item > .dropdown-menu {
         transition: transform 0.3s ease-in; }
@@ -813,7 +826,11 @@ body {
             transition: all 0.3s ease-in; } }
   .menu > .nav-item .active {
     border-bottom: 3px solid #6592fd; }
+<<<<<<< HEAD
     .menu > .nav-item .active .nav-link {
+=======
+    .menu > .nav-item .active.nav-link {
+>>>>>>> develop
       color: #6592fd; }
   .menu > .nav-item:hover {
     border-bottom: 3px solid #6592fd; }
@@ -845,10 +862,17 @@ body {
   transition: width 0.3s; }
 
 @media (min-width: 992px) {
+<<<<<<< HEAD
   .menu_white .menu > .nav-item:hover .nav-link, .menu_white .menu > .nav-item.active .nav-link {
     color: #fff; } }
 
 .menu_white .menu > .nav-item:hover .nav-link:before, .menu_white .menu > .nav-item.active .nav-link:before {
+=======
+  .menu_white .menu > .nav-item:hover .nav-link {
+    color: #fff; } }
+
+.menu_white .menu > .nav-item:hover .nav-link:before {
+>>>>>>> develop
   width: 100%; }
 
 .menu_white .navbar-toggler span {
@@ -870,7 +894,11 @@ body {
     transition: all 0.2s linear; }
   .navbar.navbar_fixed.menu_white .menu > .nav-item > .nav-link {
     color: #1b1f41; }
+<<<<<<< HEAD
   .navbar.navbar_fixed.menu_white .menu > .nav-item:hover > .nav-link, .navbar.navbar_fixed.menu_white .menu > .nav-item.active > .nav-link {
+=======
+  .navbar.navbar_fixed.menu_white .menu > .nav-item:hover {
+>>>>>>> develop
     color: #6592fd; }
   .navbar.navbar_fixed.menu_white .navbar-toggler span {
     background: #475668; }
@@ -1107,12 +1135,14 @@ body {
     padding: 0 0 50px 0; }
   .testi-row .swiper-pagination-bullet {
     background-color: #6592fd;
-    opacity: 0.3; }
+    opacity: 0.3;
+    margin-left: 8px !important;
+    margin-right: 8px !important; }
     .testi-row .swiper-pagination-bullet-active {
       opacity: 1; }
   .testi-row .testi-card {
-    border: none;
-    box-shadow: 0px 4px 6px 0px rgba(1, 6, 33, 0.08); }
+    box-shadow: 0px 1px 15px 0px rgba(1, 6, 33, 0.08);
+    border: 1px solid #eff0f7; }
     .testi-row .testi-card img {
       width: 60px;
       border-radius: 50%; }
@@ -1832,8 +1862,6 @@ body {
     margin: 60px 0 0;
     position: relative;
     text-align: left; }
-    .pricing-3-one__list:first-child {
-      color: #1d1d1d; }
     @media only screen and (max-width: 575px) {
       .pricing-3-one__list {
         padding: 30px 0 0;
