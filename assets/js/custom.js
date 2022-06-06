@@ -87,19 +87,7 @@
 
     /******************** 6. HERO VIDEO ********************/
     PATH.HeroVideo = function() {
-        var $videoSrc;
-        $(".video-btn").click(function() {
-            $videoSrc = $(this).data("src");
-        });
-        $("#heroModal").on("shown.bs.modal", function(e) {
-            $("#video").attr(
-                "src",
-                $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0"
-            );
-        });
-        $("#heroModal").on("hide.bs.modal", function(e) {
-            $("#video").attr("src", $videoSrc);
-        });
+        $(".js-modal-btn").modalVideo();
     };
 
     /******************** 7. OVERVIEW ADD CLASS ********************/

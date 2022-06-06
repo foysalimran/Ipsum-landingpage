@@ -1,47 +1,46 @@
-
 .testi-row {
-    overflow: hidden;
+  overflow: hidden;
 
-    .clients-slider {
-        padding: 0 0 50px 0;
+  .clients-slider {
+    padding: 0 0 50px 0;
+  }
+
+  .swiper-pagination {
+    &-bullet {
+      background-color: $color-secondary;
+      opacity: 0.3;
+      margin-left: 8px !important;
+      margin-right: 8px !important;
+      &-active {
+        opacity: 1;
       }
-
-      .swiper-pagination{
-        &-bullet {
-            background-color: $color-secondary;
-            opacity: 0.3;
-    
-            &-active {
-                opacity: 1;
-              }
-          }
-    }
-
-    .testi-card{
-        border: none;
-        box-shadow: 0px 4px 6px 0px $color-shadow;
-        img{
-            width: 60px;
-            border-radius: 50%;
-        }
-        &__quotation{
-            position: absolute;
-            bottom: 0;
-            right: 0;
-
-            i{
-                font-size: 45px;
-                color: $color-tertiary;
-            }
-        }
-        &__user-info {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            img {
-                margin-right: 20px;
-            }
-        }
     }
   }
-  
+
+  .testi-card {
+    box-shadow: 0px 1px 15px 0px $color-shadow;
+    border: 1px solid $color-border;
+    img {
+      width: 60px;
+      border-radius: 50%;
+    }
+    &__quotation {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+      i {
+        font-size: 45px;
+        color: $color-tertiary;
+      }
+    }
+    &__user-info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        margin-right: 20px;
+      }
+    }
+  }
+}
