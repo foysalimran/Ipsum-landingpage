@@ -4,7 +4,8 @@
       position: sticky;
       width: 100%;
       top: calc(50% - 62px);
-      @media screen and (max-width: 992px) {
+      padding: 0;
+      @include respond(laptop) {
         display: none;
       }
       li {
@@ -13,58 +14,81 @@
         padding-left: 25px;
         display: flex;
         align-items: center;
-        &:not(:last-child) {
+        a:not(:last-child) {
           margin-bottom: 15px;
         }
-        &::before {
+        a::before {
           content: "";
           position: absolute;
           left: 0;
           width: 15px;
           height: 5px;
+          top: 18px;
           background-color: $color-primary;
           opacity: 0.2;
           transition: all 0.2s;
         }
-        &.current {
+
+        a.active {
           &::before {
             opacity: 1;
           }
-        }
-        a {
-          display: block;
-          color: $color-dark;
-        }
-        &:hover{
-          &::before {
-            opacity: 1;
-          }
-          a{
+
+          a,
+          a.active {
             color: $color-primary;
           }
-          
+        }
+
+        a {
+          display: block;
+          margin: 10px 0;
+          color: $color-dark;
+          &.active {
+            color: $color-primary;
+          }
+        }
+        &:hover {
+          &::before {
+            opacity: 1;
+          }
+          a {
+            color: $color-primary;
+          }
         }
       }
     }
   }
   &__content {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    &:last-child {
-      padding-bottom: 0;
+    &:not(:first-child) {
+      padding-top: 40px;
+    }
+    &:not(:last-child) {
+      padding-bottom: 40px;
     }
     &-title {
       span {
-        font-size: 14px;
+        background: $color-tertiary;
+        padding: 10px 20px;
+        border-radius: 50px;
+        display: inline-block;
+        font-size: 12px;
         font-weight: 700;
-        display: block;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         text-transform: uppercase;
         letter-spacing: 1px;
       }
     }
-    @media screen and (max-width: 992px) {
-      padding: 40px 0;
+  }
+}
+
+.overview-v3 {
+  .overview__content {
+    &:not(:first-child) {
+      padding-top: 20px;
+    }
+    &:not(:last-child) {
+      padding-bottom: 20px;
     }
   }
 }

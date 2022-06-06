@@ -23,10 +23,10 @@
   <link rel="stylesheet" href="assets/css/icofont.min.css" />
   <!--====== Modal video css ======-->
   <link rel="stylesheet" href="assets/css/modal-video.min.css" />
-  <!--====== swiper css ======-->
-  <link rel="stylesheet" href="assets/css/swiper.min.css" />
   <!--====== Margins & Paddings css ======-->
   <link rel="stylesheet" href="assets/css/margin-paddings.css" />
+  <!--====== swiper css ======-->
+  <link rel="stylesheet" href="assets/css/swiper.min.css" />
   <!--====== Style css ======-->
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
@@ -87,51 +87,32 @@
   </header>
   <!-- ========== Navbar End ========== -->
   <!-- ========== Hero Section Start ========== -->
-  <section id="hero" class="hero p-150px-t lg-p-100px-t md-p-0px-b p-100px-b">
+  <section id="hero" class="hero-2 p-100px-t lg-p-100px-t">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-lg-6">
-          <div class="hero__content">
-            <h1 class="display-4 m-30px-b text-capitalize"> Take Control of your Project and Team </h1>
-            <p class="fs-4 m-50px-b md-m-30px-b"> The one place for all your projects, team collaboration &amp; client
-              management </p>
-            <div class="d-sm-flex gap-4">
-              <a href="#" class="btn-primary"><span>Get started now</span></a>
-              <a href="#" class="btn__secondary js-modal-btn" data-video-id="20QUNgFIrK0">
-                <span><i class="icofont-play-alt-2"></i> Watch Demo</span>
-              </a>
-            </div>
+        <div class="hero-2__content">
+          <h1 class="display-4 m-30px-b text-capitalize"> Take Control of your Project and Team </h1>
+          <p class="fs-4 m-50px-b md-m-30px-b"> The one place for all your projects, team collaboration &amp; client
+            management </p>
+          <div class="d-sm-flex justify-content-center gap-4">
+            <a href="#" class="btn-primary"><span>Get started now</span></a>
+            <a href="#" class="btn__secondary js-modal-btn" data-video-id="20QUNgFIrK0"><span><i
+                  class="icofont-play-alt-2"></i> Watch Demo</span></a>
           </div>
         </div>
-        <div class="col-lg-6">
-          <div class="hero__image">
-            <div class="hero__image__overlay"></div>
-            <div class="hero__image__area">
-              <img src="assets/images/hero.png" alt="Hero Image" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="heroModal">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-body">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              <div class="ratio ratio-16x9">
-                <iframe class="embed-responsive-item" id="video" allow="autoplay"></iframe>
-              </div>
-            </div>
-          </div>
+        <div class="hero-2__image">
+          <img src="assets/images/hero4.png" alt="laptop image" />
         </div>
       </div>
     </div>
-    <div class="hero__shape">
-      <img src="assets/images/shape.svg" alt="Hero shape" />
+    <span class="banner-one__shape-1"></span>
+    <div class="hero-2__shape-2">
+      <img src="assets/images/dots.svg" alt="Hero shape" />
     </div>
   </section>
   <!-- ========== Hero Section End ========== -->
   <!-- ========== How it works section start ========== -->
-  <section id="about" class="how-works section-padding">
+  <section id="about" class="how-works pt-0 section-padding">
     <div class="container">
       <div class="how-works">
         <div class="row">
@@ -165,19 +146,154 @@
         <div class="how-works-content">
           <div class="how-works-content__wrapper swiper-wrapper">
             <div class="how-works-content__slide swiper-slide">
-              <img src="assets/images/how-it-1.png" alt="slide image-1" />
+              <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-xl-0">
+                  <img src="assets/images/how-it-1.png" alt="slide image-1" />
+                </div>
+                <div class="col-lg-6">
+                  <h2 class="m-20px-b">The Easiest Possible Integration</h2>
+                  <p class="lh-lg m-20px-b"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt. </p>
+                  <div class="d-flex align-items-center how-works-content__slide__text">
+                    <i class="icofont-chart-histogram"></i>
+                    <div>
+                      <h4>View Histoycal Data</h4>
+                      <p class="lh-lg m-20px-b"> Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut. </p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center how-works-content__slide__text">
+                    <i class="icofont-calendar"></i>
+                    <div>
+                      <h4>Track Custom Events</h4>
+                      <p class="lh-lg m-20px-b"> Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="how-works-content__slide swiper-slide">
-              <img src="assets/images/how-it-2.png" alt="slide image-2" />
+              <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-xl-0">
+                  <img src="assets/images/how-it-2.png" alt="slide image-2" />
+                </div>
+                <div class="col-lg-6">
+                  <h2 class="m-20px-b">The Easiest Possible Integration</h2>
+                  <p class="lh-lg m-20px-b"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt. </p>
+                  <div class="d-flex align-items-center how-works-content__slide__text">
+                    <i class="icofont-chart-histogram"></i>
+                    <div>
+                      <h4>View Histoycal Data</h4>
+                      <p class="lh-lg m-20px-b"> Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut. </p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center how-works-content__slide__text">
+                    <i class="icofont-calendar"></i>
+                    <div>
+                      <h4>Track Custom Events</h4>
+                      <p class="lh-lg m-20px-b"> Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="how-works-content__slide swiper-slide">
-              <img src="assets/images/how-it-3.png" alt="slide image-3" />
+              <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-xl-0">
+                  <img src="assets/images/how-it-3.png" alt="slide image-3" />
+                </div>
+                <div class="col-lg-6">
+                  <h2 class="m-20px-b">The Easiest Possible Integration</h2>
+                  <p class="lh-lg m-20px-b"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt. </p>
+                  <div class="d-flex align-items-center how-works-content__slide__text">
+                    <i class="icofont-chart-histogram"></i>
+                    <div>
+                      <h4>View Histoycal Data</h4>
+                      <p class="lh-lg m-20px-b"> Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut. </p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center how-works-content__slide__text">
+                    <i class="icofont-calendar"></i>
+                    <div>
+                      <h4>Track Custom Events</h4>
+                      <p class="lh-lg m-20px-b"> Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="how-works-content__slide swiper-slide">
-              <img src="assets/images/how-it-4.png" alt="slide image-1" />
+              <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-xl-0">
+                  <img src="assets/images/how-it-4.png" alt="slide image-4" />
+                </div>
+                <div class="col-lg-6">
+                  <h2 class="m-20px-b">The Easiest Possible Integration</h2>
+                  <p class="lh-lg m-20px-b"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt. </p>
+                  <div class="d-flex align-items-center how-works-content__slide__text">
+                    <i class="icofont-chart-histogram"></i>
+                    <div>
+                      <h4>View Histoycal Data</h4>
+                      <p class="lh-lg m-20px-b"> Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut. </p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center how-works-content__slide__text">
+                    <i class="icofont-calendar"></i>
+                    <div>
+                      <h4>Track Custom Events</h4>
+                      <p class="lh-lg m-20px-b"> Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="how-works-content__slide swiper-slide">
-              <img src="assets/images/how-it-5.png" alt="slide image-2" />
+              <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-xl-0">
+                  <img src="assets/images/how-it-5.png" alt="slide image-5" />
+                </div>
+                <div class="col-lg-6">
+                  <h2 class="m-20px-b">The Easiest Possible Integration</h2>
+                  <p class="lh-lg m-20px-b"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt. </p>
+                  <div class="d-flex align-items-center how-works-content__slide__text">
+                    <i class="icofont-chart-histogram"></i>
+                    <div>
+                      <h4>View Histoycal Data</h4>
+                      <p class="lh-lg m-20px-b"> Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut. </p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center how-works-content__slide__text">
+                    <i class="icofont-calendar"></i>
+                    <div>
+                      <h4>Track Custom Events</h4>
+                      <p class="lh-lg m-20px-b"> Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -330,7 +446,7 @@
     <!-- ========== Services section start ========== -->
     <div class="services m-80px-t container">
       <div class="row">
-        <div class="col-md-6 mb-3 mb-xl-0 col-xl-3">
+        <div class="col-md-6 mb-4 mb-xl-0 col-xl-3">
           <div class="card">
             <div class="card-body px-4 pt-4 pb-2">
               <h5 class="pb-3 pt-2">Easy to <span>Mange</span></h5>
@@ -339,7 +455,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 mb-3 mb-xl-0 col-xl-3">
+        <div class="col-md-6 mb-4 mb-xl-0 col-xl-3">
           <div class="card">
             <div class="card-body px-4 pt-4 pb-2">
               <h5 class="pb-3 pt-2"><span>Detailed</span> Data report</h5>
@@ -348,7 +464,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 mb-3 mb-md-0 mb-xl-0 col-xl-3">
+        <div class="col-md-6 mb-4 mb-md-0 mb-xl-0 col-xl-3">
           <div class="card">
             <div class="card-body px-4 pt-4 pb-2">
               <h5 class="pb-3 pt-2">
@@ -374,7 +490,7 @@
   </section>
   <!-- ========== Overview Section End ========== -->
   <!-- ========== Pricing section start ========== -->
-  <section class="pricing section-padding" id="pricing">
+  <section class="pricing pricingV2 section-padding" id="pricing">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-md-8 col-sm-10 offset-lg-3 offset-md-2 offset-sm-1">
@@ -394,7 +510,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-4 mb-3 mb-lg-0">
+        <div class="col-xl-3 col-md-6 mb-4 mb-xl-0">
           <div class="pricing-one__single">
             <div class="pricing__values">
               <div class="pricing__value pricing__value--show">
@@ -405,74 +521,59 @@
               </div>
             </div>
             <ul class="pricing-one__list">
-              <li><i class="icofont-check-circled"></i>Unlimited projects</li>
-              <li>
-                <i class="icofont-check-circled"></i>Unlimited team members
-              </li>
-              <li>
-                <i class="icofont-check-circled"></i>Task list & task board
-              </li>
-              <li>
-                <i class="icofont-check-circled"></i>Contact and customers data
-              </li>
-              <li>
-                <i class="icofont-check-circled"></i>Invoice and receipts
-              </li>
-              <li>
-                <i class="icofont-close-circled"></i>Bills for each projects
-              </li>
-              <li><i class="icofont-close-circled"></i>Membership plan</li>
-              <li>
-                <i class="icofont-close-circled"></i>Summary financial report
-              </li>
-              <li>
-                <i class="icofont-close-circled"></i> Detailed work reports
-              </li>
+              <li>Unlimited projects</li>
+              <li>Unlimited team members</li>
+              <li>Task list & task board</li>
+              <li>Contact and customers data</li>
+              <li>Invoice and receipts</li>
             </ul>
             <a href="#" class="btn-primary m-25px-t m-10px-b"><span>Choose Plan</span></a>
             <span class="pricing-one__tag-line">No hidden charges</span>
           </div>
         </div>
-        <div class="col-lg-4 mb-3 mb-lg-0">
-          <div class="pricing-one__single popular">
+        <div class="col-xl-3 col-md-6 mb-4 mb-xl-0">
+          <div class="pricing-one__single">
             <div class="pricing__values">
               <div class="pricing__value pricing__value--show">
-                <span>$</span>49<b>/Basic</b>
+                <span>$</span>19 <b>/ Personal</b>
               </div>
               <div class="pricing__value pricing__value--hide pricing__value--hidden">
-                <span>$</span>529 <b>/ Basic</b>
+                <span>$</span>190 <b>/ Personal</b>
               </div>
             </div>
             <ul class="pricing-one__list">
-              <li><i class="icofont-check-circled"></i>Unlimited projects</li>
-              <li>
-                <i class="icofont-check-circled"></i>Unlimited team members
-              </li>
-              <li>
-                <i class="icofont-check-circled"></i>Task list & task board
-              </li>
-              <li>
-                <i class="icofont-check-circled"></i>Contact and customers data
-              </li>
-              <li>
-                <i class="icofont-check-circled"></i>Invoice and receipts
-              </li>
-              <li>
-                <i class="icofont-check-circled"></i>Bills for each projects
-              </li>
-              <li><i class="icofont-check-circled"></i>Membership plan</li>
-              <li>
-                <i class="icofont-close-circled"></i>Summary financial report
-              </li>
-              <li>
-                <i class="icofont-close-circled"></i> Detailed work reports
-              </li>
+              <li>Unlimited projects</li>
+              <li>Unlimited team members</li>
+              <li>Task list & task board</li>
+              <li>Contact and customers data</li>
+              <li>Invoice and receipts</li>
             </ul>
             <a href="#" class="btn-primary m-25px-t m-10px-b"><span>Choose Plan</span></a>
             <span class="pricing-one__tag-line">No hidden charges</span>
           </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-xl-3 col-md-6 mb-4 mb-xl-0">
+          <div class="pricing-one__single popular">
+            <div class="pricing__values">
+              <div class="pricing__value pricing__value--show">
+                <span>$</span>49 <b>/Group</b>
+              </div>
+              <div class="pricing__value pricing__value--hide pricing__value--hidden">
+                <span>$</span>529 <b>/ Group</b>
+              </div>
+            </div>
+            <ul class="pricing-one__list">
+              <li>Unlimited projects</li>
+              <li>Unlimited team members</li>
+              <li>Task list & task board</li>
+              <li>Contact and customers data</li>
+              <li>Invoice and receipts</li>
+            </ul>
+            <a href="#" class="btn-primary m-25px-t m-10px-b"><span>Choose Plan</span></a>
+            <span class="pricing-one__tag-line">No hidden charges</span>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
           <div class="pricing-one__single">
             <div class="pricing__values">
               <div class="pricing__value pricing__value--show">
@@ -483,29 +584,11 @@
               </div>
             </div>
             <ul class="pricing-one__list">
-              <li><i class="icofont-check-circled"></i>Unlimited projects</li>
-              <li>
-                <i class="icofont-check-circled"></i>Unlimited team members
-              </li>
-              <li>
-                <i class="icofont-check-circled"></i>Task list & task board
-              </li>
-              <li>
-                <i class="icofont-check-circled"></i>Contact and customers data
-              </li>
-              <li>
-                <i class="icofont-check-circled"></i>Invoice and receipts
-              </li>
-              <li>
-                <i class="icofont-check-circled"></i>Bills for each projects
-              </li>
-              <li><i class="icofont-check-circled"></i>Membership plan</li>
-              <li>
-                <i class="icofont-check-circled"></i>Summary financial report
-              </li>
-              <li>
-                <i class="icofont-check-circled"></i> Detailed work reports
-              </li>
+              <li>Unlimited projects</li>
+              <li>Unlimited team members</li>
+              <li>Task list & task board</li>
+              <li>Contact and customers data</li>
+              <li>Invoice and receipts</li>
             </ul>
             <a href="#" class="btn-primary m-25px-t m-10px-b"><span>Choose Plan</span></a>
             <span class="pricing-one__tag-line">No hidden charges</span>
@@ -528,39 +611,47 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-12 col-sm-6 mb-3 mb-lg-0 col-lg-3 fun-fact__box">
+        <div class="col-12 col-sm-6 mb-4 mb-lg-0 col-lg-3 fun-fact__box">
           <div class="card fun-fact__card p-30px-tb">
-            <div class="fun-fact__card-body">
-              <i class="icofont-airplane"></i>
+            <div class="fun-fact__card-body fun-fact-2__item">
               <h4 class=""><span class="counter">80</span>%</h4>
               <p class="mb-0"> Spend 80% less time <br /> on admin </p>
+              <span class="fun-fact-2__item__dot-1"></span>
+              <span class="fun-fact-2__item__dot-2"></span>
+              <span class="fun-fact-2__item__dot-3"></span>
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 mb-3 mb-lg-0 col-lg-3 fun-fact__box">
+        <div class="col-12 col-sm-6 mb-4 mb-lg-0 col-lg-3 fun-fact__box">
           <div class="card fun-fact__card p-30px-tb">
             <div class="fun-fact__card-body">
-              <i class="icofont-brand-delicious"></i>
               <h4 class=""><span class="counter">40</span>x</h4>
               <p class="mb-0"> Attract 40x more <br /> the candidate </p>
+              <span class="fun-fact-2__item__dot-1"></span>
+              <span class="fun-fact-2__item__dot-2"></span>
+              <span class="fun-fact-2__item__dot-3"></span>
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 mb-3 mb-lg-0 col-lg-3 fun-fact__box">
+        <div class="col-12 col-sm-6 mb-4 mb-lg-0 col-lg-3 fun-fact__box">
           <div class="card fun-fact__card p-30px-tb">
             <div class="fun-fact__card-body">
-              <i class="icofont-dice"></i>
               <h4 class=""><span class="counter">83</span>%</h4>
               <p class="mb-0"> Reduce recruitment <br /> agency spend </p>
+              <span class="fun-fact-2__item__dot-1"></span>
+              <span class="fun-fact-2__item__dot-2"></span>
+              <span class="fun-fact-2__item__dot-3"></span>
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 mb-3 mb-lg-0 col-lg-3 fun-fact__box">
+        <div class="col-12 col-sm-6 mb-4 mb-lg-0 col-lg-3 fun-fact__box">
           <div class="card fun-fact__card p-30px-tb">
             <div class="fun-fact__card-body">
-              <i class="icofont-cube"></i>
               <h4 class=""><span class="counter">40</span>%</h4>
               <p class="mb-0"> Make hires 40% <br /> faster </p>
+              <span class="fun-fact-2__item__dot-1"></span>
+              <span class="fun-fact-2__item__dot-2"></span>
+              <span class="fun-fact-2__item__dot-3"></span>
             </div>
           </div>
         </div>
@@ -586,72 +677,57 @@
           <div class="clients-slider">
             <div class="swiper-wrapper">
               <div class="swiper-slide p-5px-lr">
-                <div class="testi-card card">
+                <div class="testi-card card testi-cardV2 text-center">
                   <div class="card-body p-4">
                     <img src="assets/images/user-1.jpg" alt="User image-1" />
                     <h5 class="my-4 pt-2 lh-base"> " Excellent support for a tricky issue related to our customization
                       of the template." </h5>
                     <h6 class="mb-0">Brightlight books</h6>
                     <p class="mb-0">Ubold Customer</p>
-                    <div class="testi-card__quotation">
-                      <i class="icofont-quote-right"></i>
-                    </div>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide p-5px-lr">
-                <div class="testi-card card">
+                <div class="testi-card card testi-cardV2 text-center">
                   <div class="card-body p-4">
                     <img src="assets/images/user-2.jpg" alt="User image-2" />
                     <h5 class="my-4 pt-2 lh-base"> " This kit provides many options which I can youu use everyday. It's
                       great work and helpful.” </h5>
                     <h6 class="mb-0">Echineo</h6>
                     <p class="mb-0">Ubold Customer</p>
-                    <div class="testi-card__quotation">
-                      <i class="icofont-quote-right"></i>
-                    </div>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide p-5px-lr">
-                <div class="testi-card card">
+                <div class="testi-card card testi-cardV2 text-center">
                   <div class="card-body p-4">
                     <img src="assets/images/user-3.jpg" alt="User image-3" />
                     <h5 class="my-4 pt-2 lh-base"> " This is a very extensive web app kit that can serve all kinds of
                       purposes and help you." </h5>
                     <h6 class="mb-0">Aebra Schultz</h6>
                     <p class="mb-0">Designer</p>
-                    <div class="testi-card__quotation">
-                      <i class="icofont-quote-right"></i>
-                    </div>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide p-5px-lr">
-                <div class="testi-card card">
+                <div class="testi-card card testi-cardV2 text-center">
                   <div class="card-body p-4">
                     <img src="assets/images/user-1.jpg" alt="User image-1" />
                     <h5 class="my-4 pt-2 lh-base"> " Excellent support for a tricky issue related to our customization
                       of the template." </h5>
                     <h6 class="mb-0">Brightlight bookss</h6>
                     <p class="mb-0">Ubold Customer</p>
-                    <div class="testi-card__quotation">
-                      <i class="icofont-quote-right"></i>
-                    </div>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide p-5px-lr">
-                <div class="testi-card card">
+                <div class="testi-card card testi-cardV2 text-center">
                   <div class="card-body p-4">
                     <img src="assets/images/user-2.jpg" alt="User image-2" />
                     <h5 class="my-4 pt-2 lh-base"> " This kit provides many options which I can you use everyday. It's
                       great work and helpful.” </h5>
                     <h6 class="mb-0">Echineo</h6>
                     <p class="mb-0">Ubold Customer</p>
-                    <div class="testi-card__quotation">
-                      <i class="icofont-quote-right"></i>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -668,7 +744,7 @@
   <section class="cta section-padding bg-color-1" id="cta">
     <div class="container">
       <div class="row align-items-center text-center-xs">
-        <div class="col-12 col-md-6 mb-3 mb-md-0">
+        <div class="col-12 col-md-6 mb-4 mb-md-0">
           <img class="img-fluid" src="assets/images/target.svg" alt="Cover image" />
         </div>
         <div class="col-12 col-md-6">
@@ -697,10 +773,7 @@
         </div>
       </div>
       <div class="row align-items-center">
-        <div class="col-lg-4 mb-3 mb-lg-0">
-          <img src="assets/images/faq.svg" alt="" class="img-fluid d-block mx-auto" />
-        </div>
-        <div class="col-lg-7 offset-lg-1">
+        <div class="col-lg-7 order-2 order-lg-1">
           <div class="accordion accordion-flush faqs-accordion mt-4 mt-lg-0" id="accordionFlushExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingOne">
@@ -788,6 +861,9 @@
             <!-- accordion-header end -->
           </div>
         </div>
+        <div class="col-lg-4 offset-lg-1 mb-4 mb-lg-0 order-1 order-lg-2">
+          <img src="assets/images/faq.svg" alt="" class="img-fluid d-block mx-auto" />
+        </div>
       </div>
     </div>
   </section>
@@ -797,12 +873,12 @@
     <div class="container">
       <div class="footer__newsletter">
         <div class="row align-items-center">
-          <div class="col-md-6 mb-3 mb-md-0">
+          <div class="col-md-6 mb-4 mb-md-0">
             <h4 class="m-0 fs-4 fw-bold"> Want to Get Product Updates From Us? </h4>
           </div>
           <div class="col-md-6">
             <div class="footer__newsletter__form">
-              <form action="assets/subscribe/subscribe.php" id="subscribe">
+              <form action="assets/subscribe/subscribe.php">
                 <input type="email" name="email" placeholder="Your Email" class="form-control input-box"
                   id="subscriber-email" />
                 <button type="submit" class="footer__newsletter__form__btn footer__newsletter__form__btn-default"
@@ -834,7 +910,7 @@
       </div>
       <hr class="m-45px-tb md-m-30px-tb" />
       <div class="row footer__content">
-        <div class="col-lg-4 mb-3 mb-lg-0 pe-lg-5 footer__content__fast">
+        <div class="col-lg-4 mb-4 mb-lg-0 pe-lg-5 footer__content__fast">
           <h3 class="widget-title">About us</h3>
           <p class="m-20px-b"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque doloribus excepturi,
             aperiam cumque magnam hic. </p>

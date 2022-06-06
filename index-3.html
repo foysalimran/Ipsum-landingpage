@@ -23,10 +23,10 @@
   <link rel="stylesheet" href="assets/css/icofont.min.css" />
   <!--====== Modal video css ======-->
   <link rel="stylesheet" href="assets/css/modal-video.min.css" />
-  <!--====== swiper css ======-->
-  <link rel="stylesheet" href="assets/css/swiper.min.css" />
   <!--====== Margins & Paddings css ======-->
   <link rel="stylesheet" href="assets/css/margin-paddings.css" />
+  <!--====== swiper css ======-->
+  <link rel="stylesheet" href="assets/css/swiper.min.css" />
   <!--====== Style css ======-->
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
@@ -87,28 +87,24 @@
   </header>
   <!-- ========== Navbar End ========== -->
   <!-- ========== Hero Section Start ========== -->
-  <section id="hero" class="hero p-150px-t lg-p-100px-t md-p-0px-b p-100px-b">
+  <section id="hero" class="hero lg-p-100px-t">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-lg-6">
-          <div class="hero__content">
+        <div class="col-12 col-xl-6">
+          <div class="hero__content text-center text-xl-start">
             <h1 class="display-4 m-30px-b text-capitalize"> Take Control of your Project and Team </h1>
             <p class="fs-4 m-50px-b md-m-30px-b"> The one place for all your projects, team collaboration &amp; client
               management </p>
-            <div class="d-sm-flex gap-4">
+            <div class="d-sm-flex gap-4 justify-content-center justify-content-xl-start">
               <a href="#" class="btn-primary"><span>Get started now</span></a>
-              <a href="#" class="btn__secondary js-modal-btn" data-video-id="20QUNgFIrK0">
-                <span><i class="icofont-play-alt-2"></i> Watch Demo</span>
-              </a>
+              <a href="#" class="btn__secondary js-modal-btn" data-video-id="20QUNgFIrK0"><span><i
+                    class="icofont-play-alt-2"></i> Watch Demo</span></a>
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
-          <div class="hero__image">
-            <div class="hero__image__overlay"></div>
-            <div class="hero__image__area">
-              <img src="assets/images/hero.png" alt="Hero Image" />
-            </div>
+        <div class="d-none d-xl-block col-lg-6">
+          <div class="hero-v3__image">
+            <img class="" src="assets//images/hero-5.png" alt="" />
           </div>
         </div>
       </div>
@@ -125,68 +121,197 @@
         </div>
       </div>
     </div>
-    <div class="hero__shape">
-      <img src="assets/images/shape.svg" alt="Hero shape" />
-    </div>
+    <span class="hero-v3__shape-1"></span>
   </section>
   <!-- ========== Hero Section End ========== -->
   <!-- ========== How it works section start ========== -->
-  <section id="about" class="how-works section-padding">
+  <div id="about" class="section-padding">
     <div class="container">
-      <div class="how-works">
-        <div class="row">
-          <div class="col-lg-6 col-md-8 col-sm-10 offset-lg-3 offset-md-2 offset-sm-1">
-            <div class="section-title title-center m-60px-b">
-              <h2 class="display-6">How It Works</h2>
-              <div class="title-center__dot"></div>
-              <p class="fs-5"> Easier management with IPSUM installation to maintenance </p>
-            </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-8 col-sm-10 offset-lg-3 offset-md-2 offset-sm-1">
+          <div class="section-title title-center m-60px-b">
+            <h2 class="display-6">How It Works</h2>
+            <div class="title-center__dot"></div>
+            <p class="fs-5"> Easier management with IPSUM installation to maintenance </p>
           </div>
         </div>
-        <div class="how-works-titles">
-          <div class="how-works-titles__wrapper swiper-wrapper">
-            <div class="how-works-titles__slide swiper-slide m-10px-r">
-              <span><i class="icofont-globe"></i> Frontend</span>
-            </div>
-            <div class="how-works-titles__slide swiper-slide m-10px-r">
-              <span><i class="icofont-settings"></i> Analytics</span>
-            </div>
-            <div class="how-works-titles__slide swiper-slide m-10px-r">
-              <span><i class="icofont-ui-password"></i> Management</span>
-            </div>
-            <div class="how-works-titles__slide swiper-slide m-10px-r">
-              <span><i class="icofont-list"></i> Schedule</span>
-            </div>
-            <div class="how-works-titles__slide swiper-slide">
-              <span><i class="icofont-gears"></i> Creation</span>
+      </div>
+      <div class="tab-container-one">
+        <ul class="nav" role="tablist">
+          <li class="nav-item active">
+            <a class="nav-link active" href="#home" role="tab" aria-controls="home" data-bs-toggle="tab">Frontend</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#profile" role="tab" aria-controls="profile" data-bs-toggle="tab">Analytics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#messages" role="tab" aria-controls="messages" data-bs-toggle="tab">Management</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#settings" role="tab" aria-controls="settings" data-bs-toggle="tab">Schedule</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#creation" role="tab" aria-controls="settings" data-bs-toggle="tab">Creation</a>
+          </li>
+        </ul>
+        <div class="tab-content how-works-content__slide">
+          <div class="tab-pane active" id="home" role="tabpanel">
+            <div class="row align-items-center">
+              <div class="col-lg-6 mb-4 mb-xl-0">
+                <img class="img-fluid" src="assets/images/how-it-1.png" alt="slide image-1" />
+              </div>
+              <div class="col-lg-6">
+                <h2 class="m-20px-b">Lorem ipsum dolor sit amet.</h2>
+                <p class="lh-lg m-20px-b"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                  officia deserunt. </p>
+                <div class="d-flex align-items-center how-works-content__slide__text">
+                  <i class="icofont-chart-histogram"></i>
+                  <div>
+                    <h4>View Histoycal Data</h4>
+                    <p class="lh-lg m-20px-b"> Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut. </p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center how-works-content__slide__text">
+                  <i class="icofont-calendar"></i>
+                  <div>
+                    <h4>Track Custom Events</h4>
+                    <p class="lh-lg m-20px-b"> Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut. </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="how-works-content">
-          <div class="how-works-content__wrapper swiper-wrapper">
-            <div class="how-works-content__slide swiper-slide">
-              <img src="assets/images/how-it-1.png" alt="slide image-1" />
+          <div class="tab-pane" id="profile" role="tabpanel">
+            <div class="row align-items-center">
+              <div class="col-lg-6 order-2 order-lg-0">
+                <h2 class="m-20px-b">The Easiest Possible Integration</h2>
+                <p class="lh-lg m-20px-b"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                  officia deserunt. </p>
+                <div class="d-flex align-items-center how-works-content__slide__text">
+                  <i class="icofont-chart-histogram"></i>
+                  <div>
+                    <h4>View Histoycal Data</h4>
+                    <p class="lh-lg m-20px-b"> Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut. </p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center how-works-content__slide__text">
+                  <i class="icofont-calendar"></i>
+                  <div>
+                    <h4>Track Custom Events</h4>
+                    <p class="lh-lg m-20px-b"> Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 mb-4 mb-xl-0 order-1 order-lg-0">
+                <img class="img-fluid" src="assets/images/how-it-2.png" alt="slide image-2" />
+              </div>
             </div>
-            <div class="how-works-content__slide swiper-slide">
-              <img src="assets/images/how-it-2.png" alt="slide image-2" />
+          </div>
+          <div class="tab-pane" id="messages" role="tabpanel">
+            <div class="row align-items-center">
+              <div class="col-lg-6 mb-4 mb-xl-0">
+                <img class="img-fluid" src="assets/images/how-it-3.png" alt="slide image-3" />
+              </div>
+              <div class="col-lg-6">
+                <h2 class="m-20px-b">Lorem ipsum dolor sit amet.</h2>
+                <p class="lh-lg m-20px-b"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                  officia deserunt. </p>
+                <div class="d-flex align-items-center how-works-content__slide__text">
+                  <i class="icofont-chart-histogram"></i>
+                  <div>
+                    <h4>View Histoycal Data</h4>
+                    <p class="lh-lg m-20px-b"> Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut. </p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center how-works-content__slide__text">
+                  <i class="icofont-calendar"></i>
+                  <div>
+                    <h4>Track Custom Events</h4>
+                    <p class="lh-lg m-20px-b"> Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut. </p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="how-works-content__slide swiper-slide">
-              <img src="assets/images/how-it-3.png" alt="slide image-3" />
+          </div>
+          <div class="tab-pane" id="settings" role="tabpanel">
+            <div class="row align-items-center">
+              <div class="col-lg-6 order-2 order-lg-0">
+                <h2 class="m-20px-b">The Easiest Possible Integration</h2>
+                <p class="lh-lg m-20px-b"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                  officia deserunt. </p>
+                <div class="d-flex align-items-center how-works-content__slide__text">
+                  <i class="icofont-chart-histogram"></i>
+                  <div>
+                    <h4>View Histoycal Data</h4>
+                    <p class="lh-lg m-20px-b"> Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut. </p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center how-works-content__slide__text">
+                  <i class="icofont-calendar"></i>
+                  <div>
+                    <h4>Track Custom Events</h4>
+                    <p class="lh-lg m-20px-b"> Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 mb-4 mb-xl-0 order-1 order-lg-0">
+                <img class="img-fluid" src="assets/images/how-it-4.png" alt="slide image-4" />
+              </div>
             </div>
-            <div class="how-works-content__slide swiper-slide">
-              <img src="assets/images/how-it-4.png" alt="slide image-1" />
-            </div>
-            <div class="how-works-content__slide swiper-slide">
-              <img src="assets/images/how-it-5.png" alt="slide image-2" />
+          </div>
+          <div class="tab-pane" id="creation" role="tabpanel">
+            <div class="row align-items-center">
+              <div class="col-lg-6 mb-4 mb-xl-0">
+                <img class="img-fluid" src="assets/images/how-it-5.png" alt="slide image-1" />
+              </div>
+              <div class="col-lg-6">
+                <h2 class="m-20px-b">The Easiest Possible Integration</h2>
+                <p class="lh-lg m-20px-b"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                  officia deserunt. </p>
+                <div class="d-flex align-items-center how-works-content__slide__text">
+                  <i class="icofont-chart-histogram"></i>
+                  <div>
+                    <h4>View Histoycal Data</h4>
+                    <p class="lh-lg m-20px-b"> Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut. </p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center how-works-content__slide__text">
+                  <i class="icofont-calendar"></i>
+                  <div>
+                    <h4>Track Custom Events</h4>
+                    <p class="lh-lg m-20px-b"> Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut. </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
   <!-- ========== How it works section end ========== -->
   <!-- ========== Clients Section Start ========== -->
-  <div class="clients section-padding pt-0">
+  <section class="clients section-padding pt-5">
     <div class="container">
       <div class="row">
         <div class="hero__client-logo text-center">
@@ -232,10 +357,10 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
   <!-- ========== Clients Section End ========== -->
   <!-- ========== Overview Section Start ========== -->
-  <section id="overview" class="bg-color-1 overview section-padding">
+  <section id="overview" class="bg-color-1 overview overview-v3 section-padding">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-md-8 col-sm-10 offset-lg-3 offset-md-2 offset-sm-1">
@@ -246,86 +371,67 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="overview__sidebar col-lg-3">
-          <ul id="nav" class="overview__sidebar--items">
-            <li class="current">
-              <a class="olink active" href="#overview-1">Control hub</a>
-            </li>
-            <li>
-              <a class="olink" href="#overview-2">Time management</a>
-            </li>
-            <li>
-              <a class="olink" href="#overview-3">Collaborative platform</a>
-            </li>
-            <li>
-              <a class="olink" href="#overview-4">Save time and money</a>
-            </li>
-          </ul>
+      <div id="overview-1" class="overview__content row align-items-center">
+        <div class="col-lg-5">
+          <div class="text-center">
+            <img class="img-fluid" src="assets/images/meeting.svg" alt="overview img-1" />
+          </div>
         </div>
-        <div class="col-lg-9">
-          <!-- overview - 1  -->
-          <div id="overview-1" class="overview__content row">
-            <div class="col-lg-6">
-              <div class="text-center">
-                <img class="img-fluid" src="assets/images/meeting.svg" alt="overview img-1" />
-              </div>
-            </div>
-            <div class="col-lg-6 mt-4 mt-lg-0">
-              <h2 class="m-20px-b"> Stop wasting time shuffling between tools. </h2>
-              <p class="lh-lg m-20px-b"> Collaborate over projects with your team and clients optimised for mobile and
-                tablet don't let slow page speeds drive our innovative platform empowers anyone to convert clicks ou'll
-                publish your first landing page in minutes. </p>
-              <a href="#" class="btn-primary"><span>Try for free</span></a>
-            </div>
-          </div>
-          <!-- overview - 2  -->
-          <div id="overview-2" class="overview__content row">
-            <div class="col-lg-6 mt-4 mt-lg-0 order-2 order-lg-0">
-              <h2 class="m-20px-b"> Make tasks and distractions a thing of the past. </h2>
-              <p class="lh-lg m-20px-b"> Collaborate over projects with your team and clients optimised for mobile and
-                tablet don't let slow page speeds drive our innovative platform empowers anyone to convert clicks ou'll
-                publish your first landing page in minutes. </p>
-              <a href="#" class="btn-primary"><span>Try for free</span></a>
-            </div>
-            <div class="col-lg-6 order-1 order-lg-0">
-              <div class="text-center">
-                <img class="img-fluid" src="assets/images/time-manage.svg" alt="overview img-2" />
-              </div>
-            </div>
-          </div>
-          <!-- overview - 3  -->
-          <div id="overview-3" class="overview__content row">
-            <div class="col-lg-6">
-              <div class="text-center">
-                <img class="img-fluid" src="assets/images/collabration.svg" alt="overview img-3" />
-              </div>
-            </div>
-            <div class="col-lg-6 mt-4 mt-lg-0">
-              <h2 class="m-20px-b"> Ipsum enables you to choose the way you get work. </h2>
-              <p class="lh-lg m-20px-b"> Collaborate over projects with your team and clients optimised for mobile and
-                tablet don't let slow page speeds drive our innovative platform empowers anyone to convert clicks ou'll
-                publish your first landing page in minutes. </p>
-              <a href="#" class="btn-primary"><span>Try for free</span></a>
-            </div>
-          </div>
-          <!-- overview - 4  -->
-          <div id="overview-4" class="overview__content row">
-            <div class="col-lg-6 mt-4 mt-lg-0 order-2 order-lg-0">
-              <h2 class="lh-base m-20px-b"> Tracking profitability in real time, cover billing scenario. </h2>
-              <p class="lh-lg m-20px-b"> Collaborate over projects with your team and clients optimised for mobile and
-                tablet don't let slow page speeds drive our innovative platform empowers anyone to convert clicks ou'll
-                publish your first landing page in minutes. </p>
-              <a href="#" class="btn-primary"><span>Try for free</span></a>
-            </div>
-            <div class="col-lg-6 order-1 order-lg-0">
-              <div class="text-center">
-                <img class="img-fluid" src="assets/images/time-money.svg" alt="overview image 4" />
-              </div>
-            </div>
+        <div class="col-lg-6 offset-lg-1 mt-4 mt-lg-0">
+          <h2 class="m-20px-b">Stop wasting time shuffling between tools.</h2>
+          <p class="lh-lg m-20px-b"> Collaborate over projects with your team and clients optimised for mobile and
+            tablet don't let slow page speeds drive our innovative platform empowers anyone to convert clicks ou'll
+            publish your first landing page in minutes. </p>
+          <a href="#" class="btn-primary"><span>Try for free</span></a>
+        </div>
+      </div>
+      <!-- overview - 2  -->
+      <div id="overview-2" class="overview__content row align-items-center">
+        <div class="col-lg-6 mt-4 mt-lg-0 order-2 order-lg-0">
+          <h2 class="m-20px-b"> Make tasks and distractions a thing of the past. </h2>
+          <p class="lh-lg m-20px-b"> Collaborate over projects with your team and clients optimised for mobile and
+            tablet don't let slow page speeds drive our innovative platform empowers anyone to convert clicks ou'll
+            publish your first landing page in minutes. </p>
+          <a href="#" class="btn-primary"><span>Try for free</span></a>
+        </div>
+        <div class="col-lg-5 offset-lg-1 order-1 order-lg-0">
+          <div class="text-center">
+            <img class="img-fluid" src="assets/images/time-manage.svg" alt="overview img-2" />
           </div>
         </div>
       </div>
+      <!-- overview - 3  -->
+      <div id="overview-3" class="overview__content row align-items-center">
+        <div class="col-lg-5">
+          <div class="text-center">
+            <img class="img-fluid" src="assets/images/collabration.svg" alt="overview img-3" />
+          </div>
+        </div>
+        <div class="col-lg-6 offset-lg-1 mt-4 mt-lg-0">
+          <h2 class="m-20px-b"> Ipsum enables you to choose the way you get work. </h2>
+          <p class="lh-lg m-20px-b"> Collaborate over projects with your team and clients optimised for mobile and
+            tablet don't let slow page speeds drive our innovative platform empowers anyone to convert clicks ou'll
+            publish your first landing page in minutes. </p>
+          <a href="#" class="btn-primary"><span>Try for free</span></a>
+        </div>
+      </div>
+      <!-- overview - 4  -->
+      <div id="overview-4" class="overview__content row align-items-center">
+        <div class="col-lg-6 mt-4 mt-lg-0 order-2 order-lg-0">
+          <h2 class="lh-base m-20px-b"> Tracking profitability in real time, cover billing scenario. </h2>
+          <p class="lh-lg m-20px-b"> Collaborate over projects with your team and clients optimised for mobile and
+            tablet don't let slow page speeds drive our innovative platform empowers anyone to convert clicks ou'll
+            publish your first landing page in minutes. </p>
+          <a href="#" class="btn-primary"><span>Try for free</span></a>
+        </div>
+        <div class="col-lg-5 offset-lg-1 order-1 order-lg-0">
+          <div class="text-center">
+            <img class="img-fluid" src="assets/images/time-money.svg" alt="overview image 4" />
+          </div>
+        </div>
+      </div>
+      <!-- </div>
+        </div> -->
     </div>
     <!-- ========== Services section start ========== -->
     <div class="services m-80px-t container">
@@ -396,15 +502,18 @@
       <div class="row">
         <div class="col-lg-4 mb-3 mb-lg-0">
           <div class="pricing-one__single">
+            <h3><i class="icofont-leaf"></i>Free</h3>
+            <p>perfect to get started</p>
             <div class="pricing__values">
               <div class="pricing__value pricing__value--show">
-                <span>$</span>0 <b>/ Free</b>
+                <span>$</span>0 <b>per seat / month</b>
               </div>
               <div class="pricing__value pricing__value--hide pricing__value--hidden">
-                <span>$</span>0 <b>/ Free</b>
+                <span>$</span>0 <b>per seat / year</b>
               </div>
             </div>
             <ul class="pricing-one__list">
+              <li>Lite includes:</li>
               <li><i class="icofont-check-circled"></i>Unlimited projects</li>
               <li>
                 <i class="icofont-check-circled"></i>Unlimited team members
@@ -418,32 +527,25 @@
               <li>
                 <i class="icofont-check-circled"></i>Invoice and receipts
               </li>
-              <li>
-                <i class="icofont-close-circled"></i>Bills for each projects
-              </li>
-              <li><i class="icofont-close-circled"></i>Membership plan</li>
-              <li>
-                <i class="icofont-close-circled"></i>Summary financial report
-              </li>
-              <li>
-                <i class="icofont-close-circled"></i> Detailed work reports
-              </li>
             </ul>
-            <a href="#" class="btn-primary m-25px-t m-10px-b"><span>Choose Plan</span></a>
-            <span class="pricing-one__tag-line">No hidden charges</span>
+            <span class="pricing-one__tag-line">See all features</span>
+            <a href="#" class="btn-primary m-25px-t m-10px-b"><span>Try 7 day for free</span></a>
           </div>
         </div>
         <div class="col-lg-4 mb-3 mb-lg-0">
           <div class="pricing-one__single popular">
+            <h3><i class="icofont-brand-android-robot"></i>Pro</h3>
+            <p>Best for professionals</p>
             <div class="pricing__values">
               <div class="pricing__value pricing__value--show">
-                <span>$</span>49<b>/Basic</b>
+                <span>$</span>49<b>per seat / month</b>
               </div>
               <div class="pricing__value pricing__value--hide pricing__value--hidden">
-                <span>$</span>529 <b>/ Basic</b>
+                <span>$</span>529 <b>per seat / year</b>
               </div>
             </div>
             <ul class="pricing-one__list">
+              <li>Everything is lite, plus:</li>
               <li><i class="icofont-check-circled"></i>Unlimited projects</li>
               <li>
                 <i class="icofont-check-circled"></i>Unlimited team members
@@ -457,32 +559,25 @@
               <li>
                 <i class="icofont-check-circled"></i>Invoice and receipts
               </li>
-              <li>
-                <i class="icofont-check-circled"></i>Bills for each projects
-              </li>
-              <li><i class="icofont-check-circled"></i>Membership plan</li>
-              <li>
-                <i class="icofont-close-circled"></i>Summary financial report
-              </li>
-              <li>
-                <i class="icofont-close-circled"></i> Detailed work reports
-              </li>
             </ul>
-            <a href="#" class="btn-primary m-25px-t m-10px-b"><span>Choose Plan</span></a>
-            <span class="pricing-one__tag-line">No hidden charges</span>
+            <span class="pricing-one__tag-line">See all features</span>
+            <a href="#" class="btn-primary m-25px-t m-10px-b"><span>Get Started</span></a>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="pricing-one__single">
+            <h3><i class="icofont-flash"></i>Ultimate</h3>
+            <p>Toolset for hard players</p>
             <div class="pricing__values">
               <div class="pricing__value pricing__value--show">
-                <span>$</span>99 <b>/ Pro</b>
+                <span>$</span>99 <b>per seat / month</b>
               </div>
               <div class="pricing__value pricing__value--hide pricing__value--hidden">
-                <span>$</span>900 <b>/ Pro</b>
+                <span>$</span>900 <b>per seat / year</b>
               </div>
             </div>
-            <ul class="pricing-one__list">
+            <ul class="pricing-one__list ps-0">
+              <li>Everything in pro, plus:</li>
               <li><i class="icofont-check-circled"></i>Unlimited projects</li>
               <li>
                 <i class="icofont-check-circled"></i>Unlimited team members
@@ -496,19 +591,9 @@
               <li>
                 <i class="icofont-check-circled"></i>Invoice and receipts
               </li>
-              <li>
-                <i class="icofont-check-circled"></i>Bills for each projects
-              </li>
-              <li><i class="icofont-check-circled"></i>Membership plan</li>
-              <li>
-                <i class="icofont-check-circled"></i>Summary financial report
-              </li>
-              <li>
-                <i class="icofont-check-circled"></i> Detailed work reports
-              </li>
             </ul>
-            <a href="#" class="btn-primary m-25px-t m-10px-b"><span>Choose Plan</span></a>
-            <span class="pricing-one__tag-line">No hidden charges</span>
+            <span class="pricing-one__tag-line">See all features</span>
+            <a href="#" class="btn-primary m-25px-t m-10px-b"><span>Get Started</span></a>
           </div>
         </div>
       </div>
@@ -587,70 +672,75 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide p-5px-lr">
                 <div class="testi-card card">
-                  <div class="card-body p-4">
-                    <img src="assets/images/user-1.jpg" alt="User image-1" />
-                    <h5 class="my-4 pt-2 lh-base"> " Excellent support for a tricky issue related to our customization
-                      of the template." </h5>
-                    <h6 class="mb-0">Brightlight books</h6>
-                    <p class="mb-0">Ubold Customer</p>
-                    <div class="testi-card__quotation">
-                      <i class="icofont-quote-right"></i>
+                  <div class="card-body py-5 px-4">
+                    <h5 class="mb-5 lh-base"> " Excellent support for a tricky issue related to our customization of the
+                      template." </h5>
+                    <div class="testi-card__user-info">
+                      <img src="assets/images/user-1.jpg" alt="User image-1" />
+                      <div class="">
+                        <h6 class="mb-0">Brightlight bookss</h6>
+                        <p class="mb-0">Ubold Customer</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide p-5px-lr">
                 <div class="testi-card card">
-                  <div class="card-body p-4">
-                    <img src="assets/images/user-2.jpg" alt="User image-2" />
-                    <h5 class="my-4 pt-2 lh-base"> " This kit provides many options which I can youu use everyday. It's
-                      great work and helpful.” </h5>
-                    <h6 class="mb-0">Echineo</h6>
-                    <p class="mb-0">Ubold Customer</p>
-                    <div class="testi-card__quotation">
-                      <i class="icofont-quote-right"></i>
+                  <div class="card-body py-5 px-4">
+                    <h5 class="mb-5 lh-base"> " This kit provides many options which I can youu use everyday. It's great
+                      work and helpful.” </h5>
+                    <div class="testi-card__user-info">
+                      <img src="assets/images/user-2.jpg" alt="User image-1" />
+                      <div class="">
+                        <h6 class="mb-0">Brightlight bookss</h6>
+                        <p class="mb-0">Ubold Customer</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide p-5px-lr">
                 <div class="testi-card card">
-                  <div class="card-body p-4">
-                    <img src="assets/images/user-3.jpg" alt="User image-3" />
-                    <h5 class="my-4 pt-2 lh-base"> " This is a very extensive web app kit that can serve all kinds of
+                  <div class="card-body py-5 px-4">
+                    <h5 class="mb-5 lh-base"> " This is a very extensive web app kit that can serve all kinds of
                       purposes and help you." </h5>
-                    <h6 class="mb-0">Aebra Schultz</h6>
-                    <p class="mb-0">Designer</p>
-                    <div class="testi-card__quotation">
-                      <i class="icofont-quote-right"></i>
+                    <div class="testi-card__user-info">
+                      <img src="assets/images/user-3.jpg" alt="User image-1" />
+                      <div class="">
+                        <h6 class="mb-0">Brightlight bookss</h6>
+                        <p class="mb-0">Ubold Customer</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide p-5px-lr">
                 <div class="testi-card card">
-                  <div class="card-body p-4">
-                    <img src="assets/images/user-1.jpg" alt="User image-1" />
-                    <h5 class="my-4 pt-2 lh-base"> " Excellent support for a tricky issue related to our customization
-                      of the template." </h5>
-                    <h6 class="mb-0">Brightlight bookss</h6>
-                    <p class="mb-0">Ubold Customer</p>
-                    <div class="testi-card__quotation">
-                      <i class="icofont-quote-right"></i>
+                  <div class="card-body py-5 px-4">
+                    <h5 class="mb-5 lh-base"> " Excellent support for a tricky issue related to our customization of the
+                      template." </h5>
+                    <div class="testi-card__user-info">
+                      <img src="assets/images/user-1.jpg" alt="User image-1" />
+                      <div class="">
+                        <h6 class="mb-0">Brightlight bookss</h6>
+                        <p class="mb-0">Ubold Customer</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide p-5px-lr">
                 <div class="testi-card card">
-                  <div class="card-body p-4">
-                    <img src="assets/images/user-2.jpg" alt="User image-2" />
-                    <h5 class="my-4 pt-2 lh-base"> " This kit provides many options which I can you use everyday. It's
-                      great work and helpful.” </h5>
-                    <h6 class="mb-0">Echineo</h6>
-                    <p class="mb-0">Ubold Customer</p>
-                    <div class="testi-card__quotation">
-                      <i class="icofont-quote-right"></i>
+                  <div class="card-body py-5 px-4">
+                    <h5 class="mb-5 lh-base"> " This kit provides many options which I can you use everyday. It's great
+                      work and helpful.” </h5>
+                    <div class="testi-card__user-info">
+                      <img src="assets/images/user-2.jpg" alt="User image-1" />
+                      <div class="">
+                        <h6 class="mb-0">Brightlight bookss</h6>
+                        <p class="mb-0">Ubold Customer</p>
+                      </div>
                     </div>
                   </div>
                 </div>

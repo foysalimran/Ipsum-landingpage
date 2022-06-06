@@ -4,13 +4,16 @@
  * 1. HEADER STICKY
  * 2. NAVBAR ADD CLASS
  * 3. NAV COLLAPSE
- * 4. NAV SMOOTH SCROLL
- * 5. FIXED HEADER
+ * 4. FIXED HEADER
+ * 5. HERO VIDEO
  * 6. OVERVIEW ADD CLASS
  * 7. OVERVIEW SCROLL
  * 8. PRICING TOGGLER
  * 9. HOW IT WORKS SLIDER
  * 10. TESTIMONIAL SLIDER
+ * 11. COUNTER UP
+ * 12. AJAX MAILCHIMP SUBSCRIBE
+ * 13. LOCAL SUBSCRIPTION
  *
  * DOCUMENT READY FUNCTION
  * WINDOW ON SCROLL FUNCTION
@@ -29,23 +32,12 @@
   };
 
   /******************** 2. NAVBAR ADD CLASS ********************/
-  PATH.NavbarAddClass = function () {
-    var btns = $(".navbar-nav .nav-item");
-    for (var i = 0; i < btns.length; i++) {
-      btns[i].addEventListener("click", function () {
-        var current = document.getElementsByClassName("current");
-        current[0].className = current[0].className.replace(" current", "");
-        this.className += " current";
-      });
-    }
-
-    var distance = $(window).scrollTop();
-    $("section").each(function (i) {
-      if ($(this).position().top <= distance + 250) {
-        $(".navbar-nav li.current").removeClass("current");
-
-        $(".navbar-nav li").eq(i).addClass("current");
-      }
+  PATH.HeaderOnePageNav = function () {
+    $(".scroll").onePgaeNav({
+      activeClass: "active",
+      wrapper: "#onepage-nav",
+      navStop: 50,
+      navStart: 200,
     });
   };
 
@@ -59,32 +51,7 @@
     });
   };
 
-  /******************** 4. NAV SMOOTH SCROLL ********************/
-  PATH.HeaderScroll = function () {
-    $('.navbar a[href*="#"]:not([href="#"])').on("click", function () {
-      var PathName =
-        location.pathname.replace(/^\//, "") ==
-          this.pathname.replace(/^\//, "") ||
-        location.hostname == this.hostname;
-      if (PathName) {
-        var target = $(this.hash);
-        target = target.length
-          ? target
-          : $("[name=" + this.hash.slice(1) + "]");
-        if (target.length) {
-          $("html,body").animate(
-            {
-              scrollTop: target.offset().top - 65,
-            },
-            1000
-          );
-          return false;
-        }
-      }
-    });
-  };
-
-  /******************** 5. FIXED HEADER ********************/
+  /******************** 4. FIXED HEADER ********************/
   PATH.HeaderFixed = function () {
     var varHeaderFix = $(window).scrollTop() >= 60,
       $navbar = $(".navbar");
@@ -95,24 +62,18 @@
     }
   };
 
+  /******************** 5. HERO VIDEO ********************/
+  PATH.HeroVideo = function () {
+    $(".js-modal-btn").modalVideo();
+  };
+
   /******************** 6. OVERVIEW ADD CLASS ********************/
-  PATH.OverviewAddClass = function () {
-    var btns = $(".overview__sidebar li");
-    for (var i = 0; i < btns.length; i++) {
-      btns[i].addEventListener("click", function () {
-        var current = document.getElementsByClassName("current");
-        current[0].className = current[0].className.replace(" current", "");
-        this.className += " current";
-      });
-    }
-
-    var distance = $(window).scrollTop();
-    $(".overview__content").each(function (i) {
-      if ($(this).position().top <= distance + 250) {
-        $(".overview__sidebar li.current").removeClass("current");
-
-        $(".overview__sidebar li").eq(i).addClass("current");
-      }
+  PATH.OverviewScrollNav = function () {
+    $(".olink").onePgaeNav({
+      activeClass: "active",
+      wrapper: "#nav",
+      navStop: 100,
+      navStart: 200,
     });
   };
 
@@ -201,25 +162,89 @@
     });
   };
 
+  /******************** 11. COUNTER UP  ********************/
+  PATH.CounterUp = function () {
+    jQuery(document).ready(function ($) {
+      $(".counter").counterUp({
+        delay: 10,
+        time: 1000,
+      });
+    });
+  };
+
+  /******************** 12. AJAX MAILCHIMP SUBSCRIBE ********************/
+  PATH.ajaxChimp = function () {
+    $("#subscribe-mailchimp").ajaxChimp({
+      callback: mailchimpCallback,
+      url: "http:////unitetheme.us12.list-manage.com/subscribe/post?u=5e0141c017272ff01c6c3a091&amp;id=335f7c3601", // Replace your mailchimp post url inside double quote "".
+    });
+
+    function mailchimpCallback(resp) {
+      var error_msg = $("#subscribe-mailchimp").find(".error-msg");
+      var success_msg = $("#subscribe-mailchimp").find(".success-msg");
+
+      if (resp.result === "success") {
+        error_msg.fadeOut(200);
+        success_msg.html(resp.msg).fadeIn(200);
+      } else if (resp.result === "error") {
+        success_msg.fadeOut(200);
+        error_msg.html(resp.msg).fadeIn(200);
+      }
+    }
+  };
+  /******************** 13. LOCAL SUBSCRIPTION ********************/
+  PATH.localSubs = function () {
+    $("#subscribe").submit(function (e) {
+      e.preventDefault();
+      var email = $("#subscriber-email").val();
+      var dataString = "email=" + email;
+
+      function isValidEmail(emailAddress) {
+        var pattern = new RegExp(
+          /^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i
+        );
+        return pattern.test(emailAddress);
+      }
+
+      if (isValidEmail(email)) {
+        $.ajax({
+          type: "POST",
+          url: "assets/subscribe/subscribe.php",
+          data: dataString,
+          success: function () {
+            $(".success-msg").fadeIn(1000);
+            $(".error-msg").fadeOut(500);
+            $(".hide-after").fadeOut(500);
+          },
+        });
+      } else {
+        $(".error-msg").fadeIn(1000);
+      }
+
+      return false;
+    });
+  };
+
   /******************** DOCUMENT READY FUNCTION ********************/
   $(function () {
     PATH.MenuClose();
-    PATH.HeaderScroll();
+    PATH.HeaderOnePageNav();
     PATH.HeaderSticky();
+    PATH.HeroVideo();
+    PATH.OverviewScrollNav();
     PATH.PricingToggler();
     PATH.HowWorksSlide();
     PATH.TestimonialSlide();
+    PATH.CounterUp();
+    PATH.ajaxChimp();
+    PATH.localSubs();
   });
 
   /******************** WINDOW ON SCROLL FUNCTION ********************/
   $(window).on("scroll", function () {
     PATH.HeaderFixed();
-    PATH.NavbarAddClass();
-    PATH.OverviewAddClass();
   });
 
   /******************** WINDOW ON LOAD FUNCTION ********************/
-  $(window).on("load", function () {
-    PATH.OverviewScroll();
-  });
+  $(window).on("load", function () {});
 })(jQuery);

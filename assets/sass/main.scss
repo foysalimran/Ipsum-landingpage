@@ -1,22 +1,19 @@
 @import "./abstracts/variables";
 @import "./abstracts/mixins";
-
 @import "./base/animations";
 @import "./base/typography";
 @import "./base/base";
-
 @import "./components/hero";
 @import "./components/overview.scss";
 @import "./components/button";
 @import "./components/pricing";
 @import "./components/navbar";
 @import "./components/faq";
-
 @import "./components/services";
-
 @import "./components/howWorks";
 @import "./components/testimonial";
 @import "./components/cta";
-
+@import "./components/funFact";
 @import "./components/footer";
-
+// index -2 SCSS 
+@import "./components/hero-v2";

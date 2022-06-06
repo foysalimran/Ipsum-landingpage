@@ -1,19 +1,46 @@
-// Hero area start
+// Hero css start
 .hero {
   position: relative;
   overflow: hidden;
+  &__shape {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    img {
+      max-width: 100%;
+    }
+  }
   &__content {
+    @include respond(phone) {
+      text-align: center;
+    }
     & p,
     & h1,
     .btn-primary {
       animation-name: moveInLeft;
       animation-duration: 1s;
       animation-timing-function: ease-out;
+      @include respond(phone) {
+        padding: 5px 10px;
+      }
     }
-    & .btn-secondary {
+    & .btn__secondary {
       animation-name: moveInRight;
       animation-duration: 1s;
       animation-timing-function: ease-out;
+      @include respond(phone) {
+        padding: 5px 10px;
+        background-color: $color-primary;
+        color: $color-white;
+        &::before {
+          width: 0;
+        }
+        &::after {
+          width: 0;
+        }
+      }
     }
   }
   &__client-logo {
@@ -30,7 +57,7 @@
       text-align: center;
       overflow: hidden;
       padding: 15px;
-      webkit-transition: all 0.4s ease-in-out;
+
       -moz-transition: all 0.4s ease-in-out;
       -o-transition: all 0.4s ease-in-out;
       transition: all 0.4s ease-in-out;
@@ -62,7 +89,6 @@
         margin: 0 auto;
         -webkit-filter: grayscale(100%);
         filter: grayscale(100%);
-        webkit-transition: all 0.4s ease-in-out;
         -moz-transition: all 0.4s ease-in-out;
         -o-transition: all 0.4s ease-in-out;
         transition: all 0.4s ease-in-out;
@@ -107,10 +133,7 @@
     }
   }
   &__image {
-    animation-name: moveInRight;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-    @media screen and (max-width: 991px) {
+    @include respond(laptop) {
       position: relative;
       margin-top: 50px;
     }
@@ -121,24 +144,29 @@
       right: 0;
       bottom: 0;
       z-index: 2;
-      background-color: #f4f7fb;
+      background-color: $bg-color-1;
 
-      @media screen and (max-width: 991px) {
+      @include respond(laptop) {
         width: 100%;
         background: transparent;
       }
     }
     &__area {
+      img {
+        animation-name: moveInRight;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+      }
       position: relative;
       margin-bottom: 0;
       width: 100%;
-      right: -200px;
+      right: -120px;
       z-index: 3;
-      @media screen and (max-width: 1200px) {
-        right: -100px;
+      @include respond(desktop) {
+        right: -80px;
       }
 
-      @media screen and (max-width: 991px) {
+      @include respond(laptop) {
         right: 0px;
         img {
           width: 100%;
@@ -147,5 +175,33 @@
       }
     }
   }
+  &-v3 {
+    &__image {
+      margin-left: -120px;
+      padding-top: 80px;
+    }
+    &__shape-1 {
+      background-image: url(../images/shape_13.svg);
+      background-size: cover;
+      width: 150px;
+      height: 150px;
+      top: 20%;
+      left: 50%;
+      position: absolute;
+      -webkit-animation-duration: 7s;
+      animation-duration: 7s;
+      -webkit-perspective: 85px;
+      perspective: 85px;
+      -webkit-animation-name: bubbleMover;
+      animation-name: bubbleMover;
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      @include respond(desktop) {
+        display: none;
+      }
+    }
+  }
 }
-// Hero area end
+// Hero css end

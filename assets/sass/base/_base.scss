@@ -5,6 +5,10 @@
   padding: 0;
   box-sizing: inherit;
 }
+button {
+  border: none;
+  box-shadow: none;
+}
 a {
   text-decoration: none;
 }
@@ -20,6 +24,10 @@ body {
   text-align: right;
 }
 
+.bg-color-1 {
+  background-color: $bg-color-1;
+}
+
 /*
 * Section titles
 */
@@ -31,9 +39,12 @@ body {
   content: "";
   background-color: #0000002e;
   border-radius: 50%;
-  
 }
 .section-title {
+  h2 {
+    text-transform: capitalize;
+    margin-bottom: 15px;
+  }
   &__dot {
     @extend %title-divider-round;
     position: relative;
@@ -58,6 +69,7 @@ body {
     }
   }
   p {
+    margin-top: 20px;
     margin-bottom: 0;
   }
 }

@@ -2,8 +2,15 @@
   overflow: hidden;
 
   &-titles {
-    border-bottom: 1px solid $color-secondary;
-    margin-bottom: 20px;
+    border-bottom: 1px solid $color-border;
+
+    &__wrapper {
+      &.swiper-wrapper {
+        @include respond(laptop) {
+          width: 900px;
+        }
+      }
+    }
 
     &__slide {
       width: calc(100% / 5);
@@ -30,9 +37,8 @@
           content: "";
           position: absolute;
           left: 0;
-          
+          margin-bottom: -3px;
           bottom: 0;
-          margin: auto;
           width: 60%;
           height: 4px;
           background: $color-primary;
@@ -42,13 +48,36 @@
   }
 
   &-content__slide {
-    background-color: #fff;
-    padding: 40px 0;
-
+    margin-top: 40px;
     img {
       display: block;
       margin: auto;
       max-width: 100%;
     }
+    &__text {
+      i {
+        font-size: 45px;
+        color: $color-primary;
+        padding: 20px;
+        background: $bg-color-1;
+        border-radius: 50%;
+        margin-right: 30px;
+      }
+      h4 {
+        color: $color-primary;
+      }
+    }
+  }
+
+
+  
+}
+  // v3
+.test {
+  .nav-link {
+    color: $color-dark;
+  }
+  .nav-tabs .nav-link.active {
+    color: $color-primary;
   }
 }
