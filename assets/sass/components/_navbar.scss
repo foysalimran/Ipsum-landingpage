@@ -20,7 +20,7 @@
       }
     }
   }
-  .btn-secondary {
+  .btn__secondary {
     @include respond(phone) {
       background-color: $color-primary;
       color: $color-white;

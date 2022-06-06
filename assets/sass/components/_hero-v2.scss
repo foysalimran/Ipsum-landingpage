@@ -37,21 +37,6 @@
       padding: 40px;
     }
   }
-  .modal-dialog {
-    max-width: 800px;
-    margin: 30px auto;
-    padding: 0 20px;
-  }
-
-  .modal-body {
-    position: relative;
-    padding: 0px;
-  }
-  .btn-close {
-    position: absolute;
-    right: -30px;
-    top: 0;
-  }
 }
 
 
@@ -66,6 +51,9 @@
   animation-duration: 7s;
   -webkit-perspective: 85px;
   perspective: 85px;
+  @include respond(desktop) {
+    display: none;
+}
 }
 
 [class*=banner-one__shape-] {

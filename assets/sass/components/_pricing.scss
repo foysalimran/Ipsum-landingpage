@@ -185,3 +185,18 @@
 .switcher__button:nth-child(2).switcher__button--enabled ~ .switcher__border {
   left: 50%;
 }
+
+
+.pricingV2 {
+  .pricing-one{
+    &__single {
+      padding: 45px 20px;
+    }
+    &__list {
+      text-align: center;
+      li {
+        display: block;
+      }
+    }
+  }
+}
