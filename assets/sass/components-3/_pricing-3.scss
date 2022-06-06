@@ -70,6 +70,10 @@
       padding: 50px;
       position: relative;
       z-index: 11;
+      i {
+        color: $color-primary;
+        margin-right: 10px;
+      }
       &.popular:after {
         content: "Popular";
         position: absolute;

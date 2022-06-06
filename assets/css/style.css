@@ -1808,6 +1808,9 @@ body {
     padding: 50px;
     position: relative;
     z-index: 11; }
+    .pricing-3-one__single i {
+      color: #6365f1;
+      margin-right: 10px; }
     .pricing-3-one__single.popular:after {
       content: "Popular";
       position: absolute;
