@@ -89,22 +89,17 @@
       height: 90px;
       position: relative;
       border-radius: 50% 50% 50% 50%;
-      -webkit-border-radius: 50% 50% 50% 50%;
-      -moz-border-radius: 50% 50% 50% 50%;
-      -ms-border-radius: 50% 50% 50% 50%;
-      -o-border-radius: 50% 50% 50% 50%;
-        webkit-transition: all 0.4s ease-in-out;
-        -moz-transition: all 0.4s ease-in-out;
-        -o-transition: all 0.4s ease-in-out;
-        transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
       background-color: #ffffff;
       box-shadow: 0 8px 48px 0 rgba(0, 0, 0, 0.15);
-      -moz-box-shadow: 0 8px 48px 0 rgba(0, 0, 0, 0.15);
-      -webkit-box-shadow: 0 8px 48px 0 rgba(0, 0, 0, 0.15);
-      -o-box-shadow: 0 8px 48px 0 rgba(0, 0, 0, 0.15);
       color: $color-primary;
       line-height: 90px;
       font-size: 32px;
+      @include respond(phone) {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+      }
     }
     &:hover .icon-outer {
       background-color: $color-primary;
@@ -128,25 +123,25 @@
       -moz-transform: translateX(0) translateY(-50%) translateZ(0) rotate(0deg) scale(1);
       -webkit-transform: translateX(0) translateY(-50%) translateZ(0) rotate(0deg) scale(1);
       z-index: -1;
+      @include respond(phone) {
+        border: none;
+      }
     }
     &::before {
       right: 50%;
+    }
+    @include respond(phone) {
+      h5 {
+        display: none;
+      }
     }
   }
   .features-item:first-child::before {
     border-color: transparent;
     
-    @include respond(phone) {
-      border-top: 1px solid $color-secondary;
-    }
-    
   }
   .features-item:last-child::after {
     border-color: transparent;
-    
-    @include respond(phone) {
-      border-top: 1px solid $color-secondary;
-    }
   }
 
   .nav-link.active {
