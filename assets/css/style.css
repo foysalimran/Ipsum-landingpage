@@ -306,7 +306,6 @@ body {
       text-align: center;
       overflow: hidden;
       padding: 15px;
-      webkit-transition: all 0.4s ease-in-out;
       -moz-transition: all 0.4s ease-in-out;
       -o-transition: all 0.4s ease-in-out;
       transition: all 0.4s ease-in-out; }
@@ -330,7 +329,6 @@ body {
         margin: 0 auto;
         -webkit-filter: grayscale(100%);
         filter: grayscale(100%);
-        webkit-transition: all 0.4s ease-in-out;
         -moz-transition: all 0.4s ease-in-out;
         -o-transition: all 0.4s ease-in-out;
         transition: all 0.4s ease-in-out; }
@@ -390,8 +388,7 @@ body {
       .hero__image__area {
         right: 0px; }
         .hero__image__area img {
-          width: 100%;
-          padding: 0 10px; } }
+          width: 100%; } }
   .hero-v3__image {
     margin-left: -120px;
     padding-top: 80px; }
@@ -1213,8 +1210,7 @@ body {
   border: none; }
   .fun-fact__card-body {
     text-align: center; }
-    .fun-fact__card-body i {
-      display: block;
+    .fun-fact__card-body--icon {
       height: 170px;
       width: 170px;
       display: flex;
@@ -1404,14 +1400,12 @@ body {
   .hero-2__shape-2 {
     position: absolute;
     top: 300px;
-    right: 240px;
-    z-index: -1; }
+    right: 240px; }
     @media only screen and (max-width: 1400px) {
       .hero-2__shape-2 {
         right: 150px; } }
     @media only screen and (max-width: 1199px) {
       .hero-2__shape-2 {
-        top: 350px;
         right: 120px; } }
     @media only screen and (max-width: 991px) {
       .hero-2__shape-2 {
@@ -1421,15 +1415,40 @@ body {
         display: none; } }
   .hero-2__content {
     max-width: 750px;
-    margin: 0 auto;
+    margin-right: auto;
+    margin-left: auto;
     text-align: center; }
-  .hero-2__image img {
-    width: 100%;
-    padding: 40px; }
+    .hero-2__content p,
+    .hero-2__content h1,
+    .hero-2__content .btn-primary {
+      animation-name: moveInLeft;
+      animation-duration: 1s;
+      animation-timing-function: ease-out; }
+      @media only screen and (max-width: 575px) {
+        .hero-2__content p,
+        .hero-2__content h1,
+        .hero-2__content .btn-primary {
+          padding: 5px 10px; } }
+    .hero-2__content .btn__secondary {
+      animation-name: moveInRight;
+      animation-duration: 1s;
+      animation-timing-function: ease-out; }
+      @media only screen and (max-width: 575px) {
+        .hero-2__content .btn__secondary {
+          padding: 5px 10px;
+          background-color: #6365f1;
+          color: #fff; }
+          .hero-2__content .btn__secondary::before {
+            width: 0; }
+          .hero-2__content .btn__secondary::after {
+            width: 0; } }
+  .hero-2__image {
+    text-align: center; }
 
 .banner-one__shape-1 {
   background-image: url(../images/box-1.svg);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 150px;
   height: 150px;
   top: 20%;
@@ -1438,8 +1457,24 @@ body {
   animation-duration: 7s;
   -webkit-perspective: 85px;
   perspective: 85px; }
-  @media only screen and (max-width: 1199px) {
+  @media only screen and (max-width: 767px) {
     .banner-one__shape-1 {
+      display: none; } }
+
+.banner-one__shape-2 {
+  background-image: url(../images/dots-border-1.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 150px;
+  top: 20%;
+  right: 15%;
+  -webkit-animation-duration: 7s;
+  animation-duration: 7s;
+  -webkit-perspective: 85px;
+  perspective: 85px; }
+  @media only screen and (max-width: 767px) {
+    .banner-one__shape-2 {
       display: none; } }
 
 [class*=banner-one__shape-] {
