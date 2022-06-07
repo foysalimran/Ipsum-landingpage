@@ -5,14 +5,12 @@
     position: absolute;
     top: 300px;
     right: 240px;
-    z-index: -1;
 
     @include respond(big-desktop) {
         right: 150px;
     }
 
     @include respond(desktop) {
-        top: 350px;
     right: 120px;
     }
     @include respond(laptop) {
@@ -27,22 +25,47 @@
   }
   &__content {
     max-width: 750px;
-    margin: 0 auto;
+    margin-right: auto;
+    margin-left: auto;
     text-align: center;
+    & p,
+    & h1,
+    .btn-primary {
+      animation-name: moveInLeft;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+      @include respond(phone) {
+        padding: 5px 10px;
+      }
+    }
+    & .btn__secondary {
+      animation-name: moveInRight;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+      @include respond(phone) {
+        padding: 5px 10px;
+        background-color: $color-primary;
+        color: $color-white;
+        &::before {
+          width: 0;
+        }
+        &::after {
+          width: 0;
+        }
+      }
+    }
   }
 
   &__image {
-    img {
-      width: 100%;
-      padding: 40px;
-    }
+    text-align: center;
   }
 }
 
 
 .banner-one__shape-1 {
   background-image: url(../images/box-1.svg);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 150px;
   height: 150px;
   top: 20%;
@@ -51,7 +74,23 @@
   animation-duration: 7s;
   -webkit-perspective: 85px;
   perspective: 85px;
-  @include respond(desktop) {
+  @include respond(tablet) {
+    display: none;
+}
+}
+.banner-one__shape-2 {
+  background-image: url(../images/dots-border-1.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 150px;
+  top: 20%;
+  right: 15%;
+  -webkit-animation-duration: 7s;
+  animation-duration: 7s;
+  -webkit-perspective: 85px;
+  perspective: 85px;
+  @include respond(tablet) {
     display: none;
 }
 }

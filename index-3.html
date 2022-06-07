@@ -87,11 +87,11 @@
   </header>
   <!-- ========== Navbar End ========== -->
   <!-- ========== Hero Section Start ========== -->
-  <section id="hero" class="hero lg-p-100px-t">
+  <section id="hero" class="hero lg-p-100px-t bg-color-1">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-12 col-xl-6">
-          <div class="hero__content text-center text-xl-start">
+          <div class="hero__content m-50px-b text-center text-xl-start">
             <h1 class="display-4 m-30px-b text-capitalize"> Take Control of your Project and Team </h1>
             <p class="fs-4 m-50px-b md-m-30px-b"> The one place for all your projects, team collaboration &amp; client
               management </p>
@@ -102,9 +102,14 @@
             </div>
           </div>
         </div>
-        <div class="d-none d-xl-block col-lg-6">
+        <div class="d-none d-xl-block col-xl-6">
           <div class="hero-v3__image">
-            <img class="" src="assets//images/hero-5.png" alt="" />
+            <img class="" src="assets//images/hero-3.png" alt="" />
+          </div>
+        </div>
+        <div class="d-block d-xl-none col-xl-6">
+          <div class="hero-v3__image m-0 p-0 text-center">
+            <img class="img-fluid" src="assets//images/hero-new.png" alt="" />
           </div>
         </div>
       </div>
@@ -127,6 +132,48 @@
   <!-- ========== How it works section start ========== -->
   <div id="about" class="section-padding">
     <div class="container">
+      <!-- ========== Services section start ========== -->
+      <div class="row services m-80px-b">
+        <div class="col-md-6 mb-3 mb-xl-0 col-xl-3">
+          <div class="card">
+            <div class="card-body px-4 pt-4 pb-2">
+              <h5 class="pb-3 pt-2">Easy to <span>Mange</span></h5>
+              <p> With supporting text below as a natural lead-in to additional content. </p>
+              <span class="d-flex justify-content-end"><i class="icofont-royal icon"></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3 mb-xl-0 col-xl-3">
+          <div class="card">
+            <div class="card-body px-4 pt-4 pb-2">
+              <h5 class="pb-3 pt-2"><span>Detailed</span> Data report</h5>
+              <p> With supporting text below as a natural lead-in to additional content. </p>
+              <span class="d-flex justify-content-end"><i class="icofont-attachment icon"></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3 mb-md-0 mb-xl-0 col-xl-3">
+          <div class="card">
+            <div class="card-body px-4 pt-4 pb-2">
+              <h5 class="pb-3 pt-2">
+                <span>Smart </span>UI <span>Design</span>
+              </h5>
+              <p> With supporting text below as a natural lead-in to additional content. </p>
+              <span class="d-flex justify-content-end"><i class="icofont-spreadsheet icon"></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-xl-0 col-xl-3">
+          <div class="card">
+            <div class="card-body px-4 pt-4 pb-2">
+              <h5 class="pb-3 pt-2"><span>Target</span> Audience</h5>
+              <p> With supporting text below as a natural lead-in to additional content. </p>
+              <span class="d-flex justify-content-end"><i class="icofont-bullseye icon"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ========== Services section end ========== -->
       <div class="row">
         <div class="col-lg-6 col-md-8 col-sm-10 offset-lg-3 offset-md-2 offset-sm-1">
           <div class="section-title title-center m-60px-b">
@@ -137,21 +184,38 @@
         </div>
       </div>
       <div class="tab-container-one">
-        <ul class="nav" role="tablist">
-          <li class="nav-item active">
-            <a class="nav-link active" href="#home" role="tab" aria-controls="home" data-bs-toggle="tab">Frontend</a>
+        <ul class="nav row text-center" role="tablist">
+          <li class="nav-item active col-3 features-item">
+            <a class="nav-link active" href="#home" role="tab" aria-controls="home" data-bs-toggle="tab">
+              <div class="icon-outer">
+                <i class="icofont-globe"></i>
+              </div>
+              <h5 class="m-30px-t">Frontend</h5>
+            </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#profile" role="tab" aria-controls="profile" data-bs-toggle="tab">Analytics</a>
+          <li class="nav-item col-3 features-item">
+            <a class="nav-link" href="#profile" role="tab" aria-controls="profile" data-bs-toggle="tab">
+              <div class="icon-outer">
+                <i class="icofont-settings"></i>
+              </div>
+              <h5 class="m-30px-t">Analytics</h5>
+            </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#messages" role="tab" aria-controls="messages" data-bs-toggle="tab">Management</a>
+          <li class="nav-item col-3 features-item">
+            <a class="nav-link" href="#messages" role="tab" aria-controls="messages" data-bs-toggle="tab">
+              <div class="icon-outer">
+                <i class="icofont-ui-password"></i>
+              </div>
+              <h5 class="m-30px-t">Management</h5>
+            </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#settings" role="tab" aria-controls="settings" data-bs-toggle="tab">Schedule</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#creation" role="tab" aria-controls="settings" data-bs-toggle="tab">Creation</a>
+          <li class="nav-item col-3 features-item">
+            <a class="nav-link" href="#settings" role="tab" aria-controls="settings" data-bs-toggle="tab">
+              <div class="icon-outer">
+                <i class="icofont-list"></i>
+              </div>
+              <h5 class="m-30px-t">Schedule</h5>
+            </a>
           </li>
         </ul>
         <div class="tab-content how-works-content__slide">
@@ -161,25 +225,31 @@
                 <img class="img-fluid" src="assets/images/how-it-1.png" alt="slide image-1" />
               </div>
               <div class="col-lg-6">
-                <h2 class="m-20px-b">Lorem ipsum dolor sit amet.</h2>
-                <p class="lh-lg m-20px-b"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                  officia deserunt. </p>
-                <div class="d-flex align-items-center how-works-content__slide__text">
-                  <i class="icofont-chart-histogram"></i>
-                  <div>
-                    <h4>View Histoycal Data</h4>
-                    <p class="lh-lg m-20px-b"> Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                      exercitation ullamco laboris nisi ut. </p>
+                <div class="md-p-0px-l p-55px-l">
+                  <h2 class="how-works-content__slide__title m-25px-b"> Lorem ipsum dolor sit amet. </h2>
+                  <p class="lh-lg m-25px-b"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt. </p>
+                  <div class="d-flex how-works-content__slide__text">
+                    <div class="how-works-content__slide__text__icon">
+                      <i class="icofont-chart-histogram"></i>
+                    </div>
+                    <div>
+                      <h5>View Histoycal Data</h5>
+                      <p class="lh-lg m-20px-b"> Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut. </p>
+                    </div>
                   </div>
-                </div>
-                <div class="d-flex align-items-center how-works-content__slide__text">
-                  <i class="icofont-calendar"></i>
-                  <div>
-                    <h4>Track Custom Events</h4>
-                    <p class="lh-lg m-20px-b"> Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                      exercitation ullamco laboris nisi ut. </p>
+                  <div class="d-flex how-works-content__slide__text">
+                    <div class="how-works-content__slide__text__icon">
+                      <i class="icofont-calendar"></i>
+                    </div>
+                    <div>
+                      <h5>Track Custom Events</h5>
+                      <p class="lh-lg m-20px-b"> Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut. </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -188,25 +258,31 @@
           <div class="tab-pane" id="profile" role="tabpanel">
             <div class="row align-items-center">
               <div class="col-lg-6 order-2 order-lg-0">
-                <h2 class="m-20px-b">The Easiest Possible Integration</h2>
-                <p class="lh-lg m-20px-b"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                  officia deserunt. </p>
-                <div class="d-flex align-items-center how-works-content__slide__text">
-                  <i class="icofont-chart-histogram"></i>
-                  <div>
-                    <h4>View Histoycal Data</h4>
-                    <p class="lh-lg m-20px-b"> Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                      exercitation ullamco laboris nisi ut. </p>
+                <div class="md-p-0px-l p-55px-l">
+                  <h2 class="how-works-content__slide__title m-25px-b"> The Easiest Possible Integration </h2>
+                  <p class="lh-lg m-25px-b"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt. </p>
+                  <div class="d-flex how-works-content__slide__text">
+                    <div class="how-works-content__slide__text__icon">
+                      <i class="icofont-chart-histogram"></i>
+                    </div>
+                    <div>
+                      <h5>View Histoycal Data</h5>
+                      <p class="lh-lg m-20px-b"> Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut. </p>
+                    </div>
                   </div>
-                </div>
-                <div class="d-flex align-items-center how-works-content__slide__text">
-                  <i class="icofont-calendar"></i>
-                  <div>
-                    <h4>Track Custom Events</h4>
-                    <p class="lh-lg m-20px-b"> Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                      exercitation ullamco laboris nisi ut. </p>
+                  <div class="d-flex how-works-content__slide__text">
+                    <div class="how-works-content__slide__text__icon">
+                      <i class="icofont-calendar"></i>
+                    </div>
+                    <div>
+                      <h5>Track Custom Events</h5>
+                      <p class="lh-lg m-20px-b"> Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut. </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -221,25 +297,31 @@
                 <img class="img-fluid" src="assets/images/how-it-3.png" alt="slide image-3" />
               </div>
               <div class="col-lg-6">
-                <h2 class="m-20px-b">Lorem ipsum dolor sit amet.</h2>
-                <p class="lh-lg m-20px-b"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                  officia deserunt. </p>
-                <div class="d-flex align-items-center how-works-content__slide__text">
-                  <i class="icofont-chart-histogram"></i>
-                  <div>
-                    <h4>View Histoycal Data</h4>
-                    <p class="lh-lg m-20px-b"> Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                      exercitation ullamco laboris nisi ut. </p>
+                <div class="md-p-0px-l p-55px-l">
+                  <h2 class="how-works-content__slide__title m-25px-b"> Lorem ipsum dolor sit amet. </h2>
+                  <p class="lh-lg m-25px-b"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt. </p>
+                  <div class="d-flex how-works-content__slide__text">
+                    <div class="how-works-content__slide__text__icon">
+                      <i class="icofont-chart-histogram"></i>
+                    </div>
+                    <div>
+                      <h5>View Histoycal Data</h5>
+                      <p class="lh-lg m-20px-b"> Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut. </p>
+                    </div>
                   </div>
-                </div>
-                <div class="d-flex align-items-center how-works-content__slide__text">
-                  <i class="icofont-calendar"></i>
-                  <div>
-                    <h4>Track Custom Events</h4>
-                    <p class="lh-lg m-20px-b"> Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                      exercitation ullamco laboris nisi ut. </p>
+                  <div class="d-flex how-works-content__slide__text">
+                    <div class="how-works-content__slide__text__icon">
+                      <i class="icofont-calendar"></i>
+                    </div>
+                    <div>
+                      <h5>Track Custom Events</h5>
+                      <p class="lh-lg m-20px-b"> Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut. </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -248,25 +330,31 @@
           <div class="tab-pane" id="settings" role="tabpanel">
             <div class="row align-items-center">
               <div class="col-lg-6 order-2 order-lg-0">
-                <h2 class="m-20px-b">The Easiest Possible Integration</h2>
-                <p class="lh-lg m-20px-b"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                  officia deserunt. </p>
-                <div class="d-flex align-items-center how-works-content__slide__text">
-                  <i class="icofont-chart-histogram"></i>
-                  <div>
-                    <h4>View Histoycal Data</h4>
-                    <p class="lh-lg m-20px-b"> Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                      exercitation ullamco laboris nisi ut. </p>
+                <div class="md-p-0px-l p-55px-l">
+                  <h2 class="how-works-content__slide__title m-25px-b"> The Easiest Possible Integration </h2>
+                  <p class="lh-lg m-25px-b"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt. </p>
+                  <div class="d-flex how-works-content__slide__text">
+                    <div class="how-works-content__slide__text__icon">
+                      <i class="icofont-chart-histogram"></i>
+                    </div>
+                    <div>
+                      <h5>View Histoycal Data</h5>
+                      <p class="lh-lg m-20px-b"> Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut. </p>
+                    </div>
                   </div>
-                </div>
-                <div class="d-flex align-items-center how-works-content__slide__text">
-                  <i class="icofont-calendar"></i>
-                  <div>
-                    <h4>Track Custom Events</h4>
-                    <p class="lh-lg m-20px-b"> Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                      exercitation ullamco laboris nisi ut. </p>
+                  <div class="d-flex how-works-content__slide__text">
+                    <div class="how-works-content__slide__text__icon">
+                      <i class="icofont-calendar"></i>
+                    </div>
+                    <div>
+                      <h5>Track Custom Events</h5>
+                      <p class="lh-lg m-20px-b"> Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut. </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -275,32 +363,53 @@
               </div>
             </div>
           </div>
-          <div class="tab-pane" id="creation" role="tabpanel">
-            <div class="row align-items-center">
-              <div class="col-lg-6 mb-4 mb-xl-0">
-                <img class="img-fluid" src="assets/images/how-it-5.png" alt="slide image-1" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ========== How it works section end ========== -->
+  <!-- ========== Overview Section Start ========== -->
+  <section id="overview" class="bg-color-1 overview section-padding">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-10 offset-md-1">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="text-center">
+                <img class="img-fluid" src="assets/images/meeting.svg" alt="overview img-1" />
               </div>
-              <div class="col-lg-6">
-                <h2 class="m-20px-b">The Easiest Possible Integration</h2>
-                <p class="lh-lg m-20px-b"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                  officia deserunt. </p>
-                <div class="d-flex align-items-center how-works-content__slide__text">
-                  <i class="icofont-chart-histogram"></i>
-                  <div>
-                    <h4>View Histoycal Data</h4>
-                    <p class="lh-lg m-20px-b"> Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                      exercitation ullamco laboris nisi ut. </p>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center how-works-content__slide__text">
-                  <i class="icofont-calendar"></i>
-                  <div>
-                    <h4>Track Custom Events</h4>
-                    <p class="lh-lg m-20px-b"> Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                      exercitation ullamco laboris nisi ut. </p>
-                  </div>
+            </div>
+            <div class="col-lg-6">
+              <p class="m-0"><strong>ABOUT US</strong></p>
+              <h2 class="m-20px-b">Stop wasting time shuffling between tools.</h2>
+              <p class="lh-lg m-20px-b"> Collaborate over projects with your team and clients optimised for mobile and
+                tablet don't let slow page speeds drive our innovative platform empowers anyone to convert clicks ou'll
+                publish your first landing page in minutes. </p>
+              <a href="#" class="btn-primary"><span>Try for free</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-padding">
+    <div class="container">
+      <div class="row">
+        <!-- overview - 2  -->
+        <div id="overview-2" class="overview__content row align-items-center">
+          <div class="col-md-10 offset-md-1">
+            <div class="row">
+              <div class="col-lg-6 mt-4 mt-lg-0 order-2 order-lg-0">
+                <p class="m-0"><strong>CHANGE YOUR MANAGEMENT STYLE</strong></p>
+                <h2 class="m-20px-b"> Make tasks and distractions a thing of the past. </h2>
+                <p class="lh-lg m-20px-b"> Collaborate over projects with your team and clients optimised for mobile and
+                  tablet don't let slow page speeds drive our innovative platform empowers anyone to convert clicks
+                  ou'll publish your first landing page in minutes. </p>
+                <a href="#" class="btn-primary"><span>Try for free</span></a>
+              </div>
+              <div class="col-lg-5 offset-lg-1 order-1 order-lg-0">
+                <div class="text-center">
+                  <img class="img-fluid" src="assets/images/time-manage.svg" alt="overview img-2" />
                 </div>
               </div>
             </div>
@@ -308,10 +417,10 @@
         </div>
       </div>
     </div>
-  </div>
-  <!-- ========== How it works section end ========== -->
+  </section>
+  <!-- ========== Overview Section End ========== -->
   <!-- ========== Clients Section Start ========== -->
-  <section class="clients section-padding pt-5">
+  <section class="clients section-padding bg-color-1">
     <div class="container">
       <div class="row">
         <div class="hero__client-logo text-center">
@@ -359,126 +468,6 @@
     </div>
   </section>
   <!-- ========== Clients Section End ========== -->
-  <!-- ========== Overview Section Start ========== -->
-  <section id="overview" class="bg-color-1 overview overview-v3 section-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-md-8 col-sm-10 offset-lg-3 offset-md-2 offset-sm-1">
-          <div class="section-title title-center m-60px-b">
-            <h2 class="display-6">Why we're unique?</h2>
-            <div class="title-center__dot"></div>
-            <p class="fs-5"> The complete team solution for startup to unicorn business managers </p>
-          </div>
-        </div>
-      </div>
-      <div id="overview-1" class="overview__content row align-items-center">
-        <div class="col-lg-5">
-          <div class="text-center">
-            <img class="img-fluid" src="assets/images/meeting.svg" alt="overview img-1" />
-          </div>
-        </div>
-        <div class="col-lg-6 offset-lg-1 mt-4 mt-lg-0">
-          <h2 class="m-20px-b">Stop wasting time shuffling between tools.</h2>
-          <p class="lh-lg m-20px-b"> Collaborate over projects with your team and clients optimised for mobile and
-            tablet don't let slow page speeds drive our innovative platform empowers anyone to convert clicks ou'll
-            publish your first landing page in minutes. </p>
-          <a href="#" class="btn-primary"><span>Try for free</span></a>
-        </div>
-      </div>
-      <!-- overview - 2  -->
-      <div id="overview-2" class="overview__content row align-items-center">
-        <div class="col-lg-6 mt-4 mt-lg-0 order-2 order-lg-0">
-          <h2 class="m-20px-b"> Make tasks and distractions a thing of the past. </h2>
-          <p class="lh-lg m-20px-b"> Collaborate over projects with your team and clients optimised for mobile and
-            tablet don't let slow page speeds drive our innovative platform empowers anyone to convert clicks ou'll
-            publish your first landing page in minutes. </p>
-          <a href="#" class="btn-primary"><span>Try for free</span></a>
-        </div>
-        <div class="col-lg-5 offset-lg-1 order-1 order-lg-0">
-          <div class="text-center">
-            <img class="img-fluid" src="assets/images/time-manage.svg" alt="overview img-2" />
-          </div>
-        </div>
-      </div>
-      <!-- overview - 3  -->
-      <div id="overview-3" class="overview__content row align-items-center">
-        <div class="col-lg-5">
-          <div class="text-center">
-            <img class="img-fluid" src="assets/images/collabration.svg" alt="overview img-3" />
-          </div>
-        </div>
-        <div class="col-lg-6 offset-lg-1 mt-4 mt-lg-0">
-          <h2 class="m-20px-b"> Ipsum enables you to choose the way you get work. </h2>
-          <p class="lh-lg m-20px-b"> Collaborate over projects with your team and clients optimised for mobile and
-            tablet don't let slow page speeds drive our innovative platform empowers anyone to convert clicks ou'll
-            publish your first landing page in minutes. </p>
-          <a href="#" class="btn-primary"><span>Try for free</span></a>
-        </div>
-      </div>
-      <!-- overview - 4  -->
-      <div id="overview-4" class="overview__content row align-items-center">
-        <div class="col-lg-6 mt-4 mt-lg-0 order-2 order-lg-0">
-          <h2 class="lh-base m-20px-b"> Tracking profitability in real time, cover billing scenario. </h2>
-          <p class="lh-lg m-20px-b"> Collaborate over projects with your team and clients optimised for mobile and
-            tablet don't let slow page speeds drive our innovative platform empowers anyone to convert clicks ou'll
-            publish your first landing page in minutes. </p>
-          <a href="#" class="btn-primary"><span>Try for free</span></a>
-        </div>
-        <div class="col-lg-5 offset-lg-1 order-1 order-lg-0">
-          <div class="text-center">
-            <img class="img-fluid" src="assets/images/time-money.svg" alt="overview image 4" />
-          </div>
-        </div>
-      </div>
-      <!-- </div>
-        </div> -->
-    </div>
-    <!-- ========== Services section start ========== -->
-    <div class="services m-80px-t container">
-      <div class="row">
-        <div class="col-md-6 mb-3 mb-xl-0 col-xl-3">
-          <div class="card">
-            <div class="card-body px-4 pt-4 pb-2">
-              <h5 class="pb-3 pt-2">Easy to <span>Mange</span></h5>
-              <p> With supporting text below as a natural lead-in to additional content. </p>
-              <span class="d-flex justify-content-end"><i class="icofont-royal icon"></i></span>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 mb-3 mb-xl-0 col-xl-3">
-          <div class="card">
-            <div class="card-body px-4 pt-4 pb-2">
-              <h5 class="pb-3 pt-2"><span>Detailed</span> Data report</h5>
-              <p> With supporting text below as a natural lead-in to additional content. </p>
-              <span class="d-flex justify-content-end"><i class="icofont-attachment icon"></i></span>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 mb-3 mb-md-0 mb-xl-0 col-xl-3">
-          <div class="card">
-            <div class="card-body px-4 pt-4 pb-2">
-              <h5 class="pb-3 pt-2">
-                <span>Smart </span>UI <span>Design</span>
-              </h5>
-              <p> With supporting text below as a natural lead-in to additional content. </p>
-              <span class="d-flex justify-content-end"><i class="icofont-spreadsheet icon"></i></span>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 mb-xl-0 col-xl-3">
-          <div class="card">
-            <div class="card-body px-4 pt-4 pb-2">
-              <h5 class="pb-3 pt-2"><span>Target</span> Audience</h5>
-              <p> With supporting text below as a natural lead-in to additional content. </p>
-              <span class="d-flex justify-content-end"><i class="icofont-bullseye icon"></i></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- ========== Services section end ========== -->
-  </section>
-  <!-- ========== Overview Section End ========== -->
   <!-- ========== Pricing section start ========== -->
   <section class="pricing section-padding" id="pricing">
     <div class="container">
@@ -616,7 +605,9 @@
         <div class="col-12 col-sm-6 mb-3 mb-lg-0 col-lg-3 fun-fact__box">
           <div class="card fun-fact__card p-30px-tb">
             <div class="fun-fact__card-body">
-              <i class="icofont-airplane"></i>
+              <div class="fun-fact__card-body--icon">
+                <i class="icofont-airplane"></i>
+              </div>
               <h4 class=""><span class="counter">80</span>%</h4>
               <p class="mb-0"> Spend 80% less time <br /> on admin </p>
             </div>
@@ -625,7 +616,9 @@
         <div class="col-12 col-sm-6 mb-3 mb-lg-0 col-lg-3 fun-fact__box">
           <div class="card fun-fact__card p-30px-tb">
             <div class="fun-fact__card-body">
-              <i class="icofont-brand-delicious"></i>
+              <div class="fun-fact__card-body--icon">
+                <i class="icofont-brand-delicious"></i>
+              </div>
               <h4 class=""><span class="counter">40</span>x</h4>
               <p class="mb-0"> Attract 40x more <br /> the candidate </p>
             </div>
@@ -634,7 +627,9 @@
         <div class="col-12 col-sm-6 mb-3 mb-lg-0 col-lg-3 fun-fact__box">
           <div class="card fun-fact__card p-30px-tb">
             <div class="fun-fact__card-body">
-              <i class="icofont-dice"></i>
+              <div class="fun-fact__card-body--icon">
+                <i class="icofont-dice"></i>
+              </div>
               <h4 class=""><span class="counter">83</span>%</h4>
               <p class="mb-0"> Reduce recruitment <br /> agency spend </p>
             </div>
@@ -643,7 +638,9 @@
         <div class="col-12 col-sm-6 mb-3 mb-lg-0 col-lg-3 fun-fact__box">
           <div class="card fun-fact__card p-30px-tb">
             <div class="fun-fact__card-body">
-              <i class="icofont-cube"></i>
+              <div class="fun-fact__card-body--icon">
+                <i class="icofont-cube"></i>
+              </div>
               <h4 class=""><span class="counter">40</span>%</h4>
               <p class="mb-0"> Make hires 40% <br /> faster </p>
             </div>
