@@ -49,119 +49,120 @@
 
   &-content__slide {
     margin-top: 40px;
-    &__title {
-      font-size: 40px;
-      font-weight: 600;
-    }
+
     img {
       display: block;
       margin: auto;
       max-width: 100%;
     }
     &__text {
+      display: grid;
+      grid-template-columns: 60px 1fr;
+      gap: 15px;
       &__icon {
         background: $bg-color-1;
-        width: 120px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
         margin-right: 20px;
-      }
-      i {
-        font-size: 30px;
+        font-size: 26px;
         color: $color-primary;
       }
+
       h4 {
         color: $color-primary;
       }
     }
   }
-
-
-  
 }
-  // v3
-  .features-item  {
+// v3
+.features-item {
+  position: relative;
+  z-index: 1;
+  .icon-outer {
+    display: inline-table;
+    width: 90px;
+    height: 90px;
     position: relative;
-    z-index: 1;
-    .icon-outer {
-      display: inline-table;
-      width: 90px;
-      height: 90px;
-      position: relative;
-      border-radius: 50% 50% 50% 50%;
-      transition: all 0.4s ease-in-out;
-      background-color: #ffffff;
-      box-shadow: 0 8px 48px 0 rgba(0, 0, 0, 0.15);
-      color: $color-primary;
-      line-height: 90px;
-      font-size: 32px;
-      @include respond(phone) {
-        width: 60px;
-        height: 60px;
-        line-height: 60px;
-      }
+    border-radius: 50% 50% 50% 50%;
+    transition: all 0.4s ease-in-out;
+    background-color: #ffffff;
+    box-shadow: 0 8px 48px 0 rgba(0, 0, 0, 0.15);
+    color: $color-primary;
+    line-height: 90px;
+    font-size: 32px;
+    @include respond(phone) {
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
     }
-    &:hover .icon-outer {
-      background-image: linear-gradient(
+  }
+  &:hover .icon-outer {
+    background-image: linear-gradient(
       to right,
       $color-primary 0%,
       $color-secondary 100%
     );
-      color: #ffffff;
-      box-shadow: 0 8px 48px 0 rgba(0, 0, 0, 0.15);
-    }
-    .title {
-      font-size: 22px;
-      font-weight: 400;
-    }
-    &::after,
-    &::before {
-      content: '';
-      width: 50%;
-      border-top: 1px solid $color-secondary;
-      position: absolute;
-      top: 55px;
-      transform: translateX(0) translateY(-50%) translateZ(0) rotate(0deg) scale(1);
-      -o-transform: translateX(0) translateY(-50%) translateZ(0) rotate(0deg) scale(1);
-      -ms-transform: translateX(0) translateY(-50%) translateZ(0) rotate(0deg) scale(1);
-      -moz-transform: translateX(0) translateY(-50%) translateZ(0) rotate(0deg) scale(1);
-      -webkit-transform: translateX(0) translateY(-50%) translateZ(0) rotate(0deg) scale(1);
-      z-index: -1;
-      @include respond(phone) {
-        border: none;
-      }
-    }
-    &::before {
-      right: 50%;
-    }
+    color: #ffffff;
+    box-shadow: 0 8px 48px 0 rgba(0, 0, 0, 0.15);
+  }
+  .title {
+    font-size: 22px;
+    font-weight: 400;
+  }
+  &::after,
+  &::before {
+    content: "";
+    width: 50%;
+    border-top: 1px solid $color-secondary;
+    position: absolute;
+    top: 55px;
+    transform: translateX(0) translateY(-50%) translateZ(0) rotate(0deg)
+      scale(1);
+    -o-transform: translateX(0) translateY(-50%) translateZ(0) rotate(0deg)
+      scale(1);
+    -ms-transform: translateX(0) translateY(-50%) translateZ(0) rotate(0deg)
+      scale(1);
+    -moz-transform: translateX(0) translateY(-50%) translateZ(0) rotate(0deg)
+      scale(1);
+    -webkit-transform: translateX(0) translateY(-50%) translateZ(0) rotate(0deg)
+      scale(1);
+    z-index: -1;
     @include respond(phone) {
-      h5 {
-        display: none;
-      }
+      border: none;
     }
   }
-  .features-item:first-child::before {
-    border-color: transparent;
-    
+  &::before {
+    right: 50%;
   }
-  .features-item:last-child::after {
-    border-color: transparent;
+  @include respond(phone) {
+    h5 {
+      display: none;
+    }
   }
+}
+.features-item:first-child::before {
+  border-color: transparent;
+}
+.features-item:last-child::after {
+  border-color: transparent;
+}
+.features-item {
   .nav-link {
-    padding: 0 !important;
+    padding: 0;
   }
-
   .nav-link.active {
     .icon-outer {
       background-image: linear-gradient(
-      to right,
-      $color-primary 0%,
-      $color-secondary 100%
-    );
+        to right,
+        $color-primary 0%,
+        $color-secondary 100%
+      );
       color: #ffffff;
       box-shadow: 0 8px 48px 0 rgba(0, 0, 0, 0.15);
     }
   }
+}
