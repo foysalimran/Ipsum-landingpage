@@ -192,6 +192,7 @@
       }
     }
   };
+  
   /******************** 13. LOCAL SUBSCRIPTION ********************/
   PATH.localSubs = function () {
     $("#subscribe").submit(function (e) {

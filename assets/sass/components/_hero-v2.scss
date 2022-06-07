@@ -1,28 +1,27 @@
 .hero-2 {
   position: relative;
   overflow: hidden;
-  &__shape-2 {
-    position: absolute;
-    top: 300px;
-    right: 240px;
+  // &__shape-2 {
+  //   position: absolute;
+  //   top: 300px;
+  //   right: 240px;
 
-    @include respond(big-desktop) {
-        right: 150px;
-    }
+  //   @include respond(big-desktop) {
+  //       right: 150px;
+  //   }
 
-    @include respond(desktop) {
-    right: 120px;
-    }
-    @include respond(laptop) {
-        // top: 350px;
-    right: 50px;
-    }
+  //   @include respond(desktop) {
+  //   right: 120px;
+  //   }
+  //   @include respond(laptop) {
+  //   right: 50px;
+  //   }
 
-    @include respond(tablet) {
-        display: none;
-    }
+  //   @include respond(tablet) {
+  //       display: none;
+  //   }
    
-  }
+  // }
   &__content {
     max-width: 750px;
     margin-right: auto;
@@ -97,7 +96,6 @@
 
 [class*=banner-one__shape-] {
   position: absolute;
-  // border-radius: 50%;
   -webkit-animation-name: bubbleMover;
   animation-name: bubbleMover;
   -webkit-animation-timing-function: linear;
