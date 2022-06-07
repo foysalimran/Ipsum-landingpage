@@ -648,7 +648,8 @@ body {
       .pricing-one__single {
         padding: 20px; } }
     .pricing-one__single h3 i {
-      color: #6365f1; }
+      color: #6365f1;
+      margin-right: 10px; }
   .pricing-one__month {
     display: inline-block;
     vertical-align: middle;
@@ -742,10 +743,8 @@ body {
 .pricingV2 .pricing-one__single {
   padding: 45px 20px; }
 
-.pricingV2 .pricing-one__list {
-  text-align: center; }
-  .pricingV2 .pricing-one__list li {
-    display: block; }
+.pricingV2 .pricing-one__list li {
+  display: block; }
 
 .navbar {
   border: 0px;

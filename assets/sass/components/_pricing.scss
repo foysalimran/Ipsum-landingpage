@@ -88,6 +88,7 @@
       h3 {
         i {
           color: $color-primary;
+          margin-right: 10px;
         }
       }
     }
@@ -191,14 +192,12 @@
   left: 50%;
 }
 
-
 .pricingV2 {
-  .pricing-one{
+  .pricing-one {
     &__single {
       padding: 45px 20px;
     }
     &__list {
-      text-align: center;
       li {
         display: block;
       }
