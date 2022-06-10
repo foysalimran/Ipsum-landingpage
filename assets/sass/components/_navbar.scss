@@ -40,6 +40,10 @@
       padding: 20px 0;
       color: #1b1f41;
       position: relative;
+      &.dropdown-toggle.active.show span {
+        transform: rotate(180deg);
+        color: $color-primary;
+      }
       @media (max-width: 992px) {
         padding: 0px 0;
       }
@@ -342,6 +346,24 @@
   }
 }
 
+@media (max-width: 991px) {
+  .navbar-nav > li .sub-menu-toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: $bg-color-1;
+    width: 100%;
+    height: 38px;
+    width: 38px;
+    line-height: 38px;
+    margin-right: 0px;
+    cursor: pointer;
+    text-align: center;
+    z-index: 1;
+    border: 3px solid #fff;
+    color: $color-dark;
+  }
+}
 @media (max-width: 767px) {
   .menu,
   .nav_right {

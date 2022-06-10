@@ -228,7 +228,7 @@
 
   /******************** DOCUMENT READY FUNCTION ********************/
   $(function () {
-    PATH.MenuClose();
+    // PATH.MenuClose();
     PATH.HeaderOnePageNav();
     PATH.HeaderSticky();
     PATH.HeroVideo();

@@ -781,6 +781,9 @@ body {
     padding: 20px 0;
     color: #1b1f41;
     position: relative; }
+    .menu > .nav-item > .nav-link.dropdown-toggle.active.show span {
+      transform: rotate(180deg);
+      color: #6365f1; }
     @media (max-width: 992px) {
       .menu > .nav-item > .nav-link {
         padding: 0px 0; } }
@@ -991,6 +994,23 @@ body {
   .navbar.navbar_fixed .menu > .nav-item {
     padding-top: 10px;
     padding-bottom: 10px; } }
+
+@media (max-width: 991px) {
+  .navbar-nav > li .sub-menu-toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #f4f7fb;
+    width: 100%;
+    height: 38px;
+    width: 38px;
+    line-height: 38px;
+    margin-right: 0px;
+    cursor: pointer;
+    text-align: center;
+    z-index: 1;
+    border: 3px solid #fff;
+    color: #1d1d1d; } }
 
 @media (max-width: 767px) {
   .menu,
@@ -1427,22 +1447,6 @@ body {
 .hero-2 {
   position: relative;
   overflow: hidden; }
-  .hero-2__shape-2 {
-    position: absolute;
-    top: 300px;
-    right: 240px; }
-    @media only screen and (max-width: 1400px) {
-      .hero-2__shape-2 {
-        right: 150px; } }
-    @media only screen and (max-width: 1199px) {
-      .hero-2__shape-2 {
-        right: 120px; } }
-    @media only screen and (max-width: 991px) {
-      .hero-2__shape-2 {
-        right: 50px; } }
-    @media only screen and (max-width: 767px) {
-      .hero-2__shape-2 {
-        display: none; } }
   .hero-2__content {
     max-width: 750px;
     margin-right: auto;
